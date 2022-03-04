@@ -1,0 +1,36 @@
+# Translation of iHRIS Qualify - Printed Forms Registration to Brazilian Portuguese (português do Brasil)
+# Exported from translatewiki.net
+#
+# --
+# Copyright (c) 2011-2016 <hris@capacityproject.org> Capacity Project partnership via IntraHealth International, Inc.
+# Copyright (c) 2011-2016 Rosetta Contributors and Canonical Ltd
+# Copyright (c) 2011-2016 translatewiki.net contributors
+# This file is distributed under the same license as the iHRIS package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: iHRIS Qualify - Printed Forms Registration\n"
+"Report-Msgid-Bugs-To: translatewiki.net\n"
+"POT-Creation-Date: 2015-09-14 08:02+0000\n"
+"PO-Revision-Date: 2016-06-22 14:44:58+0000\n"
+"Last-Translator: IntraHealth Informatics <Unknown>\n"
+"Language-Team: Brazilian Portuguese <https://translatewiki.net/wiki/Portal:"
+"pt-br>\n"
+"Language: pt_br\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-04-16 05:48+0000\n"
+"X-Generator: MediaWiki 1.28.0-alpha; Translate 2016-04-06\n"
+"X-Translation-Project: translatewiki.net <https://translatewiki.net>\n"
+"X-Language-Code: pt-br\n"
+"X-Message-Group: #out-ihris-qualify-pfr\n"
+"X-POT-Import-Date: 2013-10-07 17:28:02+0000\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyPrintedForms/modules/Registration/configs/en_US/Registration.xml#L10
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyPrintedForms/modules/Registration/configs/en_US/Registration.xml
+#: line 10]
+#, no-c-format
+msgid "Registration Certificate"
+msgstr "Certificado de matriculação"

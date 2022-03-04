@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Geography" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="Geography" path="/I2CE" locale="tl">
+    <version>4.1.2.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="tl">
+      <configuration name="can_edit_database_list_country" locale="tl">
+        <value>Mababago ang tala ng bansa</value>
+      </configuration>
+      <configuration name="can_view_database_list_country" locale="tl">
+        <value>Matatanaw ang tala ng bansa</value>
+      </configuration>
+      <configuration name="can_edit_database_list_region" locale="tl">
+        <value>Mababago ang tala ng rehiyon</value>
+      </configuration>
+      <configuration name="can_view_database_list_region" locale="tl">
+        <value>Matitingnan ang tala ng rehiyon</value>
+      </configuration>
+      <configuration name="can_edit_database_list_district" locale="tl">
+        <value>Mababago ang tala ng distrito</value>
+      </configuration>
+      <configuration name="can_view_database_list_district" locale="tl">
+        <value>Matitingnan ang tala ng distrito</value>
+      </configuration>
+      <configuration name="can_edit_database_list_county" locale="tl">
+        <value>Mababago ang tala ng bansa</value>
+      </configuration>
+      <configuration name="can_view_database_list_county" locale="tl">
+        <value>Matatanaw ang tala ng bansa</value>
+      </configuration>
+      <configuration name="can_edit_geographic_database_lists" locale="tl">
+        <value>Mababago ang ilang dato ng heograpiya</value>
+      </configuration>
+      <configuration name="can_view_geographic_database_lists" locale="tl">
+        <value>Matitingnan ang ilang dato ng heograpiya</value>
+      </configuration>
+      <configuration name="can_edit_all_geographic_database_lists" locale="tl">
+        <value>Mababago ang lahat ng dato ng heograpiya</value>
+      </configuration>
+      <configuration name="can_view_all_geographic_database_lists" locale="tl">
+        <value>Matatanaw ang lahat ng dato ng heograpiya</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="country">
+          <configuration name="display" values="single" locale="tl">
+            <value>Bansa</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="county">
+          <configuration name="display" values="single" locale="tl">
+            <value>Kondado</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configuration name="display" values="single" locale="tl">
+            <value>Distrito</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="region">
+          <configuration name="display" values="single" locale="tl">
+            <value>Rehiyon</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_ListByCountry">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pangalan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Kinalalagyan</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Country">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" values="many" locale="tl">
+                <value>default:Pangalan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="alpha_two">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Kodigong Alpha na may 2 Panitik</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Kodigong may Bilang ng ISO</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="primary">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pangunahing Bansa</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Gamitin para sa Pagpili ng Kinalalagyan</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_County">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pangalan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="district">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Distrito</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_District">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pangalan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="region">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Rehiyon</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Kodigo</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Region">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pangalan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="country">
+              <configuration name="headers" type="delimited" values="many" locale="tl">
+                <value>default:Bansa</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Kodigo</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

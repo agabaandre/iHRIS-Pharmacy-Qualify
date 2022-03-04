@@ -1,0 +1,253 @@
+# Translation Template of ihris-qualify module (ihris-qualify-CustomReports-disruption Version 4.2.0)
+# Copyright (C) 2015 <hris@capacityproject.org> Capacity Project partnership via IntraHealth International, Inc.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ihris-qualify@ihris-qualify-CustomReports-disruption 4.2.0\n"
+"POT-Creation-Date: 2015-09-14 08:02+0000\n"
+"Last-Translator: Intrahealth <hris@capacityproject.org>\n"
+"Language-Team: Intrahealth <hris@capacityproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L11 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 11]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L88 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 88]
+#, no-c-format
+msgid "Training Disruption"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L14 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 14]
+#, no-c-format
+msgid "Relationship for training disruptions."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L19 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 19]
+#, no-c-format
+msgid "The year this disruption occurred."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L24 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 24]
+#, no-c-format
+msgid "A string to determine if this disruption has been resumed or not."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L31 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 31]
+#, no-c-format
+msgid "The reason this disruption occurred."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L34 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 34]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L153 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 153]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L184 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 184]
+#, no-c-format
+msgid "Disruption Reason"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L39 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 39]
+#, no-c-format
+msgid "The category for the reason this disruption occurred."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L42 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 42]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L144 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 144]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L163 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 163]
+#, no-c-format
+msgid "Disruption Category"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L91 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 91]
+#, no-c-format
+msgid "Reports related to training disruptions."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L234 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 234]
+#, no-c-format
+msgid "A pie chart of all discontinuation categories."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L237 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 237]
+#, no-c-format
+msgid "Discontinuations by Category"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L244 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 244]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L283 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 283]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L322 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 322]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L361 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 361]
+#, no-c-format
+msgid "Pie Chart(Simple)"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L249 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 249]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L288 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 288]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L327 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 327]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L366 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 366]
+#, no-c-format
+msgid "Bar Chart(Simple)"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L254 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 254]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L293 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 293]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L332 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 332]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L371 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 371]
+#, no-c-format
+msgid "Column Chart(Simple)"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L259 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 259]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L298 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 298]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L337 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 337]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L376 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 376]
+#, no-c-format
+msgid "Stacked Column Chart(Simple)"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L264 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 264]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L303 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 303]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L342 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 342]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L381 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 381]
+#, no-c-format
+msgid "Scatter Plot"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L273 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 273]
+#, no-c-format
+msgid "A chart of all discontinuations by reason."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L276 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 276]
+#, no-c-format
+msgid "Discontinuations by Reason"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L312 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 312]
+#, no-c-format
+msgid "A chart of all discontinuations by year."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L315 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 315]
+#, no-c-format
+msgid "Discontinuations by Year"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L351 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 351]
+#, no-c-format
+msgid "A pie chart of disruptions that have been resumed or not."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L354 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 354]
+#, no-c-format
+msgid "Resumption Report"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L94 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 94]
+#, no-c-format
+msgid "Training Reports"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L60 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 60]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L102 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 102]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L205 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 205]
+#, no-c-format
+msgid "Cadre"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L111 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 111]
+#, no-c-format
+msgid "Date of Birth"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L116 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 116]
+#, no-c-format
+msgid "Date of Birth After"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L121 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 121]
+#, no-c-format
+msgid "Date of Birth Before"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L128 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 128]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L133 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 133]
+#, no-c-format
+msgid "Gender"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L158 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 158]
+#, no-c-format
+msgid "Disruption Category ID"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L174 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 174]
+#, no-c-format
+msgid "Disruption Date"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L179 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 179]
+#, no-c-format
+msgid "Disruption Reason ID"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L191 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 191]
+#, no-c-format
+msgid "Resumption Date"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L200 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 200]
+#, no-c-format
+msgid "Training Cadre"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L212 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 212]
+#, no-c-format
+msgid "Intake Date"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L217 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 217]
+#, no-c-format
+msgid "Intake Date After"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L222 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 222]
+#, no-c-format
+msgid "Intake Date Before"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L49 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 49]
+#, no-c-format
+msgid "The training that was disrupted"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L52 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 52]
+#, no-c-format
+msgid "Training"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L57 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 57]
+#, no-c-format
+msgid "The cadre of the training."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L65 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 65]
+#, no-c-format
+msgid "The person taking the training."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L68 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 68]
+#, no-c-format
+msgid "Person"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L73 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 73]
+#, no-c-format
+msgid "The demographic details of the person taking this training."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml#L76 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingDisruption/configs/en_US/ihris-qualify-CustomReports-disruption.xml line 76]
+#, no-c-format
+msgid "Demographic"
+msgstr ""
+

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Uganda-manage-data">
+  <metadata>
+    <displayName>iHRIS Manage Uganda Data</displayName>
+    <category>Site</category>
+    <description>The iHRIS Manage Uganda module for drop down data.</description>
+    <creator>Intrahealth Informatics</creator>
+    <email>hris@capacityproject.org</email>
+    <link>https://launchpad.net/ihris-manage</link>
+    <version>4.0.12.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <path name="modules">
+      <value>./modules</value>
+    </path>
+    <enable name="Uganda-manage-data-country" />
+    <enable name="Uganda-manage-data-region" />
+    <enable name="Uganda-manage-data-district" />
+    <enable name="Uganda-manage-data-county" />
+    <priority>350</priority>
+  </metadata>
+  <configurationGroup name="Uganda-manage-data" path="/I2CE">
+    <displayName>iHRIS Manage Uganda Data</displayName>
+  </configurationGroup>
+</I2CEConfiguration>

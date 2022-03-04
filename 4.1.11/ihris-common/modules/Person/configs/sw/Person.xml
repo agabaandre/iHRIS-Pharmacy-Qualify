@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Person" path="/I2CE">
+  <metadata>
+    <version>4.1.10.0.1</version>
+  </metadata>
+  <configurationGroup name="Person" path="/I2CE" locale="sw">
+    <version>4.1.9.0.1</version>
+    <configurationGroup name="page_feedback_messages" path="/modules/forms/page_feedback_messages">
+      <configuration name="person_save" locale="sw"></configuration>
+      <configuration name="person_child_save" locale="sw"></configuration>
+      <configuration name="person_child_delete_success" locale="sw"></configuration>
+      <configuration name="person_child_delete_fail" locale="sw"></configuration>
+      <configuration name="person_child_delete_not_permitted" locale="sw"></configuration>
+      <configuration name="person_child_delete_not_allowed" locale="sw"></configuration>
+    </configurationGroup>
+    <configurationGroup name="invalid_formfield_message" path="/modules/forms/formfield_messages" locale="sw">
+      <configuration name="person_surname" path="person/surname/unique"></configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="sw">
+      <configuration name="person_can_view" locale="sw">
+        <value>Weza kuangalia ukurasa wa mtu</value>
+      </configuration>
+      <configuration name="person_can_edit" locale="sw">
+        <value>Weza kuhariri ukurasa wa mtu</value>
+      </configuration>
+      <configuration name="person_can_view_child_forms" locale="sw">
+        <value>Weza kuangalia fomu zote za mtoto wa mtu</value>
+      </configuration>
+      <configuration name="person_can_edit_child_forms" locale="sw">
+        <value>Weza kuhariri fomu zote za mtoto wa mtu</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="person">
+          <configuration name="display" values="single" locale="sw">
+            <value>Mtu</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="sw">
+              <value>Fomu hii ina inataarifa ya msingi kuhusu mtu kama vile majina yao na makazi</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Person">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="headers" type="delimited" locale="sw">
+                <value>default:Jina la Ukoo</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="headers" type="delimited" locale="sw">
+                <value>default:Jina la Kwanza</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="headers" type="delimited" locale="sw">
+                <value>default:Majina Mengine</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="nationality">
+              <configuration name="headers" type="delimited" locale="sw">
+                <value>default:Utaifa</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="residence">
+              <configuration name="headers" type="delimited" values="many" locale="sw">
+                <value>default:Makazi</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="person">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="sw">
+            <value>Ongeza/Sasisha Mtu</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="view">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="sw">
+            <value>Angalia Mtu</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

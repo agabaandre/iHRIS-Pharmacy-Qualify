@@ -1,0 +1,51 @@
+<div id="siteContent">
+<br style="clear: both;"><div role="records">
+<h2><a href="person" class="updateRecords">Přidat osobu</a></h2>
+<p>
+Přidat nový záznam studenta nebo profesionálního zdravotníka. V záznamu můžete aktualizovat kontakty a osobní údaje; přidat podrobnosti výukových programů probíhajících či dokončených; vydat registrace, licence a obnovení licencí; a zaznamenat licence soukromé praxe, žádosti o ověření migrace ven, disciplinárních řízení a nasazení.
+</p>
+
+<hr></div>
+
+<span type="module" name="SelfService" ifenabled="true" task="can_view_own_personnel">
+  <span type="module" name="SelfService" if="!userHasRecord()">
+    
+  </span>
+  <span type="module" name="SelfService" if="userHasRecord()">
+    <h2><span type="module" name="SelfService" call="linkToPersonRecord('view?id=')">View Your Record</span></h2>
+    <p>
+      View your own details.
+    </p>
+  </span>
+</span>
+
+<div task="custom_reports_can_access">
+<h2><a href="search" class="searchRecords">Prohledat záznamy</a></h2>
+<p>
+Umístit jakýkoliv záznam osoby do systému pro kontrolu, tisk, nebo aktualizaci.
+</p>
+</div>
+
+
+<span type="module" name="CustomReports" ifenabled="true">
+  <div role="manager|decision_maker">
+    <hr><h2><a href="CustomReports/view/reportViews" class="createRecords">Zobrazit hlášení</a></h2>
+    <p>
+      Záznamy umožňují zpracování dat lidských zdrojů různými způsoby. Přizpůsobte, zobrazte a vytiskněte seznamy zdravotnických pracovníků, nebo studentů, statistické grafy a další standardní hlášení. Přístup je omezen na Správce datových operací a osoby s rozhodovací pravomocí.
+    </p>
+  </div>
+</span>
+
+
+<div role="manager">
+<hr><h2><a href="configure" class="adminDatabase">Nastavit systém</a></h2>
+<p>
+Nastavte moduly, spravujte databáze a vytvářejte nebo aktualizujte uživatelské účty.
+</p>
+</div>
+
+
+
+<hr><h2><a href="password">Změnit heslo</a></h2>
+
+</div>

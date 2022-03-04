@@ -1,0 +1,22 @@
+<div>
+	<div class="editRecord">
+	<p>Edit This Information</p>
+		<ul>
+			<li role='manager'><span type="form" name="facility_service:id" href="facility_service?id=" parent="true" >Correct this Information</span></li>
+      <span type="module" name="PrintedForms" ifenabled="true">
+        <span type="module" if="PrintedForms->hasValidForms('facility_service')">
+          <li task="printed_forms_can_access"><span type="form" href="PrintedForms/menu?id=" name="facility_service:id">Registration Certificate</span></li>
+        </span>
+      </span>
+		</ul>
+	</div> <!-- editRecord -->
+	
+	<div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<th colspan="2">Facility Service Provided</th>
+		</tr>
+	   	<span type="form" name="facility_service:service" showhead="default"></span>
+	</table>
+	</div> <!-- dataTable -->
+</div>

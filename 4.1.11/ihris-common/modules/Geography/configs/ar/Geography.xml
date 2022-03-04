@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Geography" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="Geography" path="/I2CE" locale="ar">
+    <version>4.1.2.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="ar">
+      <configuration name="can_edit_database_list_country" locale="ar">
+        <value>يمكن تعديل &#160;قائمة&#160;البلد</value>
+      </configuration>
+      <configuration name="can_view_database_list_country" locale="ar">
+        <value>يمكن عرض&#160;قائمة&#160;البلد</value>
+      </configuration>
+      <configuration name="can_edit_database_list_region" locale="ar">
+        <value>يمكن تعديل&#160;قائمة&#160;المنطقة</value>
+      </configuration>
+      <configuration name="can_view_database_list_region" locale="ar">
+        <value>يمكن عرض&#160;قائمة&#160;المنطقة</value>
+      </configuration>
+      <configuration name="can_edit_database_list_district" locale="ar">
+        <value>يمكن تعديل &#160;قائمة&#160;الحي</value>
+      </configuration>
+      <configuration name="can_view_database_list_district" locale="ar">
+        <value>يمكن عرض&#160;قائمة&#160;الحي</value>
+      </configuration>
+      <configuration name="can_edit_database_list_county" locale="ar">
+        <value>يمكن تعديل &#160;قائمة&#160;البلد</value>
+      </configuration>
+      <configuration name="can_view_database_list_county" locale="ar">
+        <value>يمكن عرض&#160;قائمة&#160;البلد</value>
+      </configuration>
+      <configuration name="can_edit_geographic_database_lists" locale="ar">
+        <value>يمكن&#160;تعديل&#160;بعض البيانات&#160;الجغرافية</value>
+      </configuration>
+      <configuration name="can_view_geographic_database_lists" locale="ar">
+        <value>يمكن&#160;عرض بعض&#160;البيانات&#160;الجغرافية</value>
+      </configuration>
+      <configuration name="can_edit_all_geographic_database_lists" locale="ar">
+        <value>يمكن&#160;تعديل&#160;كافة&#160;البيانات&#160;الجغرافية</value>
+      </configuration>
+      <configuration name="can_view_all_geographic_database_lists" locale="ar">
+        <value>يمكن عرض&#160;كافة البيانات&#160;الجغرافية</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="country">
+          <configuration name="display" values="single" locale="ar">
+            <value>بلد</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="county">
+          <configuration name="display" values="single" locale="ar">
+            <value>مقاطعة</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configuration name="display" values="single" locale="ar">
+            <value>حي</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="region">
+          <configuration name="display" values="single" locale="ar">
+            <value>منطقة</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_ListByCountry">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:موقع</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Country">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="alpha_two">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:حرفا&#160;رمز&#160;ألفا</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الرمز الرقمي للأيزو</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="primary">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الدولة الأساسية</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:استخدم&#160;لاختيار&#160;الموقع</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_County">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="district">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:حي</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_District">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="region">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:منطقة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:رمز</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Region">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="country">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:بلد</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:رمز</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

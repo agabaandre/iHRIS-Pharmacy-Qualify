@@ -1,0 +1,88 @@
+ <div id="siteContent">
+    <h1 dir="rtl">عرض التدريب: <span type="form" name="training:cadre"></span> - <span type="form" name="person:surname"></span>, <span type="form" name="person:firstname"></span></h1>
+    <p><span type="form" name="person:id" href="view?id=" dir="rtl">العودة إلى السجل الرئيسي</span></p>
+
+	<div class="recordsData">
+	<h3><a name="jump_training" dir="rtl">معلومات التدريب</a></h3>
+	<p class="editRecordsData" id="training_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('training', this );" dir="rtl">إخفاء</a>
+		</p>
+
+	<div id="training">
+		<div class="editRecord">
+	<p dir="rtl">تعديل هذه المعلومة</p>
+		<ul><li role="manager"><span type="form" name="training:id" href="training?id=" parent="true" dir="rtl">تصحيح هذه المعلومة</span></li>
+			<li role="records"><span type="form" ifset="!training:graduation" name="training:id" href="graduate?id=" parent="true" dir="rtl">سنة التخرج</span></li>
+		</ul></div> <!-- editRecord -->
+	
+	<div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0"><tr><th colspan="2" dir="rtl">مؤشر المعلومات</th>
+		</tr><span type="form" name="training:index_num" showhead="default"></span>
+		<span type="form" name="training:intake_date" showhead="default" class="even"></span>
+		<span type="form" name="training:graduation" showhead="default"></span>
+		
+		<span type="form" ifset="training:trained_outside" ifvalue="1" name="training:out_country" showhead="default" class="even"></span>
+		<span type="form" ifset="training:trained_outside" ifvalue="1" name="training:out_institution" showhead="default"></span>
+		
+		<span type="form" ifset="training:trained_outside" ifvalue="!1" name="training:training_institution" showhead="default" class="even"></span>
+		
+	</table></div> <!-- dataTable -->
+	
+	<div id="training_disrupt"></div>
+	
+	<div class="editRecord">
+	<p dir="rtl">تعديل هذه المعلومة</p>
+		<ul><li role="records"><span type="form" ifset="exam:id" name="exam:id" href="exam?id=" parent="true" dir="rtl">تحديث هذه المعلومة</span></li>
+		</ul></div> <!-- editRecord -->
+	
+	<div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0"><tr><th colspan="2" dir="rtl">معلومات عن الامتحان</th>
+		</tr><tbody id="exam"></tbody></table></div> <!-- dataTable -->
+	
+	</div> <!-- training -->
+	<br style="clear: both;"></div> <!-- recordsData -->
+
+	<div class="recordsData">
+	<h3><a name="jump_registration" dir="rtl">معلومات التسجيل</a></h3>
+	<p class="editRecordsData" id="registration_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('registration', this );" dir="rtl">إخفاء</a>
+		</p>
+
+	<div id="registration"></div> <!-- contact -->
+	<br style="clear: both;"></div> <!-- recordsData -->
+	
+	<div class="recordsData">
+	<h3><a name="jump_license" dir="rtl">معلومات الترخيص</a></h3>
+	<p class="editRecordsData" id="license_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('license', this );" dir="rtl">إخفاء</a>
+		</p>
+
+	<div id="license"></div>
+	<br style="clear: both;"></div> <!--  recordsData -->
+
+	<div class="recordsData">
+	<h3><a name="jump_education" dir="rtl">التعليم المستمر</a></h3>
+	<p class="editRecordsData"><a href="" class="hide" title="Hide" onclick="return hideDiv('education', this );" dir="rtl">إخفاء</a>
+    	<span role="registration" type="form" ifset="license:id" name="training:id" href="continuing_education?parent=" dir="rtl">إضافة التعليم المستمر</span>
+		</p>
+
+	<div id="continuing_education"></div>
+	<br style="clear: both;"></div> <!--  recordsData -->
+
+	<div class="recordsData">
+	<h3><a name="jump_ppractice" dir="rtl">معلومات عن الممارسة الخاصة للترخصيص</a></h3>
+	<p class="editRecordsData"><a href="" class="hide" title="Hide" onclick="return hideDiv('private_practice', this );" dir="rtl">إخفاء</a>
+    	<span role="registration" type="form" ifset="license:id" name="training:id" href="private_practice?parent=" dir="rtl">أضف ترخيصاً للممارسة الخاصة</span>
+		</p>
+
+	<div id="private_practice"></div>
+	<br style="clear: both;"></div> <!--  recordsData -->
+
+	<div class="recordsData">
+	<h3><a name="jump_disciplinary" dir="rtl">بلاغ تأديبي</a></h3>
+	<p class="editRecordsData" id="disciplinary_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('disciplinary', this );" dir="rtl">إخفاء</a>
+		</p>
+
+	<div id="disciplinary_action"></div>
+	<br style="clear: both;"></div> <!--  recordsData -->
+
+
+    <!--<a href="construction">Print</a>-->
+</div>

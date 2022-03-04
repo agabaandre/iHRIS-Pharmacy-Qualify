@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="training-course" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="training-course" path="/I2CE" locale="nl">
+    <version>4.1.9.1.1</version>
+    <configurationGroup name="tranlatable_strings" locale="nl" path="/modules/training-course/translatable-strings" type="delimited">
+      <value>add_student:Student toevoegen</value>
+      <value>remove_student:Student verwijderen</value>
+    </configurationGroup>
+    <configurationGroup name="invalid_messages" path="/modules/forms/formfield_messages" locale="nl">
+      <configuration name="work" path="scheduled_training_course/end_date/bad_date">
+        <value>De einddatum moet na de begindatum liggen.</value>
+      </configuration>
+      <configuration name="work" path="person_scheduled_training_course/training_course_mod/bad_mod">
+        <value>U hebt ten minste één module geselecteerd die is niet beschikbaar voor de cursus:</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="formsdata" path="/I2CE/formsData/forms">
+      <configurationGroup name="training_course_status">
+        <configurationGroup name="open">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="nl"></configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="closed">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="nl">
+              <value>Gesloten</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_course_evaluation">
+        <configurationGroup name="pass">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="nl">
+              <value>Voldoende</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="fail">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="nl">
+              <value>Onvoldoende</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="incomplete">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="nl">
+              <value>Onvolledig</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="not_evaluated">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="nl">
+              <value>Niet beoordeeld</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="roles" path="roles/names">
+      <configurationGroup name="training_manager">
+        <configuration name="display_name" values="single" locale="nl">
+          <value>Cursusmanager</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_training_course_status" locale="nl">
+        <value>Cursusstatuslijst bewerken</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_status" locale="nl">
+        <value>Cursusstatuslijst bekijken</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_mod" locale="nl">
+        <value>Lijst met trainingscursusmodules bewerken</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_mod" locale="nl">
+        <value>Lijst met trainingscursusmodules bekijken</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_status" locale="nl">
+        <value>Cursusstatuslijst bewerken</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_status" locale="nl">
+        <value>Cursusstatuslijst bekijken</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_evaluation" locale="nl">
+        <value>Cursusevaluatielijst bewerken</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_evaluation" locale="nl">
+        <value>Cursusevaluatielijst bekijken</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_category" locale="nl">
+        <value>Cursuscategorielijst bewerken</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_category" locale="nl">
+        <value>Cursuscategorielijst bekijken</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course" locale="nl">
+        <value>Cursuslijst bewerken</value>
+      </configuration>
+      <configuration name="can_edit_database_list_scheduled_training_course" locale="nl">
+        <value>Geplande cursussencategorielijst bewerken</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_requestor" locale="nl">
+        <value>Cursusaanvragerslijst bewerken</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_requestor" locale="nl">
+        <value>Cursusaanvragerslijst bewerken</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course" locale="nl">
+        <value>Cursuslijst bekijken</value>
+      </configuration>
+      <configuration name="can_edit_scheduled_training_course" locale="nl">
+        <value>Geplande cursus bewerken</value>
+      </configuration>
+      <configuration name="can_view_database_list_scheduled_training_course" locale="nl">
+        <value>Geplande cursussencategorielijst bekijken</value>
+      </configuration>
+      <configuration name="can_edit_training_course_database_lists" locale="nl">
+        <value>Sommige lijsten die samenhangen met de cursussenmodule bewerken</value>
+      </configuration>
+      <configuration name="can_view_training_course_database_lists" locale="nl">
+        <value>Sommige lijsten die samenhangen met de cursussenmodule bekijken</value>
+      </configuration>
+      <configuration name="can_edit_all_training_course_database_lists" locale="nl">
+        <value>Alle lijsten die samenhangen met de cursussenmodule bewerken</value>
+      </configuration>
+      <configuration name="can_view_all_training_course_database_lists" locale="nl">
+        <value>Alle lijsten die samenhangen met de cursussenmodule bekijken</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="training_course_mod">
+          <configuration name="display" values="single" locale="nl">
+            <value>Trainingscursusmodule</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_status">
+          <configuration name="display" values="single" locale="nl">
+            <value>Cursusstatus</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_category">
+          <configuration name="display" values="single" locale="nl">
+            <value>Cursuscategorie</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course">
+          <configuration name="display" values="single" locale="nl">
+            <value>Cursus</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="nl">
+              <value>Dit formulier bevat basisgegevens over een cursus</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="scheduled_training_course">
+          <configuration name="display" values="single" locale="nl">
+            <value>Geplande cursus</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_scheduled_training_course">
+          <configuration name="display" values="single" locale="nl">
+            <value>Geplande cursussen voor een persoon</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_evaluation">
+          <configuration name="display" values="single" locale="nl">
+            <value>Cursusevaluatie</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_requestor">
+          <configuration name="display" values="single" locale="nl">
+            <value>Cursusaanvrager</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Training_Course_Evaluation">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Naam</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="competency_evaluation">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Competentieevaluatie</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Training_Course">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course_mod">
+              <configuration name="headers" type="delimited" locale="nl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="has_certification_date">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Certificeringsdatum gebruiker</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Certificaeringssjabloon</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="topic">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Onderwerp</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Opmerkingen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Opleidingsinstituut</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_funder">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Opleidingssponsors</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="continuing_education_course">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Aantal CUE's</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_status">
+              <configuration name="headers" type="delimited" locale="nl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_category">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Categorie</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Person_Scheduled_Training_Course">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course_mod">
+              <configuration name="headers" type="delimited" locale="nl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="certification_date">
+              <configuration name="headers" locale="nl" type="delimited">
+                <value>default:Certificeringsdatum</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="attending">
+              <configuration name="headers" locale="nl" type="delimited">
+                <value>default:Neemt deel</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="is_retraining">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Omscholing</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="completed">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Voltooid</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="duty_commencement_date">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Dienstaanvang</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="request_date">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Datum verzoek</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Opmerkingen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="average">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Gemiddelde</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_evaluation">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Evaluatie</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_requestor">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Aangevraagd door</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="scheduled_training_course">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Instantie</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Scheduled_Training_Course">
+          <configurationGroup name="meta" path="meta/list/default">
+            <configuration name="display_string" locale="nl">
+              <value>%s op %s</value>
+            </configuration>
+          </configurationGroup>
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course">
+              <configuration name="headers" type="delimited" values="many" locale="nl">
+                <value>default:Cursus</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Website</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="num_students">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Maximum aantal studenten</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Opmerkingen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="instructors">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Instructeurs</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Begindatum</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Einddatum</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" values="many" locale="nl">
+                <value>default:Locatie</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="editstudents">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="nl">
+            <value>Studenten bewerken</value>
+          </configuration>
+          <configuration name="action_header" values="single" locale="nl">
+            <value>Student toevoegen of verwijderen</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_training_participation" path="/modules/CustomReports/relationships/student_training_participation">
+        <configuration name="display_name" locale="nl"></configuration>
+        <configuration name="description" locale="nl">
+          <value>Lijst met alle trainingsdeelnames per geplande cursus</value>
+        </configuration>
+        <configurationGroup name="joins">
+          <configurationGroup name="person_scheduled_training_course">
+            <configuration name="display_name" locale="nl">
+              <value>Geplande cursus van persoon</value>
+            </configuration>
+            <configurationGroup name="joins">
+              <configurationGroup name="person">
+                <configuration name="display_name" locale="nl">
+                  <value>persoon</value>
+                </configuration>
+                <configurationGroup name="joins">
+                  <configurationGroup name="person_position">
+                    <configuration name="display_name" locale="nl">
+                      <value>Huidige positie</value>
+                    </configuration>
+                    <configurationGroup name="joins">
+                      <configurationGroup name="position">
+                        <configuration name="display_name" locale="nl">
+                          <value>Positie</value>
+                        </configuration>
+                        <configurationGroup name="joins">
+                          <configurationGroup name="facility">
+                            <configuration name="display_name" locale="nl">
+                              <value>instelling</value>
+                            </configuration>
+                            <configurationGroup name="joins">
+                              <configurationGroup name="facility_contact">
+                                <configuration name="display_name" locale="nl">
+                                  <value>Contactpersoon instelling</value>
+                                </configuration>
+                              </configurationGroup>
+                            </configurationGroup>
+                          </configurationGroup>
+                        </configurationGroup>
+                      </configurationGroup>
+                    </configurationGroup>
+                  </configurationGroup>
+                  <configurationGroup name="person_contact">
+                    <configuration name="display_name" locale="nl">
+                      <value>Persoonlijk contactpersoon</value>
+                    </configuration>
+                  </configurationGroup>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+          <configurationGroup name="training_course">
+            <configuration name="display_name" locale="nl">
+              <value>Cursus</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="schedule-person" path="/modules/training-course/page/schedule-person">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="nl">
+            <value>Geplande cursus voor een persoon toevoegen of bijwerken</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

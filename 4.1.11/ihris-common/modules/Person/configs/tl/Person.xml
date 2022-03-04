@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Person" path="/I2CE">
+  <metadata>
+    <version>4.1.10.0.1</version>
+  </metadata>
+  <configurationGroup name="Person" path="/I2CE" locale="tl">
+    <version>4.1.9.0.1</version>
+    <configurationGroup name="page_feedback_messages" path="/modules/forms/page_feedback_messages">
+      <configuration name="person_save" locale="tl">
+        <value>Nasagip na ang rekord na ito.</value>
+      </configuration>
+      <configuration name="person_child_save" locale="tl">
+        <value>Nasagip na ang rekord na ito.</value>
+      </configuration>
+      <configuration name="person_child_delete_success" locale="tl"></configuration>
+      <configuration name="person_child_delete_fail" locale="tl"></configuration>
+      <configuration name="person_child_delete_not_permitted" locale="tl"></configuration>
+      <configuration name="person_child_delete_not_allowed" locale="tl"></configuration>
+    </configurationGroup>
+    <configurationGroup name="invalid_formfield_message" path="/modules/forms/formfield_messages" locale="tl">
+      <configuration name="person_surname" path="person/surname/unique">
+        <value>Tumutugma sa pangalan ng rekord na ito ang kakambal na mga rekord:</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="tl">
+      <configuration name="person_can_view" locale="tl">
+        <value>Matitingnan ang pahina ng tao</value>
+      </configuration>
+      <configuration name="person_can_edit" locale="tl">
+        <value>Mababago ang pahina ng tao</value>
+      </configuration>
+      <configuration name="person_can_view_child_forms" locale="tl">
+        <value>Matitingnan ang lahat ng mga pormularyong pambata ng isang tao</value>
+      </configuration>
+      <configuration name="person_can_edit_child_forms" locale="tl">
+        <value>Mababago ang lahat ng mga pormularyong pambata ng isang tao</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="person">
+          <configuration name="display" values="single" locale="tl">
+            <value>Tao</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="tl">
+              <value>Ang pormularyong ito ay humahawak ng saligang kabatiran patungkol sa isang tao katulad ng kanilang mga pangalan at tirahan</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Person">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Apelyido</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Unang Pangalan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Iba pang mga Pangalan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="nationality">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Kabansaan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="residence">
+              <configuration name="headers" type="delimited" values="many" locale="tl">
+                <value>default:Tirahan</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="person">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="tl">
+            <value>Magdagdag/Magsapanahon ng Tao</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="view">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="tl">
+            <value>Tingnan ang Tao</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

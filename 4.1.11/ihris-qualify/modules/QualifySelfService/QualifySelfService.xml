@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="QualifySelfService">
+  <metadata>
+    <displayName>iHRIS Qualify Self Service</displayName>
+    <category>Application Component</category>
+    <creator>Luke Duncan</creator>
+    <email>lduncan@intrahealth.org</email>
+    <link>https://launchpad.net/ihris-qualify</link>
+    <version>4.2.2.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <requirement name="SelfService">
+      <atLeast version="4.1" />
+    </requirement>
+    <path name="modules">
+      <value>./modules</value>
+    </path>
+  </metadata>
+  <configurationGroup name="QualifySelfService" path="/">
+    <configurationGroup name="roles" path="/I2CE/formsData/forms/role">
+      <displayName>Roles</displayName>
+      <description>The list of roles provided</description>
+      <status>advanced:true</status>
+      <status>required:true</status>
+      <configurationGroup name="professionals">
+        <configuration name="last_modified">
+          <value>2013-01-05 1:23:45</value>
+        </configuration>
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="en_US">
+            <displayName>Display Name</displayName>
+            <description>The name displayed for the role</description>
+            <status>advanced:true</status>
+            <value>Professionals</value>
+          </configuration>
+          <configuration name="trickle_up">
+            <displayName>Trickle Up</displayName>
+            <description>The short Name of the roles that have privelages to anything with the role 'Professionals', You do not need to include the role for the special role 'All' as it will be ignored</description>
+            <status>advanced:true</status>
+            <status>required:false</status>
+            <value>admin</value>
+          </configuration>
+          <configuration name="assignable">
+            <value>1</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configuration name="deafult_user_role" path="/modules/SelfService/default_user_role">
+      <value>professionals</value>
+    </configuration>
+    <configuration name="deafult_user_role" path="/modules/SelfService/default_user_contact_form">
+      <value>person_contact_work</value>
+    </configuration>
+    <configurationGroup name="ss_alternative_task_satisfaction" path="/I2CE/tasks/alt_satisfaction">
+      <version>4.0.7</version>
+      <configuration name="person_can_edit" values="many">
+        <version>4.1.5.1</version>
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_forms" values="many">
+        <version>4.1.5.2</version>
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_demographic" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_demographic" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_dependents" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_dependents" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_education" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_education" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_employment" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_employment" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_emergency" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_emergency" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_other" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_other" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_personal" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_personal" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_work" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_work" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_id" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_language" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_photo_passport" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_photo_passport" values="many">
+        <value>SelfService-&gt;userIsPerson()</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

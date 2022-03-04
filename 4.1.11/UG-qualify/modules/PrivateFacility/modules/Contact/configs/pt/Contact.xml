@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="PersonContact" path="/I2CE">
+  <metadata>
+    <version>4.0.9.0</version>
+  </metadata>
+  <configurationGroup name="PersonContact" path="/I2CE" locale="pt">
+    <version>4.0.9.0</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="pt">
+      <configuration name="person_can_view_child_form_person_contact_work" locale="pt">
+        <value>Pode visualizar child form de Contacto do Local de Trabalho de uma pessoa</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_work" locale="pt">
+        <value>Pode editar child form de Contacto do Local de Trabalho de uma pessoa</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_emergency" locale="pt">
+        <value>Pode visualizar child form de Contacto de Emerg&#234;ncia de uma pessoa</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_emergency" locale="pt">
+        <value>Pode editar child form de Contacto de Emerg&#234;ncia de uma pessoa</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_personal" locale="pt">
+        <value>Pode visualizar o child form de Contacto Pessoal de uma pessoa</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_personal" locale="pt">
+        <value>Pode editar o child form de Contacto Pessoal de uma pessoa</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_other" locale="pt">
+        <value>Pode visualizar child form de Outros Contactos de uma pessoa</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_other" locale="pt">
+        <value>Pode editar o child form de Outros Contactos de uma pessoa</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="person_contact_work">
+          <configuration name="display" values="single" locale="pt">
+            <value>Contacto do Local de Trabalho</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_emergency">
+          <configuration name="display" values="single" locale="pt">
+            <value>Contacto de Emerg&#234;ncia</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_other">
+          <configuration name="display" values="single" locale="pt">
+            <value>Outros Contactos</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_personal">
+          <configuration name="display" values="single" locale="pt">
+            <value>Contacto Pessoal</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="contact">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="pt">
+            <value>Adicionar/Actualizar Informa&#231;&#227;o de Contacto</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

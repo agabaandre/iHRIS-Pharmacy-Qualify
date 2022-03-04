@@ -1,0 +1,40 @@
+# Translation of iHRIS Qualify - Custom Reports Search Training to Sindhi (سنڌي)
+# Exported from translatewiki.net
+#
+# Author: Mehtab ahmed
+# --
+# Copyright (c) 2011-2016 <hris@capacityproject.org> Capacity Project partnership via IntraHealth International, Inc.
+# Copyright (c) 2011-2016 Rosetta Contributors and Canonical Ltd
+# Copyright (c) 2011-2016 translatewiki.net contributors
+# This file is distributed under the same license as the iHRIS package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-14 08:02+0000\n"
+"PO-Revision-Date: 2016-06-22 14:44:53+0000\n"
+"Last-Translator: Siebrand Mazeland <Unknown>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-04-16 05:48+0000\n"
+"X-Generator: MediaWiki 1.28.0-alpha; Translate 2016-04-06\n"
+"X-POT-Import-Date: 2013-10-07 17:27:54+0000\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchTraining/configs/en_US/ihris-qualify-CustomReports-search-training.xml#L10
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchTraining/configs/en_US/ihris-qualify-CustomReports-search-training.xml
+#: line 10]
+#, no-c-format
+msgid "Search based on training information."
+msgstr "تربيتي معلومات تي رکيل ڳولا."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchTraining/configs/en_US/ihris-qualify-CustomReports-search-training.xml#L13
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchTraining/configs/en_US/ihris-qualify-CustomReports-search-training.xml
+#: line 13]
+#, no-c-format
+msgid "Search Training"
+msgstr "تربيت ڳوليو"

@@ -1,0 +1,15 @@
+Source: ihris-qualify
+Maintainer: Carl Leitner <litlfred@ibiblio.org>
+Section: web
+Priority: optional
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 7)
+Homepage: http://launchpad.net/ihris-qualify
+
+
+Package: ihris-qualify
+Architecture: all
+Depends: ihris-common
+Recommends: 
+Description: iHRIS Qualify Library
+ iHRIS Qualify base library

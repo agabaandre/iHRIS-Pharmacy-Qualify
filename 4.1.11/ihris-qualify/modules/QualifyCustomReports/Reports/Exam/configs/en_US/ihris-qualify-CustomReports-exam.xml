@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-exam" path="//modules/CustomReports">
+  <metadata>
+    <version>4.2.2.0</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-exam" path="//modules/CustomReports" locale="en_US">
+    <version>4.2.0</version>
+    <configurationGroup name="relationship-exam" path="relationships/exam">
+      <configuration name="display_name" locale="en_US">
+        <value>Exam</value>
+      </configuration>
+      <configuration name="description" locale="en_US">
+        <value>Relationship for exams.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="exam_year">
+          <configuration name="description" locale="en_US">
+            <value>The year this exam was taken.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="training">
+          <configuration name="description" locale="en_US">
+            <value>The training associated with this exam.</value>
+          </configuration>
+          <configuration name="display_name" locale="en_US">
+            <value>Training</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="en_US">
+                <value>The cadre of this training.</value>
+              </configuration>
+              <configuration name="display_name" locale="en_US">
+                <value>Cadre</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-exam" path="reports/exam">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="en_US">
+          <value>Exam Reports</value>
+        </configuration>
+        <configuration name="description" locale="en_US">
+          <value>Reports related to exams.</value>
+        </configuration>
+        <configuration name="category" locale="en_US">
+          <value>Training Reports</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="header" locale="en_US">
+                <value>Exam Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="try">
+              <configuration name="header" locale="en_US">
+                <value>Try</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="en_US">
+                    <value>Results</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="en_US">
+                <value>Results</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_number">
+              <configuration name="header" locale="en_US">
+                <value>Exam Number</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="en_US">
+                    <value>Cadre</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="en_US">
+                <value>Training Cadre ID</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="en_US">
+                    <value>Intake Date After</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="en_US">
+                    <value>Intake Date Before</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="en_US">
+                <value>Intake Date</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="en_US">
+                <value>Cadre</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="exam_pass_fail">
+        <configuration name="description" locale="en_US">
+          <value>A pass/fail comparison for all exams.</value>
+        </configuration>
+        <configuration name="display_name" locale="en_US">
+          <value>Exam Pass/Fail</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="en_US">
+                  <value>Pie Chart(Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="en_US">
+                  <value>Bar Chart(Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="en_US">
+                  <value>Column Chart(Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="en_US">
+                  <value>Stacked Column Chart(Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="en_US">
+                  <value>Scatter Plot</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam_pass_fail_year">
+        <configuration name="description" locale="en_US">
+          <value>A pass/fail comparison for all exams by year.</value>
+        </configuration>
+        <configuration name="display_name" locale="en_US">
+          <value>Exam Pass/Fail by Year</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="en_US">
+                  <value>Pie Chart(Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="en_US">
+                  <value>Bar Chart(Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="en_US">
+                  <value>Column Chart(Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="en_US">
+                  <value>Stacked Column Chart(Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="en_US">
+                  <value>Scatter Plot</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

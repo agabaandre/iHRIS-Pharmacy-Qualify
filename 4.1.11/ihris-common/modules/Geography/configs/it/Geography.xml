@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Geography" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="Geography" path="/I2CE" locale="it">
+    <version>4.1.2.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="it">
+      <configuration name="can_edit_database_list_country" locale="it">
+        <value>Modifica l'elenco delle nazioni</value>
+      </configuration>
+      <configuration name="can_view_database_list_country" locale="it">
+        <value>Visualizza l'elenco delle nazioni</value>
+      </configuration>
+      <configuration name="can_edit_database_list_region" locale="it">
+        <value>Modifica l'elenco delle province</value>
+      </configuration>
+      <configuration name="can_view_database_list_region" locale="it">
+        <value>VIsualizza l'elenco delle province</value>
+      </configuration>
+      <configuration name="can_edit_database_list_district" locale="it">
+        <value>Modifica l'elenco dei distretti</value>
+      </configuration>
+      <configuration name="can_view_database_list_district" locale="it">
+        <value>Visualizza l'elenco dei distretti</value>
+      </configuration>
+      <configuration name="can_edit_database_list_county" locale="it">
+        <value>Modifica l'elenco delle nazioni</value>
+      </configuration>
+      <configuration name="can_view_database_list_county" locale="it">
+        <value>Visualizza l'elenco delle nazioni</value>
+      </configuration>
+      <configuration name="can_edit_geographic_database_lists" locale="it">
+        <value>Modifica alcuni dati geografici</value>
+      </configuration>
+      <configuration name="can_view_geographic_database_lists" locale="it">
+        <value>Visualizza alcuni dati geografici</value>
+      </configuration>
+      <configuration name="can_edit_all_geographic_database_lists" locale="it">
+        <value>Modifica tutti i dati geografici</value>
+      </configuration>
+      <configuration name="can_view_all_geographic_database_lists" locale="it">
+        <value>Visualizza tutti i dati geografici</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="country">
+          <configuration name="display" values="single" locale="it">
+            <value>Nazione</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="county">
+          <configuration name="display" values="single" locale="it">
+            <value>Contea (in Italia NON usare)</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configuration name="display" values="single" locale="it">
+            <value>Distretto (in Italia NON usare)</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="region">
+          <configuration name="display" values="single" locale="it">
+            <value>Provincia</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_ListByCountry">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Nome</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Località</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Country">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" values="many" locale="it">
+                <value>default:Nome</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="alpha_two">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:2 caratteri alfabetici</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Codice numerico ISO</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="primary">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Nazione d'origine</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="it"></configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_County">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Nome</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="district">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Distretto (in Italia NON usare)</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_District">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Nome</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="region">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Provincia</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Codice</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Region">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Nome</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="country">
+              <configuration name="headers" type="delimited" values="many" locale="it">
+                <value>default:Nazione</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Codice</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

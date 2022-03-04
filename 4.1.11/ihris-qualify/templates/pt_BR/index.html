@@ -1,0 +1,54 @@
+<div id="siteContent">
+<br style="clear: both;"><div role="records">
+<h2><a href="person" class="updateRecords">Adicionar Pessoa</a></h2>
+<p>
+Adicione um novo registro para um estudante ou profissional de saúde. Para um registro, atualizar contato e informação pessoal; adicionar detalhes do programa de treinamento em execução ou concluído; gravar aplicações de exames e resultados; registro de problemas, licenças e renovações de licença; e registro de licenças de prática privada, requisições de verificação de emigração, ações disciplinares e de instalação.
+</p>
+
+<hr></div>
+
+<span type="module" name="SelfService" ifenabled="true" task="can_view_own_personnel">
+  <span type="module" name="SelfService" if="!userHasRecord()">
+    
+  </span>
+  <span type="module" name="SelfService" if="userHasRecord()">
+    <h2><span type="module" name="SelfService" call="linkToPersonRecord('view?id=')">View Your Record</span></h2>
+    <p>
+      View your own details.
+    </p>
+  </span>
+</span>
+
+<div task="custom_reports_can_access">
+<h2><a href="search" class="searchRecords">Procurar Registros</a></h2>
+<p>
+Localizar qualquer registro de pessoa no sistema para rever, imprimir ou atualizar.
+</p>
+</div>
+
+
+<span type="module" name="CustomReports" ifenabled="true">
+  <div role="manager|decision_maker">
+    <hr><h2><a href="CustomReports/view/reportViews" class="createRecords">Vizualizar Relatórios</a></h2>
+    <p>
+      Reports enable analysis of human resource data in various ways. Customize, 
+      display and print lists of health workers or students, statistical charts and 
+      other standard reports. Access is limited to Data Operations Managers and 
+      Decision Makers.
+    </p>
+  </div>
+</span>
+
+
+<div role="manager">
+<hr><h2><a href="configure" class="adminDatabase">Configurar Sistema</a></h2>
+<p>
+Configure modules, manage the database and create or update user accounts.
+</p>
+</div>
+
+
+
+<hr><h2><a href="password">Alterar Senha</a></h2>
+
+</div>

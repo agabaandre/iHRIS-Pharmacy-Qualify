@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="RecordVerify">
+  <metadata>
+    <displayName>RecordVerify</displayName>
+    <category>Application Component</category>
+    <description>Makes a record verification form available to the system</description>
+    <version>4.2.2.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <requirement name="ihris-qualify">
+      <atLeast version="4.2" />
+      <lessThan version="4.3" />
+    </requirement>
+    <path name="templates">
+      <value>./templates</value>
+    </path>
+    <priority>150</priority>
+  </metadata>
+  <configurationGroup name="RecordVerify" path="/I2CE">
+    <displayName>RecordVerify</displayName>
+    <configurationGroup name="forms" path="/modules/forms">
+      <displayName>Forms</displayName>
+      <description>Information about the forms made available by iHRIS-Qualify RecordVerify</description>
+      <configurationGroup name="forms">
+        <displayName>Forms available to the form factory</displayName>
+        <status>advanced:true</status>
+        <status>required:true</status>
+        <configurationGroup name="record_verify">
+          <displayName>Record Verify Information</displayName>
+          <description>The Record Verify Form</description>
+          <configuration name="class" values="single">
+            <displayName>Class Name</displayName>
+            <description>The name of the class providing the form</description>
+            <value>iHRIS_RecordVerify</value>
+          </configuration>
+          <configuration name="display" values="single" locale="en_US">
+            <displayName>Display name</displayName>
+            <description>The display name for this form</description>
+            <value>Record Verification</value>
+          </configuration>
+        </configurationGroup>
+        <!-- record_verify -->
+        <configurationGroup name="verify_change">
+          <displayName>Verify Change Information</displayName>
+          <description>The Verify Change form to list what possible changes can be made to a form when verifying the data</description>
+          <configuration name="class" values="single">
+            <displayName>Class Name</displayName>
+            <description>The name of the class providing the form</description>
+            <value>I2CE_SimpleList</value>
+          </configuration>
+          <configuration name="display" values="single" locale="en_US">
+            <displayName>Display name</displayName>
+            <description>The display name for this form</description>
+            <value>Verification Change</value>
+          </configuration>
+          <configuration name="storage" values="single">
+            <displayName>Storage Details</displayName>
+            <description>The storage mechanism for this form.</description>
+            <version>4.0.3</version>
+            <value>magicdata</value>
+          </configuration>
+        </configurationGroup>
+        <!-- verify_change -->
+        <configurationGroup name="person_meta" path="/modules/forms/forms/person/meta">
+          <displayName>MetaData on the form</displayName>
+          <configuration name="child_forms" values="many">
+            <status>uniquemerge:true</status>
+            <displayName>Child Forms</displayName>
+            <value>record_verify</value>
+          </configuration>
+        </configurationGroup>
+        <!-- person_meta -->
+      </configurationGroup>
+      <!-- End /modules/forms/forms-->
+      <configurationGroup name="formClasses">
+        <displayName>Form Class Configuration</displayName>
+        <configurationGroup name="iHRIS_RecordVerify">
+          <displayName>Configuration for the class 'iHRIS_RecordVerify'</displayName>
+          <configuration name="extends">
+            <displayName>The class this form extends</displayName>
+            <value>I2CE_Form</value>
+          </configuration>
+          <configurationGroup name="fields">
+            <displayName>The fields defined for this form</displayName>
+            <configurationGroup name="verify_date">
+              <displayName>The field 'verify_date'</displayName>
+              <configuration name="formfield">
+                <displayName>The form field type</displayName>
+                <value>DATE_YMD</value>
+              </configuration>
+              <configuration name="headers" type="delimited" locale="en_US">
+                <displayName>The headers for this field.</displayName>
+                <version>3.2.1</version>
+                <value>default:Verification Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="verify_change">
+              <displayName>The field 'changes'</displayName>
+              <configuration name="formfield">
+                <displayName>The form field type</displayName>
+                <version>3.3.1</version>
+                <value>MAP_MULT</value>
+              </configuration>
+              <configuration name="headers" type="delimited" locale="en_US">
+                <displayName>The headers for this field.</displayName>
+                <version>3.2.1</version>
+                <value>default:Changes Made</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <!-- iHRIS_RecordVerify -->
+      </configurationGroup>
+      <!-- End /modules/forms/formClasses -->
+    </configurationGroup>
+    <!-- End /modules/forms -->
+    <configurationGroup name="page">
+      <displayName>Pages</displayName>
+      <description>Information about various pages made available by the system</description>
+      <status>required:true</status>
+      <configurationGroup name="record_verify">
+        <displayName>Record Verify Page</displayName>
+        <description>The page 'record_verify' which has the action of: Verify Record</description>
+        <configuration name="class" values="single">
+          <displayName>Page Class</displayName>
+          <description>The class responsible for displaying this page</description>
+          <status>required:true</status>
+          <value>iHRIS_PageFormParentPerson</value>
+        </configuration>
+        <configuration name="style" values="single">
+          <displayName>Page Style</displayName>
+          <description>The Page Style</description>
+          <value>ihris_common_page_form_parent_person</value>
+        </configuration>
+        <configurationGroup name="args">
+          <displayName>Page Options</displayName>
+          <description>The options that control the access and display of all pages</description>
+          <configuration name="title" values="single" locale="en_US">
+            <displayName>Page Title</displayName>
+            <description>Page Title</description>
+            <status>required:true</status>
+            <value>Verify Record</value>
+          </configuration>
+          <configuration name="page_form" values="single">
+            <displayName>Form</displayName>
+            <description>The form this page is using</description>
+            <status>required:true</status>
+            <value>record_verify</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <!-- record_verify -->
+    </configurationGroup>
+    <!-- page -->
+  </configurationGroup>
+  <!-- RecordVerify -->
+</I2CEConfiguration>

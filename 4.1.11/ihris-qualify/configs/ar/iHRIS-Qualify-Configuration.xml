@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify" path="/I2CE" locale="ar">
+    <version>4.1.9.0.1</version>
+    <configurationGroup name="invalid_formfield_message" path="/modules/forms/formfield_messages" locale="ar">
+      <configuration name="training_disrupt" path="training_disrupt/disruption_date/bad_date"></configuration>
+      <configuration name="training_resume" path="training_disrupt/resumption_date/required">
+        <value>حقل إجباري</value>
+      </configuration>
+      <configuration name="training_resume" path="training_disrupt/resumption_date/bad_date"></configuration>
+      <configuration name="license_date" path="license/end_date/bad_date"></configuration>
+      <configuration name="registration_date" path="registration/registration_date/bad_date"></configuration>
+      <configuration name="exam_date" path="exam/exam_date/bad_date"></configuration>
+      <configuration name="training_program" path="training/training_program/bad_cadre"></configuration>
+      <configuration name="training_out_country" path="training/out_country/bad_country"></configuration>
+      <configuration name="training_graduation_req" path="training/graduation/required_out"></configuration>
+      <configuration name="training_graduation_date" path="training/graduation/bad_date"></configuration>
+      <configuration name="pp_date" path="private_practice/end_date/bad_date"></configuration>
+      <configuration name="disp_date" path="disciplinary_action/reinstate_date/bad_date_action"></configuration>
+      <configuration name="disp_req" path="disciplinary_action/reinstate_date/required">
+        <value>حقل إجباري</value>
+      </configuration>
+      <configuration name="disp_date" path="disciplinary_action/reinstate_date/bad_date_action"></configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="ar">
+      <configuration name="person_can_view_child_form_person_disciplinary_action" locale="ar">
+        <value>يمكن الاطلاع على نموذج الإجراءات التأديبية.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_disciplinary_action" locale="ar"></configuration>
+      <configuration name="person_can_view_child_form_out_migration" locale="ar">
+        <value>يمكن الاطلاع على نموذج الهجرة</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_out_migration" locale="ar"></configuration>
+      <configuration name="person_can_view_child_form_training" locale="ar">
+        <value>يمكن الاطلاع على نموذج التدريب.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_training" locale="ar"></configuration>
+      <configuration name="person_can_view_child_form_license" locale="ar">
+        <value>يمكن الاطلاع على نموذج الترخيص.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_license" locale="ar"></configuration>
+      <configuration name="person_can_view_child_form_education" locale="ar">
+        <value>يمكن الاطلاع على نموذج التعليم.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_education" locale="ar"></configuration>
+      <configuration name="person_can_view_child_form_person_license" locale="ar">
+        <value>يمكن الاطلاع على نموذج رخصة لشخص.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_license" locale="ar"></configuration>
+      <configuration name="person_can_view_child_form_record_verify" locale="ar">
+        <value>يمكن الاطلاع على نموذج سجل التدقيق</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_record_verify" locale="ar"></configuration>
+      <configuration name="person_can_view_child_form_deployment" locale="ar">
+        <value>يمكن الاطلاع على نموذج النشر.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_deployment" locale="ar"></configuration>
+    </configurationGroup>
+    <configurationGroup name="formsData" path="formsData/forms">
+      <configurationGroup name="exam_try">
+        <configurationGroup name="first">
+          <configuration name="fields" value="many" type="delimited" locale="ar">
+            <value>name:المحاولة الأولى</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="retry">
+          <configuration name="fields" value="many" type="delimited" locale="ar">
+            <value>name:إعادة المحاولة</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="final">
+          <configuration name="fields" value="many" type="delimited" locale="ar">
+            <value>name:المحاولة الأخيرة</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam_result">
+        <configurationGroup name="pass">
+          <configuration name="fields" value="many" type="delimited" locale="ar">
+            <value>name:نجح</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="fail">
+          <configuration name="fields" value="many" type="delimited" locale="ar">
+            <value>name:فشل</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="notake">
+          <configuration name="fields" value="many" type="delimited" locale="ar">
+            <value>name:لم يؤدي الامتحان</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="registration_type">
+        <configurationGroup name="permanent">
+          <configuration name="fields" value="many" type="delimited" locale="ar">
+            <value>name:دائم</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="temporary">
+          <configuration name="fields" value="many" type="delimited" locale="ar">
+            <value>name:مؤقت</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="isco">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:ISCO تصنيف قانون</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="qualification">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الحد الأدني للمؤهل المطلوب</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Certificate">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="academic_level">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:المستوي الدراسي</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Deployment">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مرفق الصحة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="job_title">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:عنوان عمل / وظيفة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="job_code">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:رمز عمل / وظيفة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="deployment_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ النشر</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_DisciplinaryAction">
+          <configurationGroup name="fields">
+            <configurationGroup name="disciplinary_action_reason">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:سبب العمل التأديبي</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="action_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ حدوث العمل التأديبي</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:ملاحظات</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="reinstate_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ الإعادة</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_DisciplinaryActionReason">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="disciplinary_action_category">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:فئة العمل التأديبي</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_SecondaryEducation">
+          <configurationGroup name="fields">
+            <configurationGroup name="sec_school">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم المدرسة الثانوية</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:شهادة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="grade">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الدرجة التي تم الحصول عليها</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate_number">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:رقم الشهادة</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Exam">
+          <configurationGroup name="fields">
+            <configurationGroup name="application_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ التطبيق</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="materials_received">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:المواد المستلمة؟</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="materials_approved">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:المواد المعتمدة؟</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="endorser_name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم المصدّق</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="endorser_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مصدق التاريخ</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="endorser_qualifications">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مؤهلات المصدّق</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ الامتحان</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="try">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:محاولة اختبار</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:نتائج الامتحان</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_number">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:رقم الامتحان</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_FacilityInstitution">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مرفق الصحة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مؤسسة التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="active">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:نشط؟</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_FacilityInstitutionEditFacility">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مرفق الصحة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مؤسسة التدريب</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_FacilityInstitutionEditInstitution">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مرفق الصحة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مؤسسة التدريب</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_HealthFacility">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="id_code">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تحديد الرمز</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:موقع</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_agent">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:وكيل المرفق</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_status">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:حالة المرفق</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_InstitutionInspection">
+          <configurationGroup name="fields">
+            <configurationGroup name="date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ التفتيش</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:ملاحظات</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="pass">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:نجح؟</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_License">
+          <configurationGroup name="fields">
+            <configurationGroup name="license_number">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:رقم الترخيص</value>
+                <value>generate:أنتج هذا الرقم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ البدء</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ الانتهاء</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="suspend">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تعليق؟</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_OutMigration">
+          <configurationGroup name="fields">
+            <configurationGroup name="country">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:بلد</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="new_address">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:العنوان في الدولة الجديدة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_migration_reason">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:سبب الهجرة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="organization">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:التحقق من طلبات المنظمة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="request_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ الطلب</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_PrivatePractice">
+          <configurationGroup name="fields">
+            <configurationGroup name="license_number">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:رقم الترخيص</value>
+                <value>generate:أنتج هذا الرقم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ البدء</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ الانتهاء</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="inspection_results">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:نتائج التفتيش</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="inspection_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ التفتيش</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مرفق الصحة</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_QualifyDemographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="birth_location">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:محل الميلاد</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_QualifyPerson">
+          <configurationGroup name="fields">
+            <configurationGroup name="home">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:منزل</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Registration">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:رقم التسجيل</value>
+                <value>generate:أنتج هذا الرقم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="application_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ التطبيق</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ التسجيل</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="practice_type">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:نوع الممارسة</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_TrainingDisruptionReason">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_disruption_category">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:فئة انقطاع التدريب</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_TrainingDisrupt">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_reason">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:سبب التعطل</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="disruption_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ التعطل</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="resumption_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ الإستئناف</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_QualifyTrainingInstitution">
+          <configurationGroup name="fields">
+            <configurationGroup name="id_code">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تحديد الرمز</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_agent">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:وكيل المرفق</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_status">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:حالة المرفق</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Training">
+          <configurationGroup name="fields">
+            <configurationGroup name="index_num">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:رقم المؤشر</value>
+                <value>generate:أنتج رقم المؤشر التالي</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:إطار</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ التأدية</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="graduation">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ التخرج</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="trained_outside">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تم تدريبه خارج هذه الدولة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_program">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:برنامج التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:مؤسسة التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="in_cadre">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:إطار</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_country">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الدولة التي تم فيها التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_institution">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مؤسسة التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_cadre">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:إطار</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_TrainingProgram">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مؤسسة التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:إطار</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ البدء</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ الانتهاء</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="num_students">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:عدد الطلاب</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="forms">
+        <configurationGroup name="academic_level">
+          <configuration name="display" values="single" locale="ar">
+            <value>المستوي الدراسي</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="disciplinary_action_category">
+          <configuration name="display" values="single" locale="ar">
+            <value>فئة العمل التأديبي</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_agent">
+          <configuration name="display" values="single" locale="ar">
+            <value>وكيل المرفق</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_status">
+          <configuration name="display" values="single" locale="ar">
+            <value>حالة المرفق</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="out_migration_reason">
+          <configuration name="display" values="single" locale="ar">
+            <value>سبب الهجرة</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_disruption_category">
+          <configuration name="display" values="single" locale="ar">
+            <value>فئة انقطاع التدريب</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="qualification">
+          <configuration name="display" values="single" locale="ar">
+            <value>المؤهل</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configuration name="display" values="single" locale="ar">
+            <value>إطار</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="certificate">
+          <configuration name="display" values="single" locale="ar">
+            <value>شهادة</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="disciplinary_action_reason">
+          <configuration name="display" values="single" locale="ar">
+            <value>سبب العمل التأديبي</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_disruption_reason">
+          <configuration name="display" values="single" locale="ar">
+            <value>سبب توقف التدريب</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="health_facility">
+          <configuration name="display" values="single" locale="ar">
+            <value>مرفق الصحة</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_program">
+          <configuration name="display" values="single" locale="ar">
+            <value>برنامج التدريب</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="institution_inspection">
+          <configuration name="display" values="single" locale="ar">
+            <value>تفتيش المؤسسة</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_institution">
+          <configuration name="display" values="single" locale="ar">
+            <value>مؤسسة المرفق</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_institution_edit_fac">
+          <configuration name="display" values="single" locale="ar"></configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_institution_edit_inst">
+          <configuration name="display" values="single" locale="ar"></configuration>
+        </configurationGroup>
+        <configurationGroup name="person">
+          <configuration name="display" values="single" locale="ar">
+            <value>شخص</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="education">
+          <configuration name="display" values="single" locale="ar">
+            <value>تاريخ التعليم</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configuration name="display" values="single" locale="ar">
+            <value>تدريب</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_disrupt">
+          <configuration name="display" values="single" locale="ar">
+            <value>تعطل التدريب</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_try">
+          <configuration name="display" values="single" locale="ar">
+            <value>محاولة اختبار</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_result">
+          <configuration name="display" values="single" locale="ar">
+            <value>نتيجة الامتحان</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam">
+          <configuration name="display" values="single" locale="ar">
+            <value>امتحان</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="registration_type">
+          <configuration name="display" values="single" locale="ar">
+            <value>نوع التسجيل</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configuration name="display" values="single" locale="ar">
+            <value>تسجيل</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="license">
+          <configuration name="display" values="single" locale="ar">
+            <value>ترخيص</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="private_practice">
+          <configuration name="display" values="single" locale="ar">
+            <value>رخصة للممارسة الخاصة</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="deployment">
+          <configuration name="display" values="single" locale="ar">
+            <value>نشر</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="out_migration">
+          <configuration name="display" values="single" locale="ar">
+            <value>خارج الهجرة</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="disciplinary_action">
+          <configuration name="display" values="single" locale="ar">
+            <value>العمل التأديبي</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="roles" path="/I2CE/formsData/forms/role">
+      <configurationGroup name="manager">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="ar">
+            <value>بيانات مدير العمليات</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="registration">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="ar">
+            <value>تسجيل المشرف</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="records">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="ar">
+            <value>سجلات الموظف</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="decision_maker">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="ar">
+            <value>صانع القرار</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="continuing_education">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث معلومات التعليم المستمر</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="deployment">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>تحديث / إضافة للانتشار</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="disciplinary_action">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث العمل التأديبي</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="disciplinary_reinstate">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إعادة الترخيص بعد العمل التأديبي</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="education">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث معلومات التعليم</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث امتحان المعلومات</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="facility_institution">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>مرفق الصحة / مؤسسة التدريب</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="graduate">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة تاريخ التخرج</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="history">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>عرض التاريخ</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="history_training">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>عرض التاريخ</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="institution_inspection">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث تفتيش مؤسسة التدريب</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="license">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث معلومات الترخيص</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="out_migration">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث معلومات الهجرة</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="private_practice">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث رخصة ممارسة معلومات خاصة</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="registration">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث معلومات التسجيل</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="renew">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>تجديد رخصة المعلومات</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_disrupt">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث تعطيل التدريب</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث التدريب</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_program">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>إضافة / تحديث برنامج التدريب</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_resume">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>استئناف تعطيل التدريب</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="view_training">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>عرض التدريب</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="search_reports" path="/modules/CustomReports/search_reports">
+      <configuration name="search_people" values="many" type="delimited" locale="ar">
+        <value>name:بحث عن الأشخاص</value>
+        <value>description:حدد موقع سجل أي شخص في النظام للمراجعة والطباعة أو التحديث.</value>
+      </configuration>
+      <configuration name="search_training" values="many" type="delimited" locale="ar">
+        <value>name:بحث عن التدريبات</value>
+        <value>description:تحديد موقع سجل أي شخص في النظام عن طريق معلومات التدريب. يجوز يظهر شخص عدة مرات إذا كان لديهم دورات تدريبية متعددة.</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="recent_forms" path="/modules/RecentForm/forms">
+      <configurationGroup name="training">
+        <configuration name="display" values="single" locale="ar"></configuration>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-search-training" path="//modules/CustomReports/reportViews/search_training">
+  <metadata>
+    <version>4.2.2.0</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-search-training" path="//modules/CustomReports/reportViews/search_training" locale="en_US">
+    <version>4.2.0</version>
+    <configuration name="description" locale="en_US">
+      <value>Search based on training information.</value>
+    </configuration>
+    <configuration name="display_name" locale="en_US">
+      <value>Search Training</value>
+    </configuration>
+  </configurationGroup>
+</I2CEConfiguration>

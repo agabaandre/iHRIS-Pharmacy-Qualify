@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-help">
+  <metadata>
+    <displayName>iHRIS Qualify Help</displayName>
+    <description>The iHRIS Qualify Help system.</description>
+    <version>4.2.2.0</version>
+    <requirement name="ihris-qualify">
+      <atLeast version="4.2" />
+      <lessThan version="4.3" />
+    </requirement>
+    <path name="static">
+      <value>./static</value>
+    </path>
+    <path name="images">
+      <value>./images</value>
+    </path>
+    <path name="css">
+      <value>./css</value>
+    </path>
+    <path name="scripts">
+      <value>./scripts</value>
+    </path>
+  </metadata>
+</I2CEConfiguration>

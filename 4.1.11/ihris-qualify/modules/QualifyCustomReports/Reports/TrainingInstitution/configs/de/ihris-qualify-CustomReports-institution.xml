@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-institution" path="/modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-institution" path="/modules/CustomReports" locale="de">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-institution" path="relationships/institution">
+      <configuration name="display_name" locale="de">
+        <value>Schulungseinrichtung</value>
+      </configuration>
+      <configuration name="description" locale="de">
+        <value>Zusammenhang zwischen allen Schulungseinrichtungen im System.</value>
+      </configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="facility_contact">
+          <configuration name="description" locale="de">
+            <value>Die Kontaktdaten für diese Schulungseinrichtung.</value>
+          </configuration>
+          <configuration name="display_name" locale="de">
+            <value>Kontakt</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_agent">
+          <configuration name="description" locale="de">
+            <value>Der Leiter dieser Einrichtung.</value>
+          </configuration>
+          <configuration name="display_name" locale="de">
+            <value>Einrichtungsleiter</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configuration name="description" locale="de">
+            <value>Der Bezirk, in dem sich diese Schulungseinrichtung befindet.</value>
+          </configuration>
+          <configuration name="display_name" locale="de">
+            <value>Bezirk</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-institution" path="reports/institution">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="de">
+          <value>Berichte zu Schulungseinrichtungen</value>
+        </configuration>
+        <configuration name="description" locale="de">
+          <value>Eine Liste aller Schulungseinrichtungen.</value>
+        </configuration>
+        <configuration name="category" locale="de">
+          <value>Schulungseinrichtungen</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="facility_agent">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="de">
+                    <value>Einrichtungsleiter</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="de">
+                <value>Schulungseinrichtung - Einrichtungsleiterkennung</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Schulungseinrichtung - Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="de">
+                    <value>Schulungseinrichtung - Standort</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="de">
+                <value>Schulungseinrichtung - Standortkennung</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Bezirk</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="facility_agent">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Einrichtungsleiter</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="facility_contact">
+          <configurationGroup name="fields">
+            <configurationGroup name="address">
+              <configuration name="header" locale="de">
+                <value>Postanschrift</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportView-institution" path="reportViews/institution">
+      <configuration name="description" locale="de">
+        <value>Eine Liste aller Schulungseinrichtungen.</value>
+      </configuration>
+      <configuration name="display_name" locale="de">
+        <value>Schulungseinrichtungen</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

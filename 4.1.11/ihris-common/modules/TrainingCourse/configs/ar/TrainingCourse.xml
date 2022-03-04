@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="training-course" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="training-course" path="/I2CE" locale="ar">
+    <version>4.1.9.1.1</version>
+    <configurationGroup name="tranlatable_strings" locale="ar" path="/modules/training-course/translatable-strings" type="delimited"></configurationGroup>
+    <configurationGroup name="invalid_messages" path="/modules/forms/formfield_messages" locale="ar">
+      <configuration name="work" path="scheduled_training_course/end_date/bad_date">
+        <value>يجب أن يكون تاريخ الانتهاء بعد تاريخ البدء.</value>
+      </configuration>
+      <configuration name="work" path="person_scheduled_training_course/training_course_mod/bad_mod"></configuration>
+    </configurationGroup>
+    <configurationGroup name="formsdata" path="/I2CE/formsData/forms">
+      <configurationGroup name="training_course_status">
+        <configurationGroup name="open">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="ar">
+              <value>فتح</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="closed">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="ar">
+              <value>مغلق</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_course_evaluation">
+        <configurationGroup name="pass">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="ar">
+              <value>إجتياز</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="fail">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="ar">
+              <value>فشل</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="incomplete">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="ar">
+              <value>غير كامل</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="not_evaluated">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="ar">
+              <value>لم يتم تقييمه</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="roles" path="roles/names">
+      <configurationGroup name="training_manager">
+        <configuration name="display_name" values="single" locale="ar">
+          <value>مدير&#160;التدريب</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_training_course_status" locale="ar">
+        <value>تعديل قائمة&#160;حالة الدورة التدريبية</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_status" locale="ar">
+        <value>عرض قائمة حالة الدورة التدريبية</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_mod" locale="ar"></configuration>
+      <configuration name="can_view_database_list_training_course_mod" locale="ar"></configuration>
+      <configuration name="can_edit_database_list_training_course_status" locale="ar">
+        <value>تعديل قائمة&#160;حالة الدورة التدريبية</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_status" locale="ar">
+        <value>عرض قائمة حالة الدورة التدريبية</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_evaluation" locale="ar">
+        <value>تعديل قائمة&#160;تقييم الدورة&#160;التدريبية</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_evaluation" locale="ar">
+        <value>عرض قائمة&#160;تقييم الدورة&#160;التدريبية</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_category" locale="ar">
+        <value>تعديل قائمة فئة الدورة التدريبية</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_category" locale="ar">
+        <value>عرض قائمة فئة الدورة التدريبية</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course" locale="ar">
+        <value>تعديل قائمة&#160;الدورة التدريبية</value>
+      </configuration>
+      <configuration name="can_edit_database_list_scheduled_training_course" locale="ar">
+        <value>تعديل &#160;قائمة فئة&#160;الدورة التدريبية&#160;المجدولة</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_requestor" locale="ar">
+        <value>تعديل قائمة طالب دورة التدريب</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_requestor" locale="ar">
+        <value>تعديل قائمة طالب دورة التدريب</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course" locale="ar">
+        <value>عرض قائمة&#160;الدورة التدريبية</value>
+      </configuration>
+      <configuration name="can_edit_scheduled_training_course" locale="ar">
+        <value>تعديل&#160;دورة تدريبية&#160;مجدولة</value>
+      </configuration>
+      <configuration name="can_view_database_list_scheduled_training_course" locale="ar">
+        <value>عرض&#160;قائمة فئة&#160;الدورة التدريبية&#160;المجدولة</value>
+      </configuration>
+      <configuration name="can_edit_training_course_database_lists" locale="ar">
+        <value>تعديل&#160;بعض القوائم&#160;المشتركة&#160;مع وحدة&#160;التدريب</value>
+      </configuration>
+      <configuration name="can_view_training_course_database_lists" locale="ar">
+        <value>عرض بعض&#160;القوائم&#160;&#160;المشتركة&#160;مع وحدة&#160;التدريب</value>
+      </configuration>
+      <configuration name="can_edit_all_training_course_database_lists" locale="ar">
+        <value>تعديل جميع&#160;القوائم&#160;&#160;المشتركة&#160;مع وحدة&#160;التدريب</value>
+      </configuration>
+      <configuration name="can_view_all_training_course_database_lists" locale="ar">
+        <value>عرض&#160;جميع القوائم&#160;&#160;المشتركة&#160;مع وحدة&#160;التدريب</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="training_course_mod">
+          <configuration name="display" values="single" locale="ar"></configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_status">
+          <configuration name="display" values="single" locale="ar">
+            <value>حالة دورة تدريبية</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_category">
+          <configuration name="display" values="single" locale="ar">
+            <value>فئة دورة تدريبية</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course">
+          <configuration name="display" values="single" locale="ar">
+            <value>دورة تدريبية</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="ar">
+              <value>هذا النموذج&#160;يحمل&#160;معلومات أساسية عن&#160;دورة تدريبية</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="scheduled_training_course">
+          <configuration name="display" values="single" locale="ar">
+            <value>دورة تدريبية مجدولة</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_scheduled_training_course">
+          <configuration name="display" values="single" locale="ar">
+            <value>جدول&#160;دورة تدريبية للفرد</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_evaluation">
+          <configuration name="display" values="single" locale="ar">
+            <value>تقييم &#160;دورة تدريبية</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_requestor">
+          <configuration name="display" values="single" locale="ar">
+            <value>طالب تدريب</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Training_Course_Evaluation">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="competency_evaluation">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تقييم كفاءة</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Training_Course">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course_mod">
+              <configuration name="headers" type="delimited" locale="ar"></configuration>
+            </configurationGroup>
+            <configurationGroup name="has_certification_date">
+              <configuration name="headers" type="delimited" locale="ar"></configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate">
+              <configuration name="headers" type="delimited" locale="ar"></configuration>
+            </configurationGroup>
+            <configurationGroup name="topic">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:النقطة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الملاحظات</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مؤسسة&#160;التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_funder">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:ممولو التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="continuing_education_course">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:CEUs مقدمة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_status">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الحالة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_category">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:فئة</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Person_Scheduled_Training_Course">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course_mod">
+              <configuration name="headers" type="delimited" locale="ar"></configuration>
+            </configurationGroup>
+            <configurationGroup name="certification_date">
+              <configuration name="headers" locale="ar" type="delimited"></configuration>
+            </configurationGroup>
+            <configurationGroup name="attending">
+              <configuration name="headers" locale="ar" type="delimited"></configuration>
+            </configurationGroup>
+            <configurationGroup name="is_retraining">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:إعادة التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="completed">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:انتهت</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="duty_commencement_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:بداية الواجب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="request_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ الطلب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الملاحظات</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="average">
+              <configuration name="headers" type="delimited" locale="ar"></configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_evaluation">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تقييم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_requestor">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:طلبت من طرف</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="scheduled_training_course">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:مثل</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Scheduled_Training_Course">
+          <configurationGroup name="meta" path="meta/list/default">
+            <configuration name="display_string" locale="ar">
+              <value>%s على %s</value>
+            </configuration>
+          </configurationGroup>
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:دورة تدريبية</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الموقع</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="num_students">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الحد الأقصى لعدد الطلاب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:الملاحظات</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="instructors">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:المدربون</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ البداية</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تاريخ النهاية</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" values="many" locale="ar">
+                <value>default:الموقع</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="editstudents">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar"></configuration>
+          <configuration name="action_header" values="single" locale="ar"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_training_participation" path="/modules/CustomReports/relationships/student_training_participation">
+        <configuration name="display_name" locale="ar"></configuration>
+        <configuration name="description" locale="ar"></configuration>
+        <configurationGroup name="joins">
+          <configurationGroup name="person_scheduled_training_course">
+            <configuration name="display_name" locale="ar"></configuration>
+            <configurationGroup name="joins">
+              <configurationGroup name="person">
+                <configuration name="display_name" locale="ar"></configuration>
+                <configurationGroup name="joins">
+                  <configurationGroup name="person_position">
+                    <configuration name="display_name" locale="ar"></configuration>
+                    <configurationGroup name="joins">
+                      <configurationGroup name="position">
+                        <configuration name="display_name" locale="ar"></configuration>
+                        <configurationGroup name="joins">
+                          <configurationGroup name="facility">
+                            <configuration name="display_name" locale="ar"></configuration>
+                            <configurationGroup name="joins">
+                              <configurationGroup name="facility_contact">
+                                <configuration name="display_name" locale="ar"></configuration>
+                              </configurationGroup>
+                            </configurationGroup>
+                          </configurationGroup>
+                        </configurationGroup>
+                      </configurationGroup>
+                    </configurationGroup>
+                  </configurationGroup>
+                  <configurationGroup name="person_contact">
+                    <configuration name="display_name" locale="ar"></configuration>
+                  </configurationGroup>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+          <configurationGroup name="training_course">
+            <configuration name="display_name" locale="ar">
+              <value>دورة تدريبية</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="schedule-person" path="/modules/training-course/page/schedule-person">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ar">
+            <value>تحديث / إضافة&#160;جدول دورة تدريبية للفرد</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,34 @@
+<div id="siteContent">
+    <h1 class="header">Administer Database: Training Program</h1>
+    <div id="error" />
+    <form method="post" action="training_program">
+    <span type="form" name="id" />
+
+    <table class="multiFormTable" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <th>Program Information</th>
+            <th>Date Information</th>
+        </tr>
+    <tbody id="list_fields">
+        <tr>
+	        <td>
+		        <span type="form" name="training_program:training_institution" showhead="default" noedit="true"></span>
+		        <span type="form" name="training_program:cadre" showhead="default" addlink="lists?type=cadre&amp;id="></span>
+		        <span type="form" name="training_program:num_students" showhead="default"></span>
+	        </td><td>
+		        <span type="form" name="training_program:start_date" showhead="default"></span>
+		        <span type="form" name="training_program:end_date" showhead="default"></span>
+            </td>
+        </tr>
+   </tbody>
+            <tr class="submitCell">
+                <td colspan="2">
+                    <div id="button" />
+                </td>
+            </tr>
+            <tr class="submitCell"><td colspan="2">
+                <div id="admin_extra" />
+            </td></tr>
+        </table>
+    </form>
+</div>

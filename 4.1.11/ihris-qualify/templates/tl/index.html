@@ -1,0 +1,51 @@
+<div id="siteContent">
+<br style="clear: both;"><div role="records">
+<h2><a href="person" class="updateRecords">Magdagdag ng Tao</a></h2>
+<p>
+Magdagdag ng isang bagong rekord para sa isang mag-aaral o dalubhasang pangkalusugan.  Para sa isang rekord, isapanahon ang kaugnayan at kabatirang pansarili; magdagdag ng mga detalye ng mga programa ng pagsasanay na isinasagawa o natapos na; itala ang mga aplikasyon at mga resulta ng pagsusulit; ibigay ang mga pagpapatala, mga lisensiya at mga muling pagbago sa lisensiiya; at itala ang mga lisensiya ng pribadong paghahanapbuhay, mga paghiling ng pagpapatunay ng panlabas na pandarayuhan, mga hakbanging pangpagdidisiplina at mga pagdedestino.
+</p>
+
+<hr></div>
+
+<span type="module" name="SelfService" ifenabled="true" task="can_view_own_personnel">
+  <span type="module" name="SelfService" if="!userHasRecord()">
+    
+  </span>
+  <span type="module" name="SelfService" if="userHasRecord()">
+    <h2><span type="module" name="SelfService" call="linkToPersonRecord('view?id=')">View Your Record</span></h2>
+    <p>
+      View your own details.
+    </p>
+  </span>
+</span>
+
+<div task="custom_reports_can_access">
+<h2><a href="search" class="searchRecords">Maghanap sa mga Rekord</a></h2>
+<p>
+Hanapin ang anumang rekord ng tao sa loob ng sistema na muling susuriin, ilillimbag o isasapanahon.
+</p>
+</div>
+
+
+<span type="module" name="CustomReports" ifenabled="true">
+  <div role="manager|decision_maker">
+    <hr><h2><a href="CustomReports/view/reportViews" class="createRecords">Tingnan ang mga Ulat</a></h2>
+    <p>
+      Nagbibigay-daan ang mga ulat sa pagsusuri ng dato ng yamang-tauhan sa sari-saring mga kaparaanan.  Nagpapasadya, nagpapakita at naglilimbag ng mga talaan ng mga manggagawang pangkalusugan o mga mag-aaral, mga talangguhit na pang-estadistika at iba pang mga pamantayang mga ulat.  Hinahanggahan ang pagpunta para sa mga Tagapamahala ng mga Pampagsasagawang Dato at mga Tagapagpasya.
+    </p>
+  </div>
+</span>
+
+
+<div role="manager">
+<hr><h2><a href="configure" class="adminDatabase">Isaayos ang Sistema</a></h2>
+<p>
+Isaayos ang mga modyul, pamahalaan ang kalipunan ng dato at lumikha o magsapanahon ng mga akawnt ng tagagamit.
+</p>
+</div>
+
+
+
+<hr><h2><a href="password">Baguhin ang Hudyat</a></h2>
+
+</div>

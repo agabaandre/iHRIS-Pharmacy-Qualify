@@ -1,0 +1,51 @@
+<div id="siteContent">
+<br style="clear: both;"><div role="records">
+<h2><a href="person" class="updateRecords">Person hinzufügen</a></h2>
+<p>
+Einen neuen Datensatz für einen Studenten oder Heilberufler hinzufügen. Um einen Datensatz anlegen zu können, müssen die Kontakt- sowie Personeninformationen aktualisiert; Angaben zu Schulungen, die gerade besucht werden oder bereits absolviert wurden angegeben; Prüfungen und deren Ergebnisse hinterlegt; Registrierungsdaten, Lizenzen und Lizenzerneuerungen angelegt sowie Lizenzinformationen zur Praxiserfahrung, Abwanderungsanfragen, Disziplinarmaßnahmen sowie Einsätze aufgezeichnet werden.
+</p>
+
+<hr></div>
+
+<span type="module" name="SelfService" ifenabled="true" task="can_view_own_personnel">
+  <span type="module" name="SelfService" if="!userHasRecord()">
+    
+  </span>
+  <span type="module" name="SelfService" if="userHasRecord()">
+    <h2><span type="module" name="SelfService" call="linkToPersonRecord('view?id=')">Dein Datensatz ansehen</span></h2>
+    <p>
+      Deine eigenen Einzelheiten ansehen.
+    </p>
+  </span>
+</span>
+
+<div task="custom_reports_can_access">
+<h2><a href="search" class="searchRecords">Aufzeichung suchen</a></h2>
+<p>
+Datensatz zu jeglichen Personen im System, zum Überprüfen, Aktualisierung oder Drucken, ermitteln.
+</p>
+</div>
+
+
+<span type="module" name="CustomReports" ifenabled="true">
+  <div role="manager|decision_maker">
+    <hr><h2><a href="CustomReports/view/reportViews" class="createRecords">Berichte ansehen</a></h2>
+    <p>
+      Aufzeichnungen ermöglichen die Auswertung der Personaldaten auf verschiedenen Wegen. Erstellen, zeigen und drucken Sie Listen von Medizinern oder Schülern, statistischen Diagrammen und anderen Standartaufzeichnungen. Zugriff auf Datenoperationsmanager und Entscheidungsträger beschränkt.
+    </p>
+  </div>
+</span>
+
+
+<div role="manager">
+<hr><h2><a href="configure" class="adminDatabase">System einrichten</a></h2>
+<p>
+Module konfigurieren, Datenbank verwalten und Benutzerkonten erstellen und aktualisieren.
+</p>
+</div>
+
+
+
+<hr><h2><a href="password">Passwort ändern</a></h2>
+
+</div>

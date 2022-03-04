@@ -1,0 +1,33 @@
+ihris-qualify (4.2.1.3~vivid) vivid; urgency=medium
+
+  * Ubuntu Release Version 4.2.1.3 644: Carl Leitner 2015-10-24
+    {4.2.1.2-ubuntu-release} "Ubuntu Release Version 4.2.1.2"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Mon, 26 Oct 2015 14:56:44 +0000
+
+ihris-qualify (4.2.1.2~vivid) vivid; urgency=medium
+
+  * Ubuntu Release Version 4.2.1.2 643: Launchpad Translations on
+    behalf of intrahealth+informatics 2015-10-23 Launchpad automatic
+    translations update.  642: Siebrand Mazeland 2015-10-22
+    Localisation updates from https://translatewiki.net.  641:
+    Launchpad Translations on behalf of intrahealth+informatics
+    2015-10-16 Launchpad automatic translations update.  640: Launchpad
+    Translations on behalf of intrahealth+informatics 2015-10-15
+    Launchpad automatic translations update.  639: Siebrand Mazeland
+    2015-10-14 Localisation updates from https://translatewiki.net.
+    638: Launchpad Translations on behalf of intrahealth+informatics
+    2015-09-26 Launchpad automatic translations update.  637:
+    Siebrand Mazeland 2015-09-25 Localisation updates from
+    https://translatewiki.net.  636: Sovello Hildebrand 2015-09-24
+    {4.2.1.1-ubuntu-release} "Ubuntu Release Version 4.2.1.1"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Sat, 24 Oct 2015 11:21:17 -0400
+
+ihris-qualify (4.2.0.0~vivid) vivid; urgency=medium
+
+  * Ubuntu Release Version 4.2.0.0
+    -Initial Packaging
+    --http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.2-dev
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Tue, 17 Feb 2015 08:08:59 -0500

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Geography" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0</version>
+  </metadata>
+  <configurationGroup name="Geography" path="/I2CE" locale="en_US">
+    <version>4.1.2.0</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="en_US">
+      <configuration name="can_edit_database_list_country" locale="en_US">
+        <value>Can edit country list</value>
+      </configuration>
+      <configuration name="can_view_database_list_country" locale="en_US">
+        <value>Can view country list</value>
+      </configuration>
+      <configuration name="can_edit_database_list_region" locale="en_US">
+        <value>Can edit region list</value>
+      </configuration>
+      <configuration name="can_view_database_list_region" locale="en_US">
+        <value>Can view region list</value>
+      </configuration>
+      <configuration name="can_edit_database_list_district" locale="en_US">
+        <value>Can edit district list</value>
+      </configuration>
+      <configuration name="can_view_database_list_district" locale="en_US">
+        <value>Can view district list</value>
+      </configuration>
+      <configuration name="can_edit_database_list_county" locale="en_US">
+        <value>Can edit country list</value>
+      </configuration>
+      <configuration name="can_view_database_list_county" locale="en_US">
+        <value>Can view country list</value>
+      </configuration>
+      <configuration name="can_edit_geographic_database_lists" locale="en_US">
+        <value>Can edit some geography data</value>
+      </configuration>
+      <configuration name="can_view_geographic_database_lists" locale="en_US">
+        <value>Can view some geography data</value>
+      </configuration>
+      <configuration name="can_edit_all_geographic_database_lists" locale="en_US">
+        <value>Can edit all geography data</value>
+      </configuration>
+      <configuration name="can_view_all_geographic_database_lists" locale="en_US">
+        <value>Can view all geography data</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="country">
+          <configuration name="display" values="single" locale="en_US">
+            <value>Country</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="county">
+          <configuration name="display" values="single" locale="en_US">
+            <value>County</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configuration name="display" values="single" locale="en_US">
+            <value>District</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="region">
+          <configuration name="display" values="single" locale="en_US">
+            <value>Region</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_ListByCountry">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Location</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Country">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="alpha_two">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:2 Character Alpha Code</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:ISO Numeric Code</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="primary">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Primary Country</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Use for Location Selection</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_County">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="district">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:District</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_District">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="region">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Region</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Code</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Region">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="country">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Country</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Code</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

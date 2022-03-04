@@ -1,0 +1,51 @@
+<div id="siteContent">
+  <h1 dir="rtl">عرض <span name="type_name"></span>: <span name="list_name"></span></h1>
+
+  <div class="recordsData">
+    <h3 dir="rtl"><span name="type_name"></span> معلومات</h3>
+    
+    <div id="list_display">	
+      
+      <div class="editRecord">
+	<p dir="rtl">تعديل هذه المعلومة</p>
+	<ul><li role="manager"><span type="form" name="training_institution:id" href="lists?type=training_institution&amp;id=" dir="rtl">تحديث هذه المعلومة</span></li>
+	  <li role="manager"><a href="lists?type=training_institution" dir="rtl">اختر مؤسسة تدريب أخري</a></li>
+	  <li role="manager"><span type="form" name="training_institution:id" href="facility_institution?training_institution=" dir="rtl">تحديث المرافق الصحية المرتبطة</span></li>
+	</ul></div> <!-- editRecord -->
+      
+      <div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0"><tbody id="training_institution"><tr><th colspan="2" dir="rtl">مؤسسة التدريب</th>
+	    </tr><span type="form" name="training_institution:name" showhead="default"></span>
+	    <span type="form" name="training_institution:id_code" showhead="default" class="even"></span>
+	    <span type="form" name="training_institution:facility_agent" showhead="default"></span>
+	    <span type="form" name="training_institution:location" showhead="default" class="even"></span>
+	    <span type="form" name="training_institution:facility_status" showhead="default"></span>
+      </tbody><tbody id="facility_contact"></tbody><tbody id="health_facility"><tr><th colspan="2" dir="rtl">المرافق الصحية المرتبطة</th>
+	    </tr></tbody></table></div> <!-- dataTable -->
+      
+    </div> <!-- list_display -->
+
+    
+    <br style="clear: both;"></div> <!-- recordsData -->
+  
+  <div class="recordsData">
+    <h3 dir="rtl">برامج التدريب</h3>
+    <p class="editRecordsData">
+      <span role="manager" type="form" name="training_institution:id" href="training_program?training_institution=" dir="rtl">اضافة برنامج تدريب</span>
+    </p>
+    
+    <div id="training_program"></div>
+    
+    <br style="clear: both;"><div class="recordsData">
+      <h3 dir="rtl">تفتيشات المؤسسة</h3>
+      <p class="editRecordsData">
+	<span role="manager" type="form" name="training_institution:id" href="institution_inspection?parent=" dir="rtl">إضافة تفتيش المؤسسة</span>
+      </p>
+      
+      <div id="institution_inspection"></div>
+      
+      <br style="clear: both;"></div> <!-- recordsData -->
+
+    <!--<a href="construction">Print</a>-->
+  </div>
+</div>

@@ -1,0 +1,73 @@
+<div id="siteContent">
+  <h1>View <span name="type_name" />: <span name="list_name" /></h1>
+
+  <div class="recordsData">
+    <h3><span name="type_name" /> Information</h3>
+    
+    <div id="list_display">	
+      
+      <div class="editRecord">
+	<p>Edit This Information</p>
+	<ul>
+	  <li role='manager'><span type="form" name="training_institution:id" href="lists?type=training_institution&amp;id=" >Update this Information</span></li>
+	  <li role='manager'><a href="lists?type=training_institution" >Select another Training Institution</a></li>
+	  <li role='manager'><span type="form" name="training_institution:id" href="facility_institution?training_institution=">Update Associated Health Facilities</span></li>
+	</ul>
+      </div> <!-- editRecord -->
+      
+      <div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0">
+	  <tbody id="training_institution">
+	    <tr>
+	      <th colspan="2">Training Institution</th>
+	    </tr>
+	    <span type="form" name="training_institution:name" showhead="default"></span>
+	    <span type="form" name="training_institution:id_code" showhead="default" class="even"></span>
+	    <span type="form" name="training_institution:facility_agent" showhead="default"></span>
+	    <span type="form" name="training_institution:location" showhead="default" class="even"></span>
+	    <span type="form" name="training_institution:facility_status" showhead="default"></span>
+      </tbody>
+      <tbody id="facility_contact" />
+	    
+      <tbody id="health_facility">
+	    <tr>
+	      <th colspan="2">Associated Health Facilities</th>
+	    </tr>
+	  </tbody>
+	  
+	</table>
+      </div> <!-- dataTable -->
+      
+    </div> <!-- list_display -->
+
+    
+    <br style="clear: both;" />
+    
+  </div> <!-- recordsData -->
+  
+  <div class="recordsData">
+    <h3>Training Programs</h3>
+    <p class="editRecordsData">
+      <span role='manager' type="form" name="training_institution:id" href="training_program?training_institution=" >Add Training Program</span>
+    </p>
+    
+    <div id="training_program" />
+    
+    <br style="clear: both;" />
+
+    <div class="recordsData">
+      <h3>Institution Inspections</h3>
+      <p class="editRecordsData">
+	<span role='manager' type="form" name="training_institution:id" href="institution_inspection?parent=">Add Institution Inspection</span>
+      </p>
+      
+      <div id="institution_inspection" />
+      
+      <br style="clear: both;" />
+
+      
+    </div> <!-- recordsData -->
+
+    <!--<a href="construction">Print</a>-->
+  </div>
+</div>

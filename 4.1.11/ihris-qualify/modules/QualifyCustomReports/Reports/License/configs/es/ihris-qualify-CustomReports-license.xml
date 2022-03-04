@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-license" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-license" path="//modules/CustomReports" locale="es">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-license" path="relationships/license">
+      <configuration name="description" locale="es">
+        <value>Informes basados en las licencias actuales del sistema.</value>
+      </configuration>
+      <configuration name="display_name" locale="es">
+        <value>Licencia</value>
+      </configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="training">
+          <configuration name="description" locale="es">
+            <value>Entrenamiento asociado con esta licencia.</value>
+          </configuration>
+          <configuration name="display_name" locale="es">
+            <value>Entrenamiento</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="es">
+                <value>Puesto asociado con este entrenamiento.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Puesto</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration">
+              <configuration name="description" locale="es">
+                <value>Información de Registro para este entrenamiento.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Registro</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="person">
+              <configuration name="description" locale="es">
+                <value>Persona que tomó este entrenamiento.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Persona</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="demographic">
+                  <configuration name="description" locale="es">
+                    <value>Detalles demográficos para esta persona.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="es">
+                    <value>Demográfico</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-license" path="reports/license">
+      <configurationGroup name="meta">
+        <configuration name="category" locale="es">
+          <value>Informes de Entrenamiento</value>
+        </configuration>
+        <configuration name="description" locale="es">
+          <value>Informes basados en las licencias actuales del sistema.</value>
+        </configuration>
+        <configuration name="display_name" locale="es">
+          <value>Informe de Licencia</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="es">
+                <value>Puesto</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="person">
+          <configurationGroup name="fields">
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="es">
+                <value>Primer nombre</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="surname">
+              <configuration name="header" locale="es">
+                <value>Apellido</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="end_date">
+              <configuration name="header" locale="es">
+                <value>Fecha de término de la licencia</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="es">
+                    <value>Fecha después del término de la Licencia</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="es">
+                    <value>Fecha antes del término de la Licencia</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="license_number">
+              <configuration name="header" locale="es">
+                <value>Número de Licencia</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="header" locale="es">
+                <value>Fecha de inicio de la licencia</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="es">
+                    <value>Fecha antes del Inicio de la Licencia</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="es">
+                    <value>Fecha antes del Inicio de la Licencia</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="cadre">
+              <configuration name="header" locale="es">
+                <value>ID de Puesto de Entrenamiento</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="es">
+                    <value>Puesto</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="graduation">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="es">
+                    <value>Fecha antes de la graduación</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="es">
+                    <value>Fecha después de la graduación</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="es">
+                <value>Fecha de Graduación</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="gender">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="es">
+                    <value>Género</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="es">
+                <value>Género</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="lisc_health_workers">
+        <configuration name="description" locale="es">
+          <value>Lista de los trabajadores de salud licenciados.</value>
+        </configuration>
+        <configuration name="display_name" locale="es">
+          <value>Trabajadores de Salud Licenciados</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="lisc_by_cadre">
+        <configuration name="description" locale="es">
+          <value>Gráfico de todos los Trabajadores de Salud licenciados, ordenados por puesto.</value>
+        </configuration>
+        <configuration name="display_name" locale="es">
+          <value>Trabajadores de Salud Licenciados por Puesto</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de torta (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de barras (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas Apiladas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

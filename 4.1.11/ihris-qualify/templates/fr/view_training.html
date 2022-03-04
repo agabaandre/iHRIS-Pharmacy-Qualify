@@ -1,0 +1,24 @@
+<div>
+	<div class="editRecord">
+	<p>Modifier cette information</p>
+		<ul><li><span type="form" name="training:id" href="view_training?id=">Mise à jour de formation/inscriptions/licences</span></li>
+		  <span type="module" name="PrintedForms" ifenabled="true" task="printed_forms_can_access">
+		    <span type="module" if="PrintedForms-&gt;hasValidForms('training')">
+		      <li>
+			<span type="form" href="PrintedForms/menu?id=" name="training:id">Formulaires de formation normalisés</span>
+		      </li>
+		    </span>
+		  </span>
+
+
+		</ul></div> <!-- editRecord -->
+	
+	<div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0"><tr><th colspan="2"><span type="form" name="training:cadre" noedit="display"></span></th>
+		</tr><span type="form" name="training:index_num" showhead="default"></span>
+		<span type="form" name="training:intake_date" showhead="default" class="even"></span>
+		<span type="form" name="training:graduation" showhead="default"></span>
+		<span type="form" ifset="true" name="registration:registration_number" showhead="default"></span>
+		<span type="form" ifset="true" name="license:license_number" showhead="default"></span>
+	</table></div> <!-- dataTable -->
+	<br style="clear: both;"></div>

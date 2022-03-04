@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-common-Job" path="/I2CE">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-common-Job" path="/I2CE" locale="et">
+    <version>4.1.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_classification" locale="et">
+        <value>Redigeeri liigituse loendit</value>
+      </configuration>
+      <configuration name="can_view_database_list_classification" locale="et">
+        <value>Vaata liigituse loendit</value>
+      </configuration>
+      <configuration name="can_edit_database_list_job" locale="et">
+        <value>Redigeeri ülesannete loendit</value>
+      </configuration>
+      <configuration name="can_view_database_list_job" locale="et">
+        <value>Vaata ülesannete loendit</value>
+      </configuration>
+      <configuration name="can_edit_job_structure_database_lists" locale="et">
+        <value>Redigeeri mõnesid ülesande struktuuri andmebaasi loendeid</value>
+      </configuration>
+      <configuration name="can_view_job_structure_database_lists" locale="et"></configuration>
+      <configuration name="can_edit_all_job_structure_database_lists" locale="et"></configuration>
+      <configuration name="can_view_all_job_structure_database_lists" locale="et"></configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="job">
+          <configuration name="display" values="single" locale="et">
+            <value>Ülesanne</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="classification">
+          <configuration name="display" values="single" locale="et">
+            <value>Klassifikatsioon</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Classification">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="et"></configuration>
+            </configurationGroup>
+            <configurationGroup name="description">
+              <configuration name="headers" type="delimited" locale="et">
+                <value>default:Kirjeldus</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="et"></configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_SalaryGrade">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="et"></configuration>
+            </configurationGroup>
+            <configurationGroup name="start">
+              <configuration name="headers" type="delimited" locale="et">
+                <value>default:Algus</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end">
+              <configuration name="headers" type="delimited" locale="et">
+                <value>default:Lõpp</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="midpoint">
+              <configuration name="headers" type="delimited" locale="et">
+                <value>default:Keskpunkt</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="et">
+                <value>default:Märkused</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Job">
+          <configurationGroup name="fields">
+            <configurationGroup name="title">
+              <configuration name="headers" type="delimited" locale="et">
+                <value>default:Pealkiri</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="et"></configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="et"></configuration>
+            </configurationGroup>
+            <configurationGroup name="description">
+              <configuration name="headers" type="delimited" locale="et">
+                <value>default:Kirjeldus</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="classification">
+              <configuration name="headers" type="delimited" locale="et">
+                <value>default:Klassifikatsioon</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

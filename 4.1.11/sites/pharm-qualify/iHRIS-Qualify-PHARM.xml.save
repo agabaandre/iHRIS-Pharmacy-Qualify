@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-site-pharmacy">
+  <metadata>
+    <displayName>iHRIS Qualify PHARM</displayName>
+    <category>Site</category>
+    <description>the iHRIS Qualify PHARM Site</description>
+    <version>4.1.11.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <requirement name="ihris-qualify-uganda">
+      <atLeast version="4.1" />
+    </requirement>
+≈    <requirement name="ihris-qualify">
+      <atLeast version="4.2" />
+      <lessThan version="4.4" />
+    </requirement>
+    <requirement name="UserAccess">
+      <atLeast version="4.2" />
+      <lessThan version="4.4" />
+    </requirement>
+    <enable name='PrivateFacility' />
+    <path name="classes">
+      <value>./lib</value>
+    </path>
+    <path name="templates">
+      <value>./templates</value>
+    </path>
+    <path name="css">
+      <value>./css</value>
+    </path>
+    <path name="scripts">
+      <value>./scripts</value>
+    </path>
+    <path name="modules">
+      <value>./modules</value>
+      <value>../../</value>
+    </path>
+    <path name="images">
+      <value>./images</value>
+    </path>
+    <priority>300</priority>
+  </metadata>
+  <configurationGroup name="ihris-qualify-site-demo" path="/I2CE">
+    <displayName>Uganda Medical and Dental Practitioners Council</displayName>
+    <status>advanced:false</status>
+    <configurationGroup name='feedback'>
+      <displayName>Feedback Information</displayName>
+      <status>required:false</status>
+      <configuration name='email' path='to' values='single'>
+	<displayName>helpdesk.hris@health.go.ug</displayName>
+      </configuration>
+      <configuration name='subject' values='single'> 
+	<displayName>PHARM Qualify Feedback</displayName>
+      </configuration>
+    </configurationGroup>
+    <configuration name="file_search_stale_time" path="/I2CE/fileSearch/stale_time">
+      <displayName>Stale Time</displayName>
+      <description>The time in seconds until a file found in the file search utility is considered stale. If stale, it will search for the file, if not stale, it will use the previously found location of the file (it will cache the file location). If negative, then we do not cache the file location.</description>
+      <status>required:true</status>
+      <status>validate:integer,nonempty</status>
+      <value>600</value>
+    </configuration>
+    <configurationGroup name="index_number" path="/modules/forms/formClasses/iHRIS_Training/fields/index_num">
+      <displayName>Overriding the registration number to not be unique</displayName>
+      <configuration name="required" type="boolean">
+        <status>overwrite:true</status>
+        <displayName>The field is required to be unique</displayName>
+        <value>false</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="provisional" path="formsData/forms/registration_type/provisional/" >
+      <version>4.1.11.0</version>
+      <configuration name="last_modified">
+        <value>2012-08-10 00:00:00</value>
+      </configuration>
+      <configuration name="fields" value="many" type="delimited" locale="en_US">
+        <value>name:Provisional</value>
+      </configuration>
+    </configurationGroup>
+
+
+    <configurationGroup name="pdf_options" path="/modules/report-pdf/PDF/display-options">
+      <displayName>PDF Options</displayName>
+      <status>visible:false</status>
+      <configurationGroup name="header">
+        <displayName>Header Options</displayName>
+        <configuration name="text" locale="en_US">
+          <displayName>Header Text</displayName>
+          <version>4.0.12.1</version>
+          <value>Uganda Medical and Dental Practitioners Council</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

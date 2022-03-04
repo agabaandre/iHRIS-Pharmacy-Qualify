@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="training-course" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="training-course" path="/I2CE" locale="es">
+    <version>4.1.9.1.1</version>
+    <configurationGroup name="tranlatable_strings" locale="es" path="/modules/training-course/translatable-strings" type="delimited">
+      <value>add_student:Añadir estudiante</value>
+      <value>remove_student:Quitar estudiante</value>
+    </configurationGroup>
+    <configurationGroup name="invalid_messages" path="/modules/forms/formfield_messages" locale="es">
+      <configuration name="work" path="scheduled_training_course/end_date/bad_date">
+        <value>La fecha final debe ser posterior a la fecha inicial.</value>
+      </configuration>
+      <configuration name="work" path="person_scheduled_training_course/training_course_mod/bad_mod">
+        <value>Ha seleccionado al menos un módulo que no está disponible para la capacitación:</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="formsdata" path="/I2CE/formsData/forms">
+      <configurationGroup name="training_course_status">
+        <configurationGroup name="open">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="es">
+              <value>Abierto</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="closed">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="es">
+              <value>Cerrado</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_course_evaluation">
+        <configurationGroup name="pass">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="es">
+              <value>Pasar</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="fail">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="es">
+              <value>Fallar</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="incomplete">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="es">
+              <value>Incompleto</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="not_evaluated">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="es">
+              <value>Sin Evaluación</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="roles" path="roles/names">
+      <configurationGroup name="training_manager">
+        <configuration name="display_name" values="single" locale="es">
+          <value>Administrador de entrenamiento</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_training_course_status" locale="es">
+        <value>Editar la lista de estados de los cursos de entrenamiento</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_status" locale="es">
+        <value>Ver la lista de estados de los cursos de entrenamiento</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_mod" locale="es">
+        <value>Editar la lista de módulos de los cursos de capacitación</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_mod" locale="es">
+        <value>Ver la lista de módulos de los cursos de capacitación</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_status" locale="es">
+        <value>Editar la lista de estados de los cursos de entrenamiento</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_status" locale="es">
+        <value>Ver la lista de estados de los cursos de entrenamiento</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_evaluation" locale="es">
+        <value>Editar la lista de evaluación de los cursos de entramiento</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_evaluation" locale="es">
+        <value>Ver la lista de evaluación de los cursos de entramiento</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_category" locale="es">
+        <value>Editar la lista de categoria del curso de entrenamiento</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_category" locale="es">
+        <value>Ver la lista de categoria del curso de entrenamiento</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course" locale="es">
+        <value>Editar la lista del curso de entrenamiento</value>
+      </configuration>
+      <configuration name="can_edit_database_list_scheduled_training_course" locale="es">
+        <value>Editar la lista de categoría de curso de entrenamiento programado</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_requestor" locale="es">
+        <value>Editar la lista de Solicitantes del Curso de Entrenamiento</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_requestor" locale="es">
+        <value>Editar la lista de Solicitantes del Curso de Entrenamiento</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course" locale="es">
+        <value>Ver la lista del curso de entrenamiento</value>
+      </configuration>
+      <configuration name="can_edit_scheduled_training_course" locale="es">
+        <value>Editar un curso de entrenamiento programado</value>
+      </configuration>
+      <configuration name="can_view_database_list_scheduled_training_course" locale="es">
+        <value>Ver la lista de categoría de cursos de entrenamiento</value>
+      </configuration>
+      <configuration name="can_edit_training_course_database_lists" locale="es">
+        <value>Editar algunas listas asociadas al módulo de entrenamiento</value>
+      </configuration>
+      <configuration name="can_view_training_course_database_lists" locale="es">
+        <value>Ver algunas listas asociadas al módulo de entrenamiento</value>
+      </configuration>
+      <configuration name="can_edit_all_training_course_database_lists" locale="es">
+        <value>Editar todas las listas asociadas al módulo de entrenamiento</value>
+      </configuration>
+      <configuration name="can_view_all_training_course_database_lists" locale="es">
+        <value>Ver todas las listas asociadas al módulo de entrenamiento</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="training_course_mod">
+          <configuration name="display" values="single" locale="es">
+            <value>Módulo del curso de capacitación</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_status">
+          <configuration name="display" values="single" locale="es">
+            <value>Estatus del Curso de Entrenamiento</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_category">
+          <configuration name="display" values="single" locale="es">
+            <value>Categoría del Curso de Entrenamiento</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course">
+          <configuration name="display" values="single" locale="es">
+            <value>Curso de entrenamiento</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="es">
+              <value>Este formulario contiene informaciones básicas del curso de entrenamiento</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="scheduled_training_course">
+          <configuration name="display" values="single" locale="es">
+            <value>Curso de entrenamiento programado</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_scheduled_training_course">
+          <configuration name="display" values="single" locale="es">
+            <value>Curso de entrenamiento programado para una persona</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_evaluation">
+          <configuration name="display" values="single" locale="es">
+            <value>Evaluación del Curso de Entrenamiento</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_requestor">
+          <configuration name="display" values="single" locale="es">
+            <value>Solicitante del Entrenamiento</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Training_Course_Evaluation">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Nombre</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="competency_evaluation">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Evaluación de Competencia</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Training_Course">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course_mod">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Módulos</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="has_certification_date">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Utilizar fecha de certificación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Plantilla de certificado</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="topic">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Tópico</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Notas</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Institución de Entrenamiento</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_funder">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Financiadores del Entrenamiento</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="continuing_education_course">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:CEUs Provistas</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_status">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Estado</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_category">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Categoría</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Person_Scheduled_Training_Course">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course_mod">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Módulos</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="certification_date">
+              <configuration name="headers" locale="es" type="delimited">
+                <value>default:Fecha de certificación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="attending">
+              <configuration name="headers" locale="es" type="delimited">
+                <value>default:Asiste a</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="is_retraining">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Re-entrenamiento</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="completed">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Completado</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="duty_commencement_date">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Comienzo del turno</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="request_date">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Fecha de solicitud</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Notas</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="average">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Promedio</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_evaluation">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Evaluación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_requestor">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Solicitado por</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="scheduled_training_course">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Instancia</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Scheduled_Training_Course">
+          <configurationGroup name="meta" path="meta/list/default">
+            <configuration name="display_string" locale="es">
+              <value>%s en %s</value>
+            </configuration>
+          </configurationGroup>
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course">
+              <configuration name="headers" type="delimited" values="many" locale="es">
+                <value>default:Curso de entrenamiento</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Sitio</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="num_students">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Número máximo de estudiantes</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Notas</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="instructors">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Instructores</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Fecha de inicio</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Fecha de terminación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" values="many" locale="es">
+                <value>default:Ubicación</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="editstudents">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="es">
+            <value>Editar estudiantes</value>
+          </configuration>
+          <configuration name="action_header" values="single" locale="es">
+            <value>Añadir/Quitar estudiante</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_training_participation" path="/modules/CustomReports/relationships/student_training_participation">
+        <configuration name="display_name" locale="es">
+          <value>Participación en la capacitación del curso programado</value>
+        </configuration>
+        <configuration name="description" locale="es">
+          <value>Lista de todas las participaciones de capacitación por curso programado</value>
+        </configuration>
+        <configurationGroup name="joins">
+          <configurationGroup name="person_scheduled_training_course">
+            <configuration name="display_name" locale="es">
+              <value>Curso programado de persona</value>
+            </configuration>
+            <configurationGroup name="joins">
+              <configurationGroup name="person">
+                <configuration name="display_name" locale="es">
+                  <value>persona</value>
+                </configuration>
+                <configurationGroup name="joins">
+                  <configurationGroup name="person_position">
+                    <configuration name="display_name" locale="es">
+                      <value>Posición actual</value>
+                    </configuration>
+                    <configurationGroup name="joins">
+                      <configurationGroup name="position">
+                        <configuration name="display_name" locale="es">
+                          <value>Posición</value>
+                        </configuration>
+                        <configurationGroup name="joins">
+                          <configurationGroup name="facility">
+                            <configuration name="display_name" locale="es">
+                              <value>institución</value>
+                            </configuration>
+                            <configurationGroup name="joins">
+                              <configurationGroup name="facility_contact">
+                                <configuration name="display_name" locale="es">
+                                  <value>Contacto de la institución</value>
+                                </configuration>
+                              </configurationGroup>
+                            </configurationGroup>
+                          </configurationGroup>
+                        </configurationGroup>
+                      </configurationGroup>
+                    </configurationGroup>
+                  </configurationGroup>
+                  <configurationGroup name="person_contact">
+                    <configuration name="display_name" locale="es">
+                      <value>Contacto de persona</value>
+                    </configuration>
+                  </configurationGroup>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+          <configurationGroup name="training_course">
+            <configuration name="display_name" locale="es">
+              <value>Curso de entrenamiento</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="schedule-person" path="/modules/training-course/page/schedule-person">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="es">
+            <value>Añadir/Actualizar un Curso de Entremiento programado para una persona</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

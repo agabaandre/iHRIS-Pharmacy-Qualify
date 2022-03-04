@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-license" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-license" path="//modules/CustomReports" locale="de">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-license" path="relationships/license">
+      <configuration name="description" locale="de">
+        <value>Auf den aktuell im System vorhandenen Lizenzen basierende Berichte.</value>
+      </configuration>
+      <configuration name="display_name" locale="de">
+        <value>Lizenz</value>
+      </configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="training">
+          <configuration name="description" locale="de">
+            <value>Die Schulung, die dieser Lizenz zugeordnet ist.</value>
+          </configuration>
+          <configuration name="display_name" locale="de">
+            <value>Schulung</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="de">
+                <value>Die dieser Schulung zugeordnete Mitarbeitergruppe.</value>
+              </configuration>
+              <configuration name="display_name" locale="de">
+                <value>Mitarbeitergruppe</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration">
+              <configuration name="description" locale="de">
+                <value>Die Registrierungsinformationen für diese Schulung.</value>
+              </configuration>
+              <configuration name="display_name" locale="de">
+                <value>Registrierung</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="person">
+              <configuration name="description" locale="de">
+                <value>Die Person, die an dieser Schulung teilnahm.</value>
+              </configuration>
+              <configuration name="display_name" locale="de"></configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="demographic">
+                  <configuration name="description" locale="de">
+                    <value>Die demografischen Daten zu dieser Person.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="de">
+                    <value>Demografisch</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-license" path="reports/license">
+      <configurationGroup name="meta">
+        <configuration name="category" locale="de">
+          <value>Schulungsberichte</value>
+        </configuration>
+        <configuration name="description" locale="de">
+          <value>Auf den aktuell im System vorhandenen Lizenzen basierende Berichte.</value>
+        </configuration>
+        <configuration name="display_name" locale="de">
+          <value>Lizenzbericht</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Mitarbeitergruppe</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="person">
+          <configurationGroup name="fields">
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="de">
+                <value>Vorname</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="surname">
+              <configuration name="header" locale="de">
+                <value>Nachname</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="end_date">
+              <configuration name="header" locale="de">
+                <value>Ablaufdatum der Lizenz</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="de">
+                    <value>Ablaufdatum der Lizenz nach</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="de">
+                    <value>Ablaufdatum der Lizenz vor</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="license_number">
+              <configuration name="header" locale="de">
+                <value>Lizenznummer</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="header" locale="de">
+                <value>Anfangsdatum der Lizenz</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="de">
+                    <value>Anfangsdatum der Lizenz nach</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="de">
+                    <value>Anfangsdatum der Lizenz vor</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="cadre">
+              <configuration name="header" locale="de">
+                <value>Mitarbeitergruppenkennung zur Schulung</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="de">
+                    <value>Mitarbeitergruppe</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="graduation">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="de">
+                    <value>Abschlussdatum nach</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="de">
+                    <value>Abschlussdatum vor</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="de">
+                <value>Abschlussdatum</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="gender">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="de">
+                    <value>Geschlecht</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="de">
+                <value>Geschlecht</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="lisc_health_workers">
+        <configuration name="description" locale="de">
+          <value>Eine Liste des gesamten lizenzierten Gesundheitspersonals.</value>
+        </configuration>
+        <configuration name="display_name" locale="de">
+          <value>Lizenziertes Gesundheitspersonal</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="lisc_by_cadre">
+        <configuration name="description" locale="de">
+          <value>Ein Diagramm des gesamten lizenzierten Gesundheitspersonals nach Teilnehmer.</value>
+        </configuration>
+        <configuration name="display_name" locale="de">
+          <value>Lizenziertes Gesundheitspersonal nach Teilnehmer</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="de">
+                  <value>Kreisdiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="de">
+                  <value>Balkendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="de">
+                  <value>Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="de">
+                  <value>Gestapeltes Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="de">
+                  <value>Punktdiagramm</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

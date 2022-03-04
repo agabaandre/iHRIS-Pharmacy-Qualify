@@ -1,0 +1,51 @@
+<div id="siteContent">
+<br style="clear: both;"><div role="records">
+<h2><a href="person" class="updateRecords" dir="rtl">إضافة شخص</a></h2>
+<p dir="rtl">
+إضافة سجل جديد للطالب أو موظف صحة. للسجل، قم بتحديث الاتصالات والمعلومات الشخصية، إضافة تفاصيل برامج تدريب جارية أو منتهية؛ سجل تطبيقات الأمتحان والنتائج؛ مشاكل التسجيلات، التراخيص وتجديدات ترخيص، وسجل تراخيص ممارسة خاصة، طلبات تحقق من الهجرة، والإجراءات التأديبية والانتشار.
+</p>
+
+<hr></div>
+
+<span type="module" name="SelfService" ifenabled="true" task="can_view_own_personnel">
+  <span type="module" name="SelfService" if="!userHasRecord()">
+    
+  </span>
+  <span type="module" name="SelfService" if="userHasRecord()">
+    <h2><span type="module" name="SelfService" call="linkToPersonRecord('view?id=')">View Your Record</span></h2>
+    <p>
+      View your own details.
+    </p>
+  </span>
+</span>
+
+<div task="custom_reports_can_access">
+<h2><a href="search" class="searchRecords" dir="rtl">بحث التسجيلات</a></h2>
+<p dir="rtl">
+حدد موقع سجل أي شخص في النظام للمراجعة والطباعة أو التحديث.
+</p>
+</div>
+
+
+<span type="module" name="CustomReports" ifenabled="true">
+  <div role="manager|decision_maker">
+    <hr><h2><a href="CustomReports/view/reportViews" class="createRecords" dir="rtl">عرض التقارير</a></h2>
+    <p dir="rtl">
+      تقارير تمكين تحليل بيانات الموارد البشرية بطرق مختلفة. تخصيص وعرض وطباعة قوائم من العاملين في مجال الصحة أو الطلاب، والخرائط الإحصائية والتقارير القياسية الأخرى. يقتصر الوصول إلى مديري العمليات البيانات وصانعي القرار.
+    </p>
+  </div>
+</span>
+
+
+<div role="manager">
+<hr><h2><a href="configure" class="adminDatabase" dir="rtl">تكوين النظام</a></h2>
+<p dir="rtl">
+تكوين وحدات، وإدارة قواعد البيانات وإنشاء أو تحديث حسابات المستخدمين.
+</p>
+</div>
+
+
+
+<hr><h2><a href="password" dir="rtl">تغيير كلمة السر</a></h2>
+
+</div>

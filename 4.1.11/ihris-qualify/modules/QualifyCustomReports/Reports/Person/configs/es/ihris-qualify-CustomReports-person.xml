@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-person" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-person" path="//modules/CustomReports" locale="es">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-person" path="relationships/person">
+      <configuration name="display_name" locale="es">
+        <value>Persona</value>
+      </configuration>
+      <configuration name="description" locale="es">
+        <value>Relación de la persona con los primeros detalles de entrenamiento.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="reg_results">
+          <configuration name="description" locale="es">
+            <value>Resultados del examen y registro para el primer entrenamiento.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="intake_year">
+          <configuration name="description" locale="es">
+            <value>Año en que el primer entrenamiento ocurrió.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_year">
+          <configuration name="description" locale="es">
+            <value>Año en que el examen fue tomado.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="in_training">
+          <configuration name="description" locale="es">
+            <value>Si/No para determinar si la persona aún está o no entrenando.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="demographic">
+          <configuration name="description" locale="es">
+            <value>Información demográfica para esta persona.</value>
+          </configuration>
+          <configuration name="display_name" locale="es">
+            <value>Demográfico</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="birth_district">
+              <configuration name="description" locale="es">
+                <value>Distrito donde esta persona nació.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Distrito de Nacimiento</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="deployment">
+          <configuration name="description" locale="es">
+            <value>Despliegue más reciente para esta persona.</value>
+          </configuration>
+          <configuration name="display_name" locale="es">
+            <value>Despliegue</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="first_training">
+          <configuration name="description" locale="es">
+            <value>Primer entrenamiento desde que esta persona ingresó.</value>
+          </configuration>
+          <configuration name="display_name" locale="es">
+            <value>Primer Entrenamiento</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="es">
+                <value>Puesto del primer entrenamiento.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Puesto</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam">
+              <configuration name="description" locale="es">
+                <value>Detalles del examen del primer entrenamiento.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Examen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration">
+              <configuration name="description" locale="es">
+                <value>Detalles del registro del primer entrenamiento.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Registro</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="description" locale="es">
+                <value>Institución de Entrenamiento donde el primer entrenamiento ocurrió.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Institución de Entrenamiento</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="institution_district">
+                  <configuration name="description" locale="es">
+                    <value>Distrito donde la Institución de Entrenamiento está ubicada.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="es">
+                    <value>Distrito de la Institución</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="training_disrupt">
+              <configuration name="description" locale="es">
+                <value>Interrupción de entrenamient actual para este entrenamiento, si hay una.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Interrupción de Entrenamiento</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-person" path="reports/person">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="es">
+          <value>Informe de la Persona</value>
+        </configuration>
+        <configuration name="description" locale="es">
+          <value>Informes relacionados a personas en el sistema con sus primeros entrenamientos.</value>
+        </configuration>
+        <configuration name="category" locale="es">
+          <value>Informes de Persona</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="header" locale="es">
+                <value>Apellido</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="es">
+                <value>Primer nombre</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="header" locale="es">
+                <value>Otros Nombres</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="first_training">
+          <configurationGroup name="fields">
+            <configurationGroup name="index_num">
+              <configuration name="header" locale="es">
+                <value>Número de índice</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="es">
+                    <value>Puesto</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="es">
+                <value>ID de Puesto de Entrenamiento</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="es">
+                    <value>Fecha después de la Admisión</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="es">
+                    <value>Fecha antes de la Admisión</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="es">
+                <value>Fecha de Admisión</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="graduation">
+              <configuration name="header" locale="es">
+                <value>Fecha de Graduación</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training_disrupt">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_date">
+              <configuration name="header" locale="es">
+                <value>Fecha de la Interrupción</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="institution_district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="es">
+                <value>Distrito de la Institución</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configuration name="header" locale="es">
+                <value>Número de Registro</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="exam">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="header" locale="es">
+                <value>Fecha de Examen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configuration name="header" locale="es">
+                <value>Resultados de Examen</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="es">
+                <value>Puesto</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="gender">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="es">
+                    <value>Género</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="es">
+                <value>Género</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="birth_district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="es">
+                <value>Distrito de Nacimiento</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="reg_results">
+          <configuration name="header" locale="es">
+            <value>Resultados del Registro</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="top_birth_district">
+        <configuration name="description" locale="es">
+          <value>Gráfico de Torta del número de personas ingresando a entrenar por su distrito de nacimiento.</value>
+        </configuration>
+        <configuration name="display_name" locale="es">
+          <value>Distrito con la Mayor Tasa de Nacimientos</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de torta (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de barras (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas Apiladas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_intake_year">
+        <configuration name="description" locale="es">
+          <value>Número de estudiantes ingresando para estudiar por añor.</value>
+        </configuration>
+        <configuration name="display_name" locale="es">
+          <value>Año de Admisión del Estudiante</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de torta (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de barras (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas Apiladas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="pass_fail_person">
+        <configuration name="description" locale="es">
+          <value>Resultados de aprobación/desaprobación para cada primer entrenamiento de la persona.</value>
+        </configuration>
+        <configuration name="display_name" locale="es">
+          <value>Aprobación/Desaprobación por Primer Entrenamiento</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de torta (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de barras (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas Apiladas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="final_exam_reg">
+        <configuration name="description" locale="es">
+          <value>Resultados del registro para cada primer entrenamiento de la persona.</value>
+        </configuration>
+        <configuration name="display_name" locale="es">
+          <value>Resultados de Registro por Primer Entrenamiento</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de torta (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de barras (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas Apiladas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_training_year">
+        <configuration name="description" locale="es">
+          <value>Los estudiantes se dividen por el año en el que están o no están formándose.</value>
+        </configuration>
+        <configuration name="display_name" locale="es">
+          <value>Estudiantes en Entrenamiento por Año</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de torta (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de barras (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Columnas Apiladas (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="es">
+                  <value>Gráfico de Dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-common-Job" path="/I2CE">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-common-Job" path="/I2CE" locale="ar">
+    <version>4.1.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_classification" locale="ar">
+        <value>تعديل قائمة&#160;التصنيف</value>
+      </configuration>
+      <configuration name="can_view_database_list_classification" locale="ar">
+        <value>عرض قائمة&#160;التصنيف</value>
+      </configuration>
+      <configuration name="can_edit_database_list_job" locale="ar">
+        <value>تعديل&#160;لائحة&#160;الوظائف</value>
+      </configuration>
+      <configuration name="can_view_database_list_job" locale="ar">
+        <value>عرض&#160;قائمة الوظائف</value>
+      </configuration>
+      <configuration name="can_edit_job_structure_database_lists" locale="ar">
+        <value>يمكن&#160;تعديل&#160;بعض قوائم&#160;قاعدة البيانات&#160;للهيكل الوظيفي</value>
+      </configuration>
+      <configuration name="can_view_job_structure_database_lists" locale="ar">
+        <value>يمكن&#160;عرض بعض&#160;قوائم&#160;قاعدة البيانات&#160;للهيكل الوظيفي</value>
+      </configuration>
+      <configuration name="can_edit_all_job_structure_database_lists" locale="ar">
+        <value>يمكن&#160;تعديل&#160;جميع قوائم&#160;قاعدة البيانات&#160;للهيكل الوظيفي</value>
+      </configuration>
+      <configuration name="can_view_all_job_structure_database_lists" locale="ar">
+        <value>يمكن عرض&#160;كل&#160;قوائم&#160;قاعدة&#160;البيانات للهيكل الوظيفي</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="job">
+          <configuration name="display" values="single" locale="ar">
+            <value>وظيفة</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="classification">
+          <configuration name="display" values="single" locale="ar">
+            <value>تصنيف</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Classification">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="description">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:وصف</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:رمز</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_SalaryGrade">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:اسم</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:بداية</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:نهاية</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="midpoint">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:نقطة الوسط</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:ملحوظات</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Job">
+          <configurationGroup name="fields">
+            <configurationGroup name="title">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:لقب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:إطار&#160;(العاملون في قطاع الصحة&#160;فقط)</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:رمز</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="description">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:وصف</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="classification">
+              <configuration name="headers" type="delimited" locale="ar">
+                <value>default:تصنيف</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

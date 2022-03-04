@@ -1,0 +1,279 @@
+# Translation of iHRIS Qualify - Custom Reports Training to Czech (čeština)
+# Exported from translatewiki.net
+#
+# Author: Chmee2
+# --
+# Copyright (c) 2011-2016 <hris@capacityproject.org> Capacity Project partnership via IntraHealth International, Inc.
+# Copyright (c) 2011-2016 Rosetta Contributors and Canonical Ltd
+# Copyright (c) 2011-2016 translatewiki.net contributors
+# This file is distributed under the same license as the iHRIS package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: iHRIS Qualify - Custom Reports Training\n"
+"Report-Msgid-Bugs-To: translatewiki.net\n"
+"POT-Creation-Date: 2015-09-14 08:02+0000\n"
+"PO-Revision-Date: 2016-06-22 14:44:54+0000\n"
+"Last-Translator: IntraHealth Informatics <Unknown>\n"
+"Language-Team: Czech <https://translatewiki.net/wiki/Portal:cs>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-04-16 05:48+0000\n"
+"X-Generator: MediaWiki 1.28.0-alpha; Translate 2016-04-06\n"
+"X-Translation-Project: translatewiki.net <https://translatewiki.net>\n"
+"X-Language-Code: cs\n"
+"X-Message-Group: #out-ihris-qualify-crt\n"
+"X-POT-Import-Date: 2013-10-07 17:27:56+0000\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ( (n >= 2 && n <= 4) ? 1 : "
+"2 );\n"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L11
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 11]
+#, no-c-format
+msgid "Training"
+msgstr "Výuka"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L14
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 14]
+#, no-c-format
+msgid ""
+"Training relationship for all trainings that have been entered in the system."
+msgstr "Vztah výuky pro všechny výuky, které byly zadány do systému."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L19
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 19]
+#, no-c-format
+msgid "The person who took this training."
+msgstr "Osoba, která se zúčastnila tohoto školení."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L22
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 22]
+#, no-c-format
+msgid "Person"
+msgstr "Osoba"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L27
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 27]
+#, no-c-format
+msgid "The personal contact information for the person taking this training."
+msgstr "Informace o kontaktu na osobu, která se zúčastňuje tohoto školení."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L30
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 30]
+#, no-c-format
+msgid "Personal Contact"
+msgstr "Osobní kontakt"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L37
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 37]
+#, no-c-format
+msgid "The cadre trained by this training."
+msgstr "Kádr, který je školen touto výukou."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L40
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 40]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L128
+#: 128]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L196
+#: 196]
+#, no-c-format
+msgid "Cadre"
+msgstr "Kádr"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L45
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 45]
+#, no-c-format
+msgid "The qualification associated with this cadre."
+msgstr "Kvalifikace spojená s tímto kádrem."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L48
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 48]
+#, no-c-format
+msgid "Qualification"
+msgstr "Kvalifikace"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L55
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 55]
+#, no-c-format
+msgid "The registration for this training."
+msgstr "Registrace pro tuto výuku."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L58
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 58]
+#, no-c-format
+msgid "Registration"
+msgstr "Registrace"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L63
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 63]
+#, no-c-format
+msgid "The current license for this training."
+msgstr "Současná licence pro tuto výuku."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L66
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 66]
+#, no-c-format
+msgid "License"
+msgstr "Licence"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L71
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 71]
+#, no-c-format
+msgid "The exam details for this training."
+msgstr "Podrobnosti zkoušky pro tuto výuku."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L74
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 74]
+#, no-c-format
+msgid "Exam"
+msgstr "Zkouška"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L79
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 79]
+#, no-c-format
+msgid "The training institution where this training occurred."
+msgstr "Učiliště, kde se tato výuka nachází."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L82
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 82]
+#, no-c-format
+msgid "Training Institution"
+msgstr "Učiliště"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L90
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 90]
+#, no-c-format
+msgid "Institution District"
+msgstr "Okres učiliště"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L100
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 100]
+#, no-c-format
+msgid "Training Report"
+msgstr "Záznam výuky"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L103
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 103]
+#, no-c-format
+msgid "Reports based on individual trainings in the system."
+msgstr "Záznamy na základě jednotlivých výuk v systému."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L116
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 116]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L121
+#: 121]
+#, no-c-format
+msgid "Index Number"
+msgstr "Číslo rejstříku"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L133
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 133]
+#, no-c-format
+msgid "Training Cadre ID"
+msgstr "ID výukového kádru"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L140
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 140]
+#, no-c-format
+msgid "Intake Date After"
+msgstr "Datum přijetí po"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L145
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 145]
+#, no-c-format
+msgid "Intake Date Before"
+msgstr "Datum přijetí před"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L150
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 150]
+#, no-c-format
+msgid "Intake Date"
+msgstr "Datum přijetí"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L161
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 161]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L166
+#: 166]
+#, no-c-format
+msgid "License Number"
+msgstr "Číslo licence"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L171
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 171]
+#, no-c-format
+msgid "License End Date"
+msgstr "Datum ukončení licence"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L182
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 182]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L187
+#: 187]
+#, no-c-format
+msgid "Registration Number"
+msgstr "Registrační číslo"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L205
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 205]
+#, no-c-format
+msgid "Surname"
+msgstr "Příjmení"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L210
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 210]
+#, no-c-format
+msgid "First Name"
+msgstr "Křestní jméno"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L215
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 215]
+#, no-c-format
+msgid "Other Names"
+msgstr "Další jména"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L106
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 106]
+#, no-c-format
+msgid "Training Reports"
+msgstr "Záznamy výuky"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml#L87
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Training/configs/en_US/ihris-qualify-CustomReports-training.xml
+#: line 87]
+#, no-c-format
+msgid "The district where this institution is located."
+msgstr "Čtvrť, kde se instituce nachází."

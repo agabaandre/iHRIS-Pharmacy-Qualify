@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-base-data">
+  <metadata>
+    <displayName>iHRIS Qualify Base Data</displayName>
+    <category>Site</category>
+    <description>iHRIS Qualify Base Data</description>
+    <version>4.2.2.0</version>
+    <requirement name="ihris-qualify">
+      <atLeast version="4.2" />
+      <lessThan version="4.3" />
+    </requirement>
+    <requirement name="BackgroundProcess">
+      <atLeast version="4.2" />
+      <lessThan version="4.3" />
+    </requirement>
+    <requirement name="SampleData-Common">
+      <atLeast version="4.0" />
+    </requirement>
+    <enable name="QualifySampleData-facility_type" />
+    <enable name="QualifySampleData-id_type" />
+    <enable name="QualifySampleData-marital_status" />
+    <path name="modules">
+      <value>./modules</value>
+    </path>
+  </metadata>
+</I2CEConfiguration>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Geography" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="Geography" path="/I2CE" locale="cs">
+    <version>4.1.2.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="cs">
+      <configuration name="can_edit_database_list_country" locale="cs">
+        <value>Může upravit seznam zemí</value>
+      </configuration>
+      <configuration name="can_view_database_list_country" locale="cs">
+        <value>Může zobrazit seznam zemí</value>
+      </configuration>
+      <configuration name="can_edit_database_list_region" locale="cs">
+        <value>Může upravit seznam krajů</value>
+      </configuration>
+      <configuration name="can_view_database_list_region" locale="cs">
+        <value>Může zobrazit seznam krajů</value>
+      </configuration>
+      <configuration name="can_edit_database_list_district" locale="cs">
+        <value>Může upravit seznam čtvrtí</value>
+      </configuration>
+      <configuration name="can_view_database_list_district" locale="cs">
+        <value>Může zobrazit seznam čtvrtí</value>
+      </configuration>
+      <configuration name="can_edit_database_list_county" locale="cs">
+        <value>Může upravit seznam zemí</value>
+      </configuration>
+      <configuration name="can_view_database_list_county" locale="cs">
+        <value>Může zobrazit seznam zemí</value>
+      </configuration>
+      <configuration name="can_edit_geographic_database_lists" locale="cs">
+        <value>Může upravit některá geografická data</value>
+      </configuration>
+      <configuration name="can_view_geographic_database_lists" locale="cs">
+        <value>Může zobrazit některá geografická data</value>
+      </configuration>
+      <configuration name="can_edit_all_geographic_database_lists" locale="cs">
+        <value>Může upravit všechna geografická data</value>
+      </configuration>
+      <configuration name="can_view_all_geographic_database_lists" locale="cs">
+        <value>Může zobrazit všchna geografická data</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="country">
+          <configuration name="display" values="single" locale="cs">
+            <value>Země</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="county">
+          <configuration name="display" values="single" locale="cs">
+            <value>Obec</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configuration name="display" values="single" locale="cs">
+            <value>Čtvrť</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="region">
+          <configuration name="display" values="single" locale="cs">
+            <value>Kraj</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_ListByCountry">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Název</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Umístění</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Country">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Název</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="alpha_two">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Dvouznakový Alfa kód</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Číselný kód ISO</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="primary">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Hlavní země</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Použít pro zvolení umístění</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_County">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Název</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="district">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Čtvrť</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_District">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Název</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="region">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kraj</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kód</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Region">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Název</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="country">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Země</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kód</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

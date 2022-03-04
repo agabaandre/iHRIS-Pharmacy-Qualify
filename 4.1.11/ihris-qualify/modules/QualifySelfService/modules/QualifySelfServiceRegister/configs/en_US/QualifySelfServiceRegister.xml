@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="QualifySelfServiceRegister" path="/">
+  <metadata>
+    <version>4.2.2.0</version>
+  </metadata>
+  <configurationGroup name="QualifySelfServiceRegister" path="/" locale="en_US">
+    <version>4.2.0</version>
+    <configurationGroup name="SS" path="/modules/SelfService">
+      <configurationGroup name="page">
+        <configurationGroup name="register">
+          <configurationGroup name="args">
+            <configuration name="title" values="single" locale="en_US">
+              <value>Add/Update Person</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify" path="/I2CE">
+  <metadata>
+    <version>4.2.1.0</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify" path="/I2CE" locale="en_US">
+    <version>4.2.1.0</version>
+    <configurationGroup name="invalid_formfield_message" path="/modules/forms/formfield_messages" locale="en_US">
+      <configuration name="training_disrupt" path="training_disrupt/disruption_date/bad_date" values="single" type="string">
+        <value>The disruption date must be after the intake date for this training.</value>
+      </configuration>
+      <configuration name="training_resume" path="training_disrupt/resumption_date/required" values="single" type="string">
+        <value>Required Field</value>
+      </configuration>
+      <configuration name="training_resume" path="training_disrupt/resumption_date/bad_date" values="single" type="string">
+        <value>The resumption date must be after the disruption date.</value>
+      </configuration>
+      <configuration name="license_date" path="license/end_date/bad_date" values="single" type="string">
+        <value>The end date must be after the start date.</value>
+      </configuration>
+      <configuration name="registration_date" path="registration/registration_date/bad_date" values="single" type="string">
+        <value>The registration date must be after the application date.</value>
+      </configuration>
+      <configuration name="exam_date" path="exam/exam_date/bad_date" values="single" type="string">
+        <value>The exam date must be after the application date.</value>
+      </configuration>
+      <configuration name="training_program" path="training/training_program/bad_cadre" values="single" type="string">
+        <value>You must select a Cadre from Trained in Country or Trained outside the Country</value>
+      </configuration>
+      <configuration name="training_out_country" path="training/out_country/bad_country" values="single" type="string">
+        <value>You must select the Country where training was received.</value>
+      </configuration>
+      <configuration name="training_graduation_req" path="training/graduation/required_out" values="single" type="string">
+        <value>This field is required when you selected training outside the country.</value>
+      </configuration>
+      <configuration name="training_graduation_date" path="training/graduation/bad_date" values="single" type="string">
+        <value>The graduation date must be after the intake date.</value>
+      </configuration>
+      <configuration name="pp_date" path="private_practice/end_date/bad_date" values="single" type="string">
+        <value>The end date must be after the start date.</value>
+      </configuration>
+      <configuration name="disp_date" path="disciplinary_action/reinstate_date/bad_date_action" values="single" type="string">
+        <value>The reinstatement date must be after the initial action date.</value>
+      </configuration>
+      <configuration name="disp_req" path="disciplinary_action/reinstate_date/required" values="single" type="string">
+        <value>Required Field</value>
+      </configuration>
+      <configuration name="disp_date" path="disciplinary_action/reinstate_date/bad_date_action" values="single" type="string">
+        <value>The Reinstatement Date should be after the Disciplinary Action Date.</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="en_US">
+      <configuration name="person_can_view_child_form_person_disciplinary_action" locale="en_US" values="single" type="string">
+        <value>Can view the disciplinary action form.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_disciplinary_action" locale="en_US" values="single" type="string">
+        <value>Can edit the disciplinary action form.</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_out_migration" locale="en_US" values="single" type="string">
+        <value>Can view the out migration form.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_out_migration" locale="en_US" values="single" type="string">
+        <value>Can edit the out migration form.</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_training" locale="en_US" values="single" type="string">
+        <value>Can view the training form.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_training" locale="en_US" values="single" type="string">
+        <value>Can edit the training form.</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_license" locale="en_US" values="single" type="string">
+        <value>Can view the license form.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_license" locale="en_US" values="single" type="string">
+        <value>Can edit the license form.</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_education" locale="en_US" values="single" type="string">
+        <value>Can view the education form.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_education" locale="en_US" values="single" type="string">
+        <value>Can edit the education form.</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_license" locale="en_US" values="single" type="string">
+        <value>Can view the person license form.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_license" locale="en_US" values="single" type="string">
+        <value>Can edit the person license form.</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_record_verify" locale="en_US" values="single" type="string">
+        <value>Can view the record verify form.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_record_verify" locale="en_US" values="single" type="string">
+        <value>Can edit the record verify form.</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_deployment" locale="en_US" values="single" type="string">
+        <value>Can view the deployment form.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_deployment" locale="en_US" values="single" type="string">
+        <value>Can edit the deployment form.</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="formsData" path="formsData/forms">
+      <configurationGroup name="exam_try">
+        <configurationGroup name="first">
+          <configuration name="fields" value="many" type="delimited" locale="en_US" values="single">
+            <value>name:First Try</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="retry">
+          <configuration name="fields" value="many" type="delimited" locale="en_US" values="single">
+            <value>name:Re-Try</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="final">
+          <configuration name="fields" value="many" type="delimited" locale="en_US" values="single">
+            <value>name:Final Try</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam_result">
+        <configurationGroup name="pass">
+          <configuration name="fields" value="many" type="delimited" locale="en_US" values="single">
+            <value>name:Pass</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="fail">
+          <configuration name="fields" value="many" type="delimited" locale="en_US" values="single">
+            <value>name:Fail</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="notake">
+          <configuration name="fields" value="many" type="delimited" locale="en_US" values="single">
+            <value>name:Did not sit for exam</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="registration_type">
+        <configurationGroup name="permanent">
+          <configuration name="fields" value="many" type="delimited" locale="en_US" values="single">
+            <value>name:Permanent</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="temporary">
+          <configuration name="fields" value="many" type="delimited" locale="en_US" values="single">
+            <value>name:Temporary</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="isco">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:ISCO Classification Code</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="qualification">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Minimum Qualification Required</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Certificate">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="academic_level">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Academic Level</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Deployment">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Health Facility</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="job_title">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Job/Post Title</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="job_code">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Job/Post Code</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="deployment_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Deployment Date</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_DisciplinaryAction">
+          <configurationGroup name="fields">
+            <configurationGroup name="disciplinary_action_reason">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Disciplinary Action Reason</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="action_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Date Disciplinary Action Occurred</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Notes</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="reinstate_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Reinstatement Date</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_DisciplinaryActionReason">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="disciplinary_action_category">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Disciplinary Action Category</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_SecondaryEducation">
+          <configurationGroup name="fields">
+            <configurationGroup name="sec_school">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Secondary School Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Certificate</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="grade">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Grade Obtained</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate_number">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Certificate Number</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Exam">
+          <configurationGroup name="fields">
+            <configurationGroup name="application_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Application Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="materials_received">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Materials Received?</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="materials_approved">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Materials Approved?</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="endorser_name">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Endorser Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="endorser_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Endorser Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="endorser_qualifications">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Endorser Qualifications</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Exam Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="try">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Exam Try</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Exam Results</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_number">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Exam Number</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_FacilityInstitution">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Health Facility</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Training Institution</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="active">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Active?</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_FacilityInstitutionEditFacility">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Health Facility</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Training Institution</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_FacilityInstitutionEditInstitution">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Health Facility</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Training Institution</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_HealthFacility">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="id_code">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Identification Code</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Location</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_agent">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Facility Agent</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_status">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Facility Status</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_InstitutionInspection">
+          <configurationGroup name="fields">
+            <configurationGroup name="date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Inspection Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Notes</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="pass">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Passed?</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_License">
+          <configurationGroup name="fields">
+            <configurationGroup name="license_number">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:License Number</value>
+                <value>generate:Generate this Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Start Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:End Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="suspend">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Suspended?</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_OutMigration">
+          <configurationGroup name="fields">
+            <configurationGroup name="country">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Country</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="new_address">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Address in new Country</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_migration_reason">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Out Migration Reason</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="organization">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Organization Requesting Verification</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="request_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Request Date</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_PrivatePractice">
+          <configurationGroup name="fields">
+            <configurationGroup name="license_number">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:License Number</value>
+                <value>generate:Generate this Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Start Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:End Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="inspection_results">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Inspection Results</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="inspection_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Inspection Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Health Facility</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_QualifyDemographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="birth_location">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Birth Location</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_QualifyPerson">
+          <configurationGroup name="fields">
+            <configurationGroup name="home">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Home</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Registration">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Registration Number</value>
+                <value>generate:Generate this Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="application_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Application Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Registration Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="practice_type">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Practice Type</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_TrainingDisruptionReason">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Name</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_disruption_category">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Training Disruption Category</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_TrainingDisrupt">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_reason">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Disruption Reason</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="disruption_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Disruption Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="resumption_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Resumption Date</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_QualifyTrainingInstitution">
+          <configurationGroup name="fields">
+            <configurationGroup name="id_code">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Identification Code</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_agent">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Facility Agent</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_status">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Facility Status</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Training">
+          <configurationGroup name="fields">
+            <configurationGroup name="index_num">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Index Number</value>
+                <value>generate:Generate next Index Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Cadre</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Intake Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="graduation">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Graduation Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="trained_outside">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Trained Outside this Country</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_program">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Training Program</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Training Institution</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="in_cadre">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Cadre</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_country">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Country Trained in</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_institution">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Training Institution</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_cadre">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Cadre</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_TrainingProgram">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Training Institution</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Cadre</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Start Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:End Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="num_students">
+              <configuration name="headers" type="delimited" locale="en_US" values="single">
+                <value>default:Number of Students</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="forms">
+        <configurationGroup name="academic_level">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Academic Level</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="disciplinary_action_category">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Disciplinary Action Category</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_agent">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Facility Agent</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_status">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Facility Status</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="out_migration_reason">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Out Migration Reason</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_disruption_category">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Training Disruption Category</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="qualification">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Qualification</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Cadre</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="certificate">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Certificate</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="disciplinary_action_reason">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Disciplinary Action Reason</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_disruption_reason">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Training Disruption Reason</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="health_facility">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Health Facility</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_program">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Training Program</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="institution_inspection">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Institution Inspection</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_institution">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Facility Institution</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_institution_edit_fac">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Edit Facility to Link Facilities with Institutions</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_institution_edit_inst">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Edit Institution to Link Facilities and Institutions</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Person</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="education">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Education History</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Training</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_disrupt">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Training Disruption</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_try">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Exam Try</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_result">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Exam Result</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Exam</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="registration_type">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Registration Type</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Registration</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="license">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>License</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="private_practice">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Private Practice License</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="deployment">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Deployment</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="out_migration">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Out Migration</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="disciplinary_action">
+          <configuration name="display" values="single" locale="en_US" type="string">
+            <value>Disciplinary Action</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="roles" path="/I2CE/formsData/forms/role">
+      <configurationGroup name="manager">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="en_US" type="string">
+            <value>Data Operations Manager</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="registration">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="en_US" type="string">
+            <value>Registration Supervisor</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="records">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="en_US" type="string">
+            <value>Records Officer</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="decision_maker">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="en_US" type="string">
+            <value>Decision Maker</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="continuing_education">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Continuing Education Information</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="deployment">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Deployment</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="disciplinary_action">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Disciplinary Action</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="disciplinary_reinstate">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Reinstate License after Disciplinary Action</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="education">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Education Information</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Exam Information</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="facility_institution">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Health Facility / Training Institution</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="graduate">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add Graduation Date</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="history">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>View History</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="history_training">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>View History</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="institution_inspection">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Training Institution Inspection</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="license">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update License Information</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="out_migration">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Out Migration Information</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="private_practice">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Private Practice License Information</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="registration">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Registration Information</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="renew">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Renew License Information</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_disrupt">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Training Disruption</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Training</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_program">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Add/Update Training Program</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_resume">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>Resume Training Disruption</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="view_training">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US" type="string">
+            <value>View Training</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="search_reports" path="/modules/CustomReports/search_reports">
+      <configuration name="search_people" values="many" type="delimited" locale="en_US">
+        <value>name:Search People</value>
+        <value>description:Locate any person's record in the system to review, print or update.</value>
+      </configuration>
+      <configuration name="search_training" values="many" type="delimited" locale="en_US">
+        <value>name:Search Trainings</value>
+        <value>description:Locate any person's record in the system by training information. A person may appear multiple times if they have multiple trainings.</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="recent_forms" path="/modules/RecentForm/forms">
+      <configurationGroup name="training">
+        <configuration name="display" values="single" locale="en_US" type="string">
+          <value>Index Number: %1$s - Cadre: %2$s - Intake Date: %3$s</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

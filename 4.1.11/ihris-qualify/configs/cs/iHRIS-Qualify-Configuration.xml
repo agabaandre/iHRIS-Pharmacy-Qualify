@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify" path="/I2CE" locale="cs">
+    <version>4.1.9.0.1</version>
+    <configurationGroup name="invalid_formfield_message" path="/modules/forms/formfield_messages" locale="cs">
+      <configuration name="training_disrupt" path="training_disrupt/disruption_date/bad_date">
+        <value>Datum přerušení musí být po datu přijetí k výuce.</value>
+      </configuration>
+      <configuration name="training_resume" path="training_disrupt/resumption_date/required">
+        <value>Povinné pole</value>
+      </configuration>
+      <configuration name="training_resume" path="training_disrupt/resumption_date/bad_date">
+        <value>Datum pokračování musí být po datu přerušení.</value>
+      </configuration>
+      <configuration name="license_date" path="license/end_date/bad_date">
+        <value>Konečné datum musí být po počátečním.</value>
+      </configuration>
+      <configuration name="registration_date" path="registration/registration_date/bad_date">
+        <value>Datum zápisu musí být po datu přihlášky.</value>
+      </configuration>
+      <configuration name="exam_date" path="exam/exam_date/bad_date">
+        <value>Datum zkoušky musí být po datu přihlášky.</value>
+      </configuration>
+      <configuration name="training_program" path="training/training_program/bad_cadre">
+        <value>Musíte zvolit kádr z Vyučen v zemi a Vyučen mimo zemi</value>
+      </configuration>
+      <configuration name="training_out_country" path="training/out_country/bad_country">
+        <value>Musíte vybrat zemi, kde proběhlo školení.</value>
+      </configuration>
+      <configuration name="training_graduation_req" path="training/graduation/required_out">
+        <value>Toto pole je vyžadováno, když jste zvolili výuku mimo zemi.</value>
+      </configuration>
+      <configuration name="training_graduation_date" path="training/graduation/bad_date">
+        <value>Datum promoce musí být po datu přijetí.</value>
+      </configuration>
+      <configuration name="pp_date" path="private_practice/end_date/bad_date">
+        <value>Konečné datum musí být po počátečním.</value>
+      </configuration>
+      <configuration name="disp_date" path="disciplinary_action/reinstate_date/bad_date_action">
+        <value>Datum návratu musí být po datu počáteční činnosti.</value>
+      </configuration>
+      <configuration name="disp_req" path="disciplinary_action/reinstate_date/required">
+        <value>Povinné pole</value>
+      </configuration>
+      <configuration name="disp_date" path="disciplinary_action/reinstate_date/bad_date_action">
+        <value>Datum návratu by mělo být po datu disciplinárního řízení.</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="cs">
+      <configuration name="person_can_view_child_form_person_disciplinary_action" locale="cs">
+        <value>Může zobrazit formulář disciplinárního řízení.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_disciplinary_action" locale="cs"></configuration>
+      <configuration name="person_can_view_child_form_out_migration" locale="cs">
+        <value>Může zobrazit formulář migrace ven.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_out_migration" locale="cs"></configuration>
+      <configuration name="person_can_view_child_form_training" locale="cs">
+        <value>Může zobrazit formulář výuky.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_training" locale="cs"></configuration>
+      <configuration name="person_can_view_child_form_license" locale="cs">
+        <value>Může zobrazit formulář licence.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_license" locale="cs"></configuration>
+      <configuration name="person_can_view_child_form_education" locale="cs">
+        <value>Může zobrazit formulář vzdělání.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_education" locale="cs"></configuration>
+      <configuration name="person_can_view_child_form_person_license" locale="cs">
+        <value>Může zobrazit formulář osobní licence.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_license" locale="cs"></configuration>
+      <configuration name="person_can_view_child_form_record_verify" locale="cs">
+        <value>Může zobrazit formulář ověření záznamu.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_record_verify" locale="cs"></configuration>
+      <configuration name="person_can_view_child_form_deployment" locale="cs">
+        <value>Může zobrazit formulář nasazení.</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_deployment" locale="cs"></configuration>
+    </configurationGroup>
+    <configurationGroup name="formsData" path="formsData/forms">
+      <configurationGroup name="exam_try">
+        <configurationGroup name="first">
+          <configuration name="fields" value="many" type="delimited" locale="cs">
+            <value>name:První pokus</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="retry">
+          <configuration name="fields" value="many" type="delimited" locale="cs">
+            <value>name:Opakovat</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="final">
+          <configuration name="fields" value="many" type="delimited" locale="cs">
+            <value>name:Závěrečný pokus</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam_result">
+        <configurationGroup name="pass">
+          <configuration name="fields" value="many" type="delimited" locale="cs">
+            <value>name:Úspěšný</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="fail">
+          <configuration name="fields" value="many" type="delimited" locale="cs">
+            <value>name:Neúspěšný</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="notake">
+          <configuration name="fields" value="many" type="delimited" locale="cs">
+            <value>name:Nedostavil(a) se na zkoušku</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="registration_type">
+        <configurationGroup name="permanent">
+          <configuration name="fields" value="many" type="delimited" locale="cs">
+            <value>name:Trvalé</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="temporary">
+          <configuration name="fields" value="many" type="delimited" locale="cs">
+            <value>name:Dočasné</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Jméno</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="isco">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Klasifikační kód ISCO</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="qualification">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Požadovaná minimální kvalifikace</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Certificate">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Jméno</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="academic_level">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Akademická úroveň</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Deployment">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Zdravotnícké zařízení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="job_title">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Název práce/pozice</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="job_code">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kód práce/pozice</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="deployment_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum nasazení</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_DisciplinaryAction">
+          <configurationGroup name="fields">
+            <configurationGroup name="disciplinary_action_reason">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Důvod disciplinárního řízení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="action_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum, kdy bylo zaznamenáno disciplinární opatření</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Poznámky</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="reinstate_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum návratu</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_DisciplinaryActionReason">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Jméno</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="disciplinary_action_category">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kategorie disciplinárního řízení</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_SecondaryEducation">
+          <configurationGroup name="fields">
+            <configurationGroup name="sec_school">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Druhotný název školy</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Certifikát</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="grade">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Obdržená známka</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate_number">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Číslo certifikátu</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Exam">
+          <configurationGroup name="fields">
+            <configurationGroup name="application_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum podání žádosti</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="materials_received">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Obdržené materiály?</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="materials_approved">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Materiály schváleny?</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="endorser_name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Jméno převodc</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="endorser_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum převodce</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="endorser_qualifications">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kvalifikace převodce</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum zkoušky</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="try">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Pokus zkoušky</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Výsledek zkoušky</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_number">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Číslo zkoušky</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_FacilityInstitution">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Zdravotnícké zařízení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Učiliště</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="active">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Aktivní?</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_FacilityInstitutionEditFacility">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Zdravotnícké zařízení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Učiliště</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_FacilityInstitutionEditInstitution">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Zdravotnícké zařízení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Učiliště</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_HealthFacility">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Jméno</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="id_code">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Identifikační kód</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Umístění</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_agent">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Zástupce zařízení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_status">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Stav zařízení</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_InstitutionInspection">
+          <configurationGroup name="fields">
+            <configurationGroup name="date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum kontroly</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Poznámky</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="pass">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Prošel?</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_License">
+          <configurationGroup name="fields">
+            <configurationGroup name="license_number">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Číslo licence</value>
+                <value>generate:Vytvořit toto číslo</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum zahájení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum ukončení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="suspend">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Pozastaveno?</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_OutMigration">
+          <configurationGroup name="fields">
+            <configurationGroup name="country">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Země</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="new_address">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Adresa v nové zemi</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_migration_reason">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Důvod migrace ven</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="organization">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Orginazicae požadující ověření</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="request_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum žádosti</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_PrivatePractice">
+          <configurationGroup name="fields">
+            <configurationGroup name="license_number">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Číslo licence</value>
+                <value>generate:Vytvořit toto číslo</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum zahájení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum ukončení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="inspection_results">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Výsledky kontroly</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="inspection_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum kontroly</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Zdravotnícké zařízení</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_QualifyDemographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="birth_location">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Místo narození</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_QualifyPerson">
+          <configurationGroup name="fields">
+            <configurationGroup name="home">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Domů</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Registration">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Registrační číslo</value>
+                <value>generate:Vytvořit toto číslo</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="application_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum podání žádosti</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum registrace</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="practice_type">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Typ praxe</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_TrainingDisruptionReason">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Jméno</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_disruption_category">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kategorie přerušení výuky</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_TrainingDisrupt">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_reason">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Důvod přerušení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="disruption_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum přerušení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="resumption_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum obnovení</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_QualifyTrainingInstitution">
+          <configurationGroup name="fields">
+            <configurationGroup name="id_code">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Identifikační kód</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_agent">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Zástupce zařízení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_status">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Stav zařízení</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Training">
+          <configurationGroup name="fields">
+            <configurationGroup name="index_num">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Číslo rejstříku</value>
+                <value>generate:Vytvořit další číslo rejstříku</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kádr</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum přijetí</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="graduation">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum ukončení studia</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="trained_outside">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Vyučen mimo tuto zem</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_program">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Výukový program</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Učiliště</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="in_cadre">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kádr</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_country">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Země v které byl vyučen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_institution">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Učiliště</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="out_cadre">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kádr</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_TrainingProgram">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Učiliště</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kádr</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum zahájení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum ukončení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="num_students">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Počet studentů</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="forms">
+        <configurationGroup name="academic_level">
+          <configuration name="display" values="single" locale="cs">
+            <value>Akademická úroveň</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="disciplinary_action_category">
+          <configuration name="display" values="single" locale="cs">
+            <value>Kategorie disciplinárního řízení</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_agent">
+          <configuration name="display" values="single" locale="cs">
+            <value>Zástupce zařízení</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_status">
+          <configuration name="display" values="single" locale="cs">
+            <value>Stav zařízení</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="out_migration_reason">
+          <configuration name="display" values="single" locale="cs">
+            <value>Důvod migrace ven</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_disruption_category">
+          <configuration name="display" values="single" locale="cs">
+            <value>Kategorie přerušení výuky</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="qualification">
+          <configuration name="display" values="single" locale="cs">
+            <value>Kvalifikace</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configuration name="display" values="single" locale="cs">
+            <value>Kádr</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="certificate">
+          <configuration name="display" values="single" locale="cs">
+            <value>Certifikát</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="disciplinary_action_reason">
+          <configuration name="display" values="single" locale="cs">
+            <value>Důvod disciplinárního řízení</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_disruption_reason">
+          <configuration name="display" values="single" locale="cs">
+            <value>Důvod přerušení výuky</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="health_facility">
+          <configuration name="display" values="single" locale="cs">
+            <value>Zdravotnícké zařízení</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_program">
+          <configuration name="display" values="single" locale="cs">
+            <value>Výukový program</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="institution_inspection">
+          <configuration name="display" values="single" locale="cs">
+            <value>Kontrola instituce</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_institution">
+          <configuration name="display" values="single" locale="cs">
+            <value>Zařízení instituce</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_institution_edit_fac">
+          <configuration name="display" values="single" locale="cs"></configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_institution_edit_inst">
+          <configuration name="display" values="single" locale="cs"></configuration>
+        </configurationGroup>
+        <configurationGroup name="person">
+          <configuration name="display" values="single" locale="cs">
+            <value>Osoba</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="education">
+          <configuration name="display" values="single" locale="cs">
+            <value>Historie vzdělání</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configuration name="display" values="single" locale="cs">
+            <value>Výuka</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_disrupt">
+          <configuration name="display" values="single" locale="cs">
+            <value>Přerušení školení</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_try">
+          <configuration name="display" values="single" locale="cs">
+            <value>Pokus zkoušky</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_result">
+          <configuration name="display" values="single" locale="cs">
+            <value>Výsledek zkoušky</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam">
+          <configuration name="display" values="single" locale="cs">
+            <value>Zkouška</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="registration_type">
+          <configuration name="display" values="single" locale="cs">
+            <value>Typ registrace</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configuration name="display" values="single" locale="cs">
+            <value>Registrace</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="license">
+          <configuration name="display" values="single" locale="cs">
+            <value>Licence</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="private_practice">
+          <configuration name="display" values="single" locale="cs">
+            <value>Licence soukromé praxe</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="deployment">
+          <configuration name="display" values="single" locale="cs">
+            <value>Nasazení</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="out_migration">
+          <configuration name="display" values="single" locale="cs">
+            <value>Migrace ven</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="disciplinary_action">
+          <configuration name="display" values="single" locale="cs">
+            <value>Disciplinární opatření</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="roles" path="/I2CE/formsData/forms/role">
+      <configurationGroup name="manager">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="cs">
+            <value>Správce datových operací</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="registration">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="cs">
+            <value>Vedoucí registrací</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="records">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="cs">
+            <value>Manažer záznamů</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="decision_maker">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="cs">
+            <value>Osoby s rozhodovací pravomocí</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="continuing_education">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/Aktualizovat Informace o dalším vzdělávání</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="deployment">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/Aktualizovat nasazení</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="disciplinary_action">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/Aktualizovat disciplinární řízení</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="disciplinary_reinstate">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Obnovit licenci po disciplinárním řízení</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="education">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/aktualizovat informace o vzdělání</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/aktualizovat informace o zkoušce</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="facility_institution">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Zdravotnické zařízení / Učiliště</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="graduate">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat datum ukončení výuky</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="history">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Zobrazit historii</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="history_training">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Zobrazit historii</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="institution_inspection">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/aktualizovat informace o kontrole učiliště</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="license">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/aktualizovat informace o licenci</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="out_migration">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/aktualizovat informace o migraci ven</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="private_practice">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/aktualizovat informace o licenci soukromé praxe</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="registration">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/aktualizovat informace o registraci</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="renew">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Informace o obnově licence</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_disrupt">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/aktualizovat přerušení výuky</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/aktualizovat výuky</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_program">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/aktualizovat výuokvý program</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_resume">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Pokračovat v přerušení výuky</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="view_training">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Zobrazit výuku</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="search_reports" path="/modules/CustomReports/search_reports">
+      <configuration name="search_people" values="many" type="delimited" locale="cs">
+        <value>name:Hledat lidi</value>
+        <value>description:Umístit jakýkoliv záznam osoby do systému pro kontrolu, tisk, nebo aktualizaci.</value>
+      </configuration>
+      <configuration name="search_training" values="many" type="delimited" locale="cs">
+        <value>name:Hledat výuky</value>
+        <value>description:Nalézt jakýkoliv záznam osoby v systému podle informací o výuce. Osoba se může objevit vícekrát, pokud má více výuk.</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="recent_forms" path="/modules/RecentForm/forms">
+      <configurationGroup name="training">
+        <configuration name="display" values="single" locale="cs">
+          <value>Číslo indexu: %1$s - Kádr: %2$s - Datum příjmu: %3$s</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,250 @@
+# French translation for ihris-qualify
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the ihris-qualify package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ihris-qualify\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-09-14 08:02+0000\n"
+"PO-Revision-Date: 2014-01-13 15:00+0000\n"
+"Last-Translator: Mohamed SEDKI <Unknown>\n"
+"Language-Team: French <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-04-16 05:48+0000\n"
+"X-Generator: Launchpad (build 17995)\n"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_thanks.html#L3 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_thanks.html line 3]
+#, no-c-format
+msgid "Thank you for your feedback."
+msgstr "Merci de votre feedback"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_thanks.html#L6 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_thanks.html line 6]
+#, no-c-format
+msgid "return"
+msgstr "retour"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/welcome.html#L10 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/welcome.html line 10]
+#, no-c-format
+msgid ""
+"To get started using iHRIS Qualify, please click one of the options below. "
+"Return to this page at any time by clicking the Home button in the bar "
+"above. If you need help with any function, click the Help button. We "
+"encourage you to send us any errors you find, suggestions for improvements "
+"or additional features, and any other feedback you may have about this "
+"software; contact us at any time by clicking the Feedback button or visiting "
+"the"
+msgstr ""
+"Pour commencer à utiliser iHRIS Qualify, cliquez s'il vous plaît sur l'une "
+"des options ci-dessous. Retourner à cette page à tout moment en cliquant sur "
+"le bouton Accueil dans la barre ci-dessus. Si vous avez besoin d'aide avec "
+"n'importe quelle fonction, cliquez sur le bouton Aide. Nous vous "
+"encourageons à nous envoyer toutes les erreurs que vous trouvez, suggestions "
+"pour des améliorations ou des fonctionnalités supplémentaires, et tous les "
+"autres commentaires que vous pourriez avoir au sujet de ce logiciel; "
+"contactez nous à tout moment en cliquant sur le bouton d'évaluation ou en "
+"visitant le"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/welcome.html#L11 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/welcome.html line 11]
+#, no-c-format
+msgid "HRIS Strengthening Website"
+msgstr "Site web du renforcement des SIRH"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/intro.html#L3 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/intro.html line 3]
+#, no-c-format
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L7 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 7]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L32 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 32]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/intro.html#L5 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/intro.html line 5]
+#, no-c-format
+msgid "iHRIS Qualify"
+msgstr "iHRIS Qualify"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/intro.html#L8 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/intro.html line 8]
+#, no-c-format
+msgid ""
+"is a health worker training, licensing and certification tracking system. "
+"The system enables a licensing or certification authority for a health "
+"worker cadre, such as nurses or physicians, to track data on the complete "
+"cadre in a country from pre-service training through attrition. iHRIS "
+"Qualify is a free, Open Source software solution developed by"
+msgstr ""
+"est un système de suivi de formation, d’accréditation et de certification "
+"pour le personnel de la santé. Le système permet la création d'une autorité "
+"de certification pour un cadre du domaine de la santé, comme pour une "
+"infirmière ou un médecin, et lui permet de suivre les données complètes dans "
+"un cadre national, de la pré-formation jusqu'à la retraite. iHRIS Qualify "
+"est un logiciel gratuit et une solution de Open Source Software développé par"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/intro.html#L8 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/intro.html line 8]
+#, no-c-format
+msgid "The Capacity Project"
+msgstr "Le projet Capacity"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/intro.html#L10 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/intro.html line 10]
+#, no-c-format
+msgid ""
+"an innovative global initiative to help developing countries build and "
+"sustain the health workforce."
+msgstr ""
+"une initiative innovatrice et mondial pour aider les pays en voie de "
+"développement à développer et gérer leurs personnels du domaine de la santé."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L6 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 6]
+#, no-c-format
+msgid ""
+"If you have a bug report, problem with the page, feature request or "
+"question, please contact us by filling out and submitting the following "
+"form. Your comments and email address will be kept private in accordance "
+"with the Capacity Project's"
+msgstr ""
+"Si vous souhaiter signalez un bug, un problème, adresser une demande de "
+"fonctionnalité ou une question, veuillez nous contacter en remplissant et en "
+"soumettant le formulaire suivant. Vos commentaires et adresse électronique "
+"seront tenus confidentiels conformément à l’éthique du Capacity Project"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L6 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 6]
+#, no-c-format
+msgid "privacy policy"
+msgstr "politique de confidentialité"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L10 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 10]
+#, no-c-format
+msgid ""
+". We will use your email address only to reply to your request. You may also "
+"contact us by emailing us directly at"
+msgstr ""
+". Nous utiliserons votre adresse email uniquement pour répondre à votre "
+"requête. Vous pouvez également nous contacter directement par email à"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L14 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 14]
+#, no-c-format
+msgid "Site Feedback Form"
+msgstr "Formulaire de commentaires sur le site"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L21 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 21]
+#, no-c-format
+msgid "Comments"
+msgstr "Commentaires"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L26 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 26]
+#, no-c-format
+msgid "Name"
+msgstr "Nom"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L31 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 31]
+#, no-c-format
+msgid "Company"
+msgstr "Entreprise"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L36 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 36]
+#, no-c-format
+msgid "Title"
+msgstr "Titre"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L41 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 41]
+#, no-c-format
+msgid "Industry"
+msgstr "Secteur d’activité"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L45 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 45]
+#, no-c-format
+msgid "Address"
+msgstr "Adresse"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L50 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 50]
+#, no-c-format
+msgid "City"
+msgstr "Ville"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L55 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 55]
+#, no-c-format
+msgid "State/Province"
+msgstr "Etat/Province"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L60 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 60]
+#, no-c-format
+msgid "Postal Code"
+msgstr "Code postal"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L65 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 65]
+#, no-c-format
+msgid "Country"
+msgstr "Pays"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L70 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 70]
+#, no-c-format
+msgid "Telephone"
+msgstr "Téléphone"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L75 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 75]
+#, no-c-format
+msgid "Fax"
+msgstr "Fax"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html#L80 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/feedback_form.html line 80]
+#, no-c-format
+msgid "Email"
+msgstr "E-mail"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/configs/en_US/iHRIS-Qualify-Demo.xml#L11 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/configs/en_US/iHRIS-Qualify-Demo.xml line 11]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/configs/en_US/iHRIS-Qualify-Demo.xml#L17 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/configs/en_US/iHRIS-Qualify-Demo.xml line 17]
+#, no-c-format
+msgid "iHRIS Qualify Demo"
+msgstr "Démo iHRIS Qualify"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/welcome.html#L3 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/welcome.html line 3]
+#, no-c-format
+msgid "Welcome, %s"
+msgstr "Bienvenue, %s"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L33 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 33]
+#, no-c-format
+msgid "Demonstration Site"
+msgstr "Site de démonstration"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L39 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 39]
+#, no-c-format
+msgid "Home"
+msgstr "Accueil"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L41 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 41]
+#, no-c-format
+msgid "Help"
+msgstr "Aide"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L43 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 43]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L44 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 44]
+#, no-c-format
+msgid "Feedback"
+msgstr "Feedback"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L45 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 45]
+#, no-c-format
+msgid "iHRIS Website"
+msgstr "Site Web iHRIS"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L48 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 48]
+#, no-c-format
+msgid "Log out as %s"
+msgstr "Se déconnecter en tant que %s"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L72 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 72]
+#, no-c-format
+msgid "iHRIS Qualify Version"
+msgstr "iHRIS Qualify Version"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L38 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 38]
+#, no-c-format
+msgid "Menu"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html#L51 ihris-qualify/4.0-dev/annotate/head%3A/sites/Demo/templates/en_US/main.html line 51]
+#, no-c-format
+msgid "Log In"
+msgstr ""

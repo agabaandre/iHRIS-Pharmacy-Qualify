@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-search-training">
+  <metadata>
+    <displayName>Search Training Report View</displayName>
+    <description>The report view for searching trainings.</description>
+    <version>4.2.2.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <requirement name="ihris-qualify-CustomReports-training">
+      <atLeast version="4.0" />
+    </requirement>
+  </metadata>
+  <erase path="/modules/CustomReports/reportViews/search_training">
+    <lessThan version="3.3.4" />
+  </erase>
+  <configurationGroup name="ihris-qualify-CustomReports-search-training" path="//modules/CustomReports/reportViews/search_training">
+    <displayName>Search Training Report View</displayName>
+    <version>3.3.4</version>
+    <configuration name="report">
+      <displayName>Report</displayName>
+      <value>training</value>
+    </configuration>
+    <configuration name="description" locale="en_US">
+      <displayName>Description</displayName>
+      <value>Search based on training information.</value>
+    </configuration>
+    <configuration name="display_name" locale="en_US">
+      <displayName>Display Name</displayName>
+      <value>Search Training</value>
+    </configuration>
+    <configurationGroup name="fields">
+      <displayName>Fields</displayName>
+      <configurationGroup name="primary_form+index_num">
+        <displayName>Primary Form Index Num</displayName>
+        <configuration name="enabled">
+          <displayName>Enabled</displayName>
+          <value>1</value>
+        </configuration>
+        <configuration name="aggregate">
+          <displayName>Aggregate</displayName>
+          <value>none</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="primary_form+intake_date">
+        <displayName>Primary Form Intake Date</displayName>
+        <configuration name="enabled">
+          <displayName>Enabled</displayName>
+          <value>1</value>
+        </configuration>
+        <configuration name="aggregate">
+          <displayName>Aggregate</displayName>
+          <value>none</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="license+license_number">
+        <displayName>License License Number</displayName>
+        <configuration name="enabled">
+          <displayName>Enabled</displayName>
+          <value>1</value>
+        </configuration>
+        <configuration name="aggregate">
+          <displayName>Aggregate</displayName>
+          <value>none</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="license+end_date">
+        <displayName>License End Date</displayName>
+        <configuration name="enabled">
+          <displayName>Enabled</displayName>
+          <value>1</value>
+        </configuration>
+        <configuration name="aggregate">
+          <displayName>Aggregate</displayName>
+          <value>none</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="registration+registration_number">
+        <displayName>Registration Registration Number</displayName>
+        <configuration name="enabled">
+          <displayName>Enabled</displayName>
+          <value>1</value>
+        </configuration>
+        <configuration name="aggregate">
+          <displayName>Aggregate</displayName>
+          <value>none</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="cadre+name">
+        <displayName>Cadre Name</displayName>
+        <configuration name="enabled">
+          <displayName>Enabled</displayName>
+          <value>1</value>
+        </configuration>
+        <configuration name="aggregate">
+          <displayName>Aggregate</displayName>
+          <value>none</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="person+surname">
+        <displayName>Person Surname</displayName>
+        <configuration name="enabled">
+          <displayName>Enabled</displayName>
+          <value>1</value>
+        </configuration>
+        <configuration name="aggregate">
+          <displayName>Aggregate</displayName>
+          <value>none</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="person+firstname">
+        <displayName>Person Firstname</displayName>
+        <configuration name="enabled">
+          <displayName>Enabled</displayName>
+          <value>1</value>
+        </configuration>
+        <configuration name="aggregate">
+          <displayName>Aggregate</displayName>
+          <value>none</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="person+othername">
+        <displayName>Person Othername</displayName>
+        <configuration name="enabled">
+          <displayName>Enabled</displayName>
+          <value>1</value>
+        </configuration>
+        <configuration name="aggregate">
+          <displayName>Aggregate</displayName>
+          <value>none</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configuration name="total">
+      <displayName>Total</displayName>
+      <value>0</value>
+    </configuration>
+    <configuration name="display_order">
+      <displayName>Display Order</displayName>
+      <value>person+surname,person+firstname,person+othername,cadre+name,primary_form+index_num,primary_form+intake_date,primary_form+cadre,registration+registration_number,license+license_number,license+end_date</value>
+    </configuration>
+  </configurationGroup>
+</I2CEConfiguration>

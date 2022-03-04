@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-PrintedForms-license">
+  <metadata>
+    <displayName>iHRIS Qualify Printed Forms: License</displayName>
+    <category>Application Option</category>
+    <description>The Qualify Printed Forms: License</description>
+    <version>4.2.2.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <requirement name="ihris-qualify-PrintedForms">
+      <atLeast version="4.1" />
+      <lessThan version="4.4" />
+    </requirement>
+    <path name="pdf_images">
+      <value>./pdf_images</value>
+    </path>
+  </metadata>
+  <configurationGroup name="ihris-qualify-PrintedForms-license" path="/modules/PrintedForms/forms/license">
+    <displayName>iHRIS Qualify Printed Forms: Registration</displayName>
+    <configuration name="relationship">
+      <value>license</value>
+    </configuration>
+    <configuration name="displayName" locale="en_US">
+      <value>License Card</value>
+    </configuration>
+    <configuration name="archive">
+      <value>training</value>
+    </configuration>
+    <configuration name="layout_details" type="delimited">
+      <value>cols:1</value>
+      <value>rows:1</value>
+      <value>orientation:L</value>
+    </configuration>
+    <configurationGroup name="elements">
+      <configurationGroup name="0">
+        <configuration name="type">
+          <value>image</value>
+        </configuration>
+        <configuration name="definition" type="delimited">
+          <value>image:QualifyLicenseCard.jpg</value>
+          <value>horiz_min:0</value>
+          <value>vert_min:0</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="1">
+        <configuration name="type">
+          <value>text</value>
+        </configuration>
+        <configuration name="text_properties" type="delimited">
+          <value>size:16</value>
+        </configuration>
+        <configuration name="definition" type="delimited">
+          <version>4.0.5.2</version>
+          <value>horiz_min:26</value>
+          <value>vert_min:35</value>
+        </configuration>
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s, %s %s</value>
+        </configuration>
+        <configuration name="printf_args" path="definition/printf_args" type="delimited">
+          <value>0:person+surname</value>
+          <value>1:person+firstname</value>
+          <value>2:person+othername</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="2">
+        <configuration name="type">
+          <value>text</value>
+        </configuration>
+        <configuration name="text_properties" type="delimited">
+          <version>4.0.5.2</version>
+          <value>size:18</value>
+          <value>style:BU</value>
+        </configuration>
+        <configuration name="definition" type="delimited">
+          <version>4.0.5.2</version>
+          <value>horiz_min:30</value>
+          <value>vert_min:25</value>
+        </configuration>
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s</value>
+        </configuration>
+        <configuration name="printf_args" path="definition/printf_args" type="delimited">
+          <value>0:cadre+name</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="3">
+        <configuration name="type">
+          <value>text</value>
+        </configuration>
+        <configuration name="text_properties" type="delimited">
+          <value>size:16</value>
+        </configuration>
+        <configuration name="definition" type="delimited">
+          <version>4.0.5.5</version>
+          <value>horiz_min:45</value>
+          <value>vert_min:50</value>
+        </configuration>
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s</value>
+        </configuration>
+        <configuration name="printf_args" path="definition/printf_args" type="delimited">
+          <value>0:license+license_number</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="4">
+        <configuration name="type">
+          <value>text</value>
+        </configuration>
+        <configuration name="text_properties" type="delimited">
+          <value>size:16</value>
+        </configuration>
+        <configuration name="definition" type="delimited">
+          <version>4.0.5.5</version>
+          <value>horiz_min:45</value>
+          <value>vert_min:58</value>
+        </configuration>
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s</value>
+        </configuration>
+        <configuration name="printf_args" path="definition/printf_args" type="delimited">
+          <value>0:license+start_date</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="5">
+        <configuration name="type">
+          <value>text</value>
+        </configuration>
+        <configuration name="text_properties" type="delimited">
+          <value>size:16</value>
+        </configuration>
+        <configuration name="definition" type="delimited">
+          <version>4.0.5.5</version>
+          <value>horiz_min:45</value>
+          <value>vert_min:65</value>
+        </configuration>
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s</value>
+        </configuration>
+        <configuration name="printf_args" path="definition/printf_args" type="delimited">
+          <value>0:license+end_date</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="6">
+        <version>4.0.5.3</version>
+        <configuration name="type">
+          <value>text</value>
+        </configuration>
+        <configuration name="text_properties" type="delimited">
+          <value>size:16</value>
+        </configuration>
+        <configuration name="definition" type="delimited">
+          <version>4.0.5.4</version>
+          <value>horiz_min:55</value>
+          <value>vert_min:73</value>
+        </configuration>
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s</value>
+        </configuration>
+        <configuration name="printf_args" path="definition/printf_args" type="delimited">
+          <value>0:registration+registration_number</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="7">
+        <version>4.0.5.3</version>
+        <configuration name="type">
+          <value>text</value>
+        </configuration>
+        <configuration name="text_properties" type="delimited">
+          <value>size:16</value>
+        </configuration>
+        <configuration name="definition" type="delimited">
+          <version>4.0.5.4</version>
+          <value>horiz_min:60</value>
+          <value>vert_min:81</value>
+        </configuration>
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s</value>
+        </configuration>
+        <configuration name="printf_args" path="definition/printf_args" type="delimited">
+          <value>0:registration+registration_date</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <!-- elements -->
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,38 @@
+<div id="list_display">
+	
+	<div class="editRecord">
+	<p>Edit This Information</p>
+		<ul>
+			<li role='manager'><span type="form" name="health_facility:id" href="lists?type=health_facility&amp;id=" >Update this Information</span></li>
+			<li role='manager'><a href="lists?type=health_facility">Select another Health Facility</a></li>
+			<li role='manager'><span type="form" name="health_facility:id" href="facility_institution?health_facility=" >Update Associated Training Institutions</span></li>
+		</ul>
+	</div> <!-- editRecord -->
+	
+	<div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0">
+		<tbody id="health_facility">
+		<tr>
+			<th colspan="2">Health Facility</th>
+		</tr>
+		<span type="form" name="health_facility:name" showhead="default"></span>
+	   	<span type="form" name="health_facility:id_code" showhead="default" class="even"></span>
+	   	<span type="form" name="health_facility:facility_type" showhead="default"></span>
+	   	<span type="form" name="health_facility:facility_agent" showhead="default" class="even"></span>
+	   	<span type="form" name="health_facility:location" showhead="default"></span>
+	   	<span type="form" name="health_facility:facility_status" showhead="default" class="even"></span>
+	   	</tbody>
+
+        <tbody id="facility_contact" />
+        <tbody id="training_institution">
+	   	<tr>
+	   		<th colspan="2">Associated Training Institutions</th>
+	   	</tr>
+	   	</tbody>
+
+	   	
+
+	</table>
+	</div> <!-- dataTable -->
+	
+</div> <!-- list_display -->

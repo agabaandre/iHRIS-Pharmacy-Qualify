@@ -1,0 +1,51 @@
+<div id="siteContent">
+<br style="clear: both;"><div role="records">
+<h2><a href="person" class="updateRecords">Persoon toevoegen</a></h2>
+<p>
+Voeg een nieuwe kaart toe voor een studen of een gezondheidswerker. Werk contactgegevens en persoonlijke gegevens bij voor een kaart. Voeg gegevens toe over opleidingsprogramma's die op dit moment worden gevolgd of die zijn afgerond. Neem afgenomen examens en examenresultaten op. Geef een registratie, licenties en vernieuwde licenties af. Leg licenties voor particuliere praktijken vast, als ook gegevens over migratieverificatieverzoeken, disciplinaire maatregelen en inzet.
+</p>
+
+<hr></div>
+
+<span type="module" name="SelfService" ifenabled="true" task="can_view_own_personnel">
+  <span type="module" name="SelfService" if="!userHasRecord()">
+    
+  </span>
+  <span type="module" name="SelfService" if="userHasRecord()">
+    <h2><span type="module" name="SelfService" call="linkToPersonRecord('view?id=')">Uw record bekijken</span></h2>
+    <p>
+      Uw eigen gegevens bekijken.
+    </p>
+  </span>
+</span>
+
+<div task="custom_reports_can_access">
+<h2><a href="search" class="searchRecords">Gegevens doorzoeken</a></h2>
+<p>
+De gegevens van personen vinden om ze te bekijken, af te drukken of bij te werken.
+</p>
+</div>
+
+
+<span type="module" name="CustomReports" ifenabled="true">
+  <div role="manager|decision_maker">
+    <hr><h2><a href="CustomReports/view/reportViews" class="createRecords">Rapporten weergeven</a></h2>
+    <p>
+      Maakt de analyse van personeelsgegevens op verschillende wijzen mogelijk. U kunt lijsten van gezondheidswerker of studenten aanpassen, weergeven en afdrukken, en u hebt toegang tot statistische grafieken en andere standaard rapportages. De toegang is beperkt tot de rollen databeheerders en beslissers.
+    </p>
+  </div>
+</span>
+
+
+<div role="manager">
+<hr><h2><a href="configure" class="adminDatabase">Systeeminstellingen</a></h2>
+<p>
+Modules instellen, de database beheren en gebruikers aanmaken of bijwerken.
+</p>
+</div>
+
+
+
+<hr><h2><a href="password">Wachtwoord wijzigen</a></h2>
+
+</div>

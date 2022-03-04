@@ -1,0 +1,51 @@
+<div id="siteContent">
+<br style="clear: both;"><div role="records">
+<h2><a href="person" class="updateRecords">Ajouter une personne</a></h2>
+<p>
+Ajouter un nouvel enregistrement pour un étudiant ou un professionnel de la santé. Pour un enregistrement, mise à jour de contact et des renseignements personnels; ajouter des détails des programmes de formation en cours ou achevés; enregistrement  des examens d'applications et des résultats; des enregistrements, les licences et les renouvellements de licence; inscrire les licences pratique privée, les demandes de vérification de migration, les mesures disciplinaires et les déploiements.
+</p>
+
+<hr></div>
+
+<span type="module" name="SelfService" ifenabled="true" task="can_view_own_personnel">
+  <span type="module" name="SelfService" if="!userHasRecord()">
+    
+  </span>
+  <span type="module" name="SelfService" if="userHasRecord()">
+    <h2><span type="module" name="SelfService" call="linkToPersonRecord('view?id=')">Afficher votre enregistrement</span></h2>
+    <p>
+      Afficher vos détails personnels.
+    </p>
+  </span>
+</span>
+
+<div task="custom_reports_can_access">
+<h2><a href="search" class="searchRecords">Rechercher des enregistrements</a></h2>
+<p>
+Trouver n'importe quelles données d'une personne dans le système pour les revoir, les imprimer ou les mettre à jour.
+</p>
+</div>
+
+
+<span type="module" name="CustomReports" ifenabled="true">
+  <div role="manager|decision_maker">
+    <hr><h2><a href="CustomReports/view/reportViews" class="createRecords">Afficher les rapports</a></h2>
+    <p>
+      Rapports permet l'analyse des données de ressources humaines de différentes manières. Personnaliser l'affichage et imprimer des listes d'agents de santé ou des étudiants, des tableaux statistiques et d'autres rapports standard. L'accès est limité aux Gestionnaires des opérations de données et aux Décideurs.
+    </p>
+  </div>
+</span>
+
+
+<div role="manager">
+<hr><h2><a href="configure" class="adminDatabase">Configurer le système</a></h2>
+<p>
+Configurer les modules, gérer la base de données et créer ou mettre à jour les comptes d'utilisateurs.
+</p>
+</div>
+
+
+
+<hr><h2><a href="password">Changer le mot de passe</a></h2>
+
+</div>

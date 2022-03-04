@@ -1,0 +1,234 @@
+# Translation of iHRIS Qualify - Custom Reports Exam to Ukrainian (українська)
+# Exported from translatewiki.net
+#
+# Author: Andriykopanytsia
+# Author: SteveR
+# --
+# Copyright (c) 2011-2016 <hris@capacityproject.org> Capacity Project partnership via IntraHealth International, Inc.
+# Copyright (c) 2011-2016 Rosetta Contributors and Canonical Ltd
+# Copyright (c) 2011-2016 translatewiki.net contributors
+# This file is distributed under the same license as the iHRIS package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: iHRIS Qualify - Custom Reports Exam\n"
+"Report-Msgid-Bugs-To: translatewiki.net\n"
+"POT-Creation-Date: 2015-09-14 08:02+0000\n"
+"PO-Revision-Date: 2016-06-22 14:44:46+0000\n"
+"Last-Translator: Siebrand Mazeland <Unknown>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-04-16 05:48+0000\n"
+"X-Generator: MediaWiki 1.28.0-alpha; Translate 2016-04-06\n"
+"X-Translation-Project: translatewiki.net <https://translatewiki.net>\n"
+"X-POT-Import-Date: 2013-10-07 17:27:20+0000\n"
+"Plural-Forms: nplurals=3; plural=(n%10 == 1 && n%100 != 11) ? 0 : ( (n%10 >= "
+"2 && n%10 <= 4 && (n%100 < 10 || n%100 >= 20)) ? 1 : 2 );\n"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L11
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 11]
+#, no-c-format
+msgid "Exam"
+msgstr "Іспит"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L14
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 14]
+#, no-c-format
+msgid "Relationship for exams."
+msgstr "Взаємозв'язки до іспитів."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L19
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 19]
+#, no-c-format
+msgid "The year this exam was taken."
+msgstr "Рік складання екзамену."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L26
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 26]
+#, no-c-format
+msgid "The training associated with this exam."
+msgstr "Навчання, пов'язане з цим іспитом."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L29
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 29]
+#, no-c-format
+msgid "Training"
+msgstr "Навчання"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L34
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 34]
+#, no-c-format
+msgid "The cadre of this training."
+msgstr "Кадровий склад цього навчання."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L37
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 37]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L94
+#: 94]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L125
+#: 125]
+#, no-c-format
+msgid "Cadre"
+msgstr "Кадровий склад"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L47
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 47]
+#, no-c-format
+msgid "Exam Reports"
+msgstr "Екзаменаційні звіти"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L50
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 50]
+#, no-c-format
+msgid "Reports related to exams."
+msgstr "Звіти, пов'язані з іспитами."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L61
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 61]
+#, no-c-format
+msgid "Exam Date"
+msgstr "Дата іспиту"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L66
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 66]
+#, no-c-format
+msgid "Try"
+msgstr "Спробувати"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L73
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 73]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L78
+#: 78]
+#, no-c-format
+msgid "Results"
+msgstr "Результати"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L83
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 83]
+#, no-c-format
+msgid "Exam Number"
+msgstr "Номер іспиту"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L99
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 99]
+#, no-c-format
+msgid "Training Cadre ID"
+msgstr "ID Підготовки кадрів"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L106
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 106]
+#, no-c-format
+msgid "Intake Date After"
+msgstr "Дата прийому після"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L111
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 111]
+#, no-c-format
+msgid "Intake Date Before"
+msgstr "Дата прийому перед"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L116
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 116]
+#, no-c-format
+msgid "Intake Date"
+msgstr "Дата прийому"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L135
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 135]
+#, no-c-format
+msgid "A pass/fail comparison for all exams."
+msgstr "Порівняння результатів для усіх іспитів."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L138
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 138]
+#, no-c-format
+msgid "Exam Pass/Fail"
+msgstr "Іспит склали/не склали"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L145
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 145]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L184
+#: 184]
+#, no-c-format
+msgid "Pie Chart(Simple)"
+msgstr "Кругова діаграма (проста)"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L150
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 150]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L189
+#: 189]
+#, no-c-format
+msgid "Bar Chart(Simple)"
+msgstr "Гістограма (проста)"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L155
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 155]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L194
+#: 194]
+#, no-c-format
+msgid "Column Chart(Simple)"
+msgstr "Стовпчикова діаграма (проста)"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L160
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 160]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L199
+#: 199]
+#, no-c-format
+msgid "Stacked Column Chart(Simple)"
+msgstr "Гістограма з накопиченням (проста)"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L165
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 165]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L204
+#: 204]
+#, no-c-format
+msgid "Scatter Plot"
+msgstr "Точкова діаграма"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L174
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 174]
+#, no-c-format
+msgid "A pass/fail comparison for all exams by year."
+msgstr "Порівняння результатів для усіх іспитів за рік."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L177
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 177]
+#, no-c-format
+msgid "Exam Pass/Fail by Year"
+msgstr "Іспит склали/не склали за рік"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml#L53
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Exam/configs/en_US/ihris-qualify-CustomReports-exam.xml
+#: line 53]
+#, no-c-format
+msgid "Training Reports"
+msgstr "Звіти підготовки"

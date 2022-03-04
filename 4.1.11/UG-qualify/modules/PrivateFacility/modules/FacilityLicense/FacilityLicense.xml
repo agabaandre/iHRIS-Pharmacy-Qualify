@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name='FacilityLicense'>     
+  <metadata>
+    <displayName>FacilityLicense</displayName>   
+    <className>iHRIS_Module_FacilityLicense</className>
+    <category>Application Component</category>
+    <description>Makes a license associated with a facility instead of a training</description>
+    <version>4.0.10.2</version>
+    <path name='classes'>
+      <value>./lib</value>
+    </path>
+    <path name='templates'>
+      <value>./templates</value>
+    </path>
+    <requirement name="FacilityRegistration">
+      <atLeast version="4.0" />
+    </requirement>
+    <priority>325</priority>
+  </metadata>
+  
+  <configurationGroup name='FacilityLicense' path='/I2CE'>
+    <displayName>FacilityLicense</displayName>
+    
+    <configurationGroup name='forms' path='/modules/forms'>
+      <displayName>Forms</displayName>
+      <description>Information about the forms made available by iHRIS-Qualify RecordVerify</description>
+      
+      <configurationGroup name='forms'>
+        <displayName>Forms available to the form factory</displayName>
+        <status>advanced:true</status>
+        <status>required:true</status>
+
+        <configurationGroup name='facility_license'>
+          <displayName>Facility License</displayName>
+          <description>The Facility License Form</description>
+          <configuration name='class' values='single'>
+            <displayName>Class Name</displayName>
+            <description>The name of the class providing the form</description>
+            <value>iHRIS_FacilityLicense</value>
+          </configuration>
+          <configuration name='display' values='single'>
+            <displayName>Display name</displayName>
+            <description>The display name for this form</description>
+            <value>Facility License</value>
+          </configuration>
+        </configurationGroup> <!-- facility_license -->
+
+       
+
+        <configurationGroup name='facility_meta' path='/modules/forms/forms/privatefacility/meta'>
+          <displayName>MetaData on the form</displayName>
+          <version>4.0.10.0</version>
+          <configuration name='child_forms' values='many' > 
+            <status>uniquemerge:true</status>
+            <displayName>Child Forms</displayName>
+            <value>facility_license</value>
+          </configuration>
+        </configurationGroup> <!-- facility_meta -->
+        
+      </configurationGroup> <!-- End /modules/forms/forms-->
+      
+      
+      <configurationGroup name="formClasses" >
+        <displayName>Form Class Configuration</displayName>
+
+
+        <configurationGroup name="iHRIS_FacilityLicense">
+          <displayName>Configuration for the class 'iHRIS_FacilityLicense'</displayName>
+          <configuration name="extends">
+            <displayName>The class this form extends</displayName>
+            <value>iHRIS_License</value>
+          </configuration>
+        </configurationGroup> <!-- iHRIS_FacilityLicense -->
+
+
+      </configurationGroup> <!-- End /modules/forms/formClasses -->
+      
+    </configurationGroup> <!-- End /modules/forms -->
+    
+    
+    <configurationGroup name='page'>
+      <displayName>Pages</displayName>
+      <description>Information about various pages made available by the system</description>
+      <status>required:true</status>
+
+      <configurationGroup name='facility_license'>
+        <displayName>Record Verify Page</displayName>
+        <description> The page 'facility_license' which has the action of: Add/Update License</description>
+        <configuration name='style' values='single'>
+          <displayName>Page Style</displayName>
+          <description>The Page Style</description>
+          <version>4.0.10.0</version>
+          <value>ihris_common_page_form_parent_privatefacility</value>
+        </configuration>
+        <configurationGroup name='args'>
+          <displayName>Page Options</displayName>
+          <description>The options that control the access and display of all pages</description>
+          <configuration name='title' values='single'>
+            <displayName>Page Title</displayName>
+            <description>Page Title</description>
+            <status>required:true</status>
+            <value>Add/Update License Information</value>
+          </configuration>
+          <configuration name='page_form' values='single'>
+            <displayName>Form</displayName>
+            <description>The form this page is using</description>
+            <status>required:true</status>
+            <value>facility_license</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup> <!-- facility_license -->
+
+
+      <configurationGroup name='facility_renew'>
+        <displayName>Renew Page </displayName>
+        <description> The page 'facility_renew' which has the action of: Renew License Information</description>
+        <configuration name='class' values='single'>
+          <displayName>Page Class</displayName>
+          <description>The class responsible for displaying this page</description>
+          <status>required:true</status>
+          <value>iHRIS_PageFormFacilityRenew</value>
+        </configuration>
+        <configuration name='style' values='single'>
+          <displayName>Page Style</displayName>
+          <description>The Page Style</description>
+          <version>4.0.10.1</version>
+          <value>ihris_common_page_form_parent_privatefacility</value>
+        </configuration>
+        <configurationGroup name='args'>
+          <displayName>Page Options</displayName>
+          <description>The options that control the access and display of all pages</description>
+          <configuration name='title' values='single'>
+            <displayName>Page Title</displayName>
+            <description>Page Title</description>
+            <status>required:true</status>
+            <value>Renew License Information</value>
+          </configuration>
+          <configuration name='page_form' values='single'>
+            <displayName>Form</displayName>
+            <description>The form this page is using</description>
+            <status>required:true</status>
+            <value>facility_license</value>
+          </configuration>
+          <configuration name='access' values='many'>
+            <displayName>Page Access</displayName>
+            <description>All of the roles that have access to this page</description>
+            <status>required:false</status>
+            <value>registration</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup> <!-- facility_renew -->
+
+    
+    </configurationGroup> <!-- page -->
+    
+    
+  </configurationGroup> <!-- RecordVerify -->
+</I2CEConfiguration>

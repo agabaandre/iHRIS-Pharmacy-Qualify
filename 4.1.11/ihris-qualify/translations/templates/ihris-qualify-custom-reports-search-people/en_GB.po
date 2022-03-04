@@ -1,0 +1,160 @@
+# Translation of iHRIS Qualify - Custom Reports Search People to British English (British English)
+# Exported from translatewiki.net
+#
+# --
+# Copyright (c) 2011-2016 <hris@capacityproject.org> Capacity Project partnership via IntraHealth International, Inc.
+# Copyright (c) 2011-2016 Rosetta Contributors and Canonical Ltd
+# Copyright (c) 2011-2016 translatewiki.net contributors
+# This file is distributed under the same license as the iHRIS package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: iHRIS Qualify - Custom Reports Search People\n"
+"Report-Msgid-Bugs-To: translatewiki.net\n"
+"POT-Creation-Date: 2015-09-14 08:02+0000\n"
+"PO-Revision-Date: 2016-06-22 14:44:52+0000\n"
+"Last-Translator: IntraHealth Informatics <Unknown>\n"
+"Language-Team: British English <https://translatewiki.net/wiki/Portal:en-"
+"gb>\n"
+"Language: en_gb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-04-16 05:48+0000\n"
+"X-Generator: MediaWiki 1.28.0-alpha; Translate 2016-04-06\n"
+"X-Translation-Project: translatewiki.net <https://translatewiki.net>\n"
+"X-Language-Code: en-gb\n"
+"X-Message-Group: #out-ihris-qualify-crsp\n"
+"X-POT-Import-Date: 2013-10-07 17:27:49+0000\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L11
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 11]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L48
+#: 48]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L133
+#: 133]
+#, no-c-format
+msgid "Search People"
+msgstr "Search People"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L14
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 14]
+#, no-c-format
+msgid "The relationship used for the person search page."
+msgstr "The relationship used for the person search page."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L19
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 19]
+#, no-c-format
+msgid "The most recent training this person has taken."
+msgstr "The most recent training this person has taken."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L22
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 22]
+#, no-c-format
+msgid "Last Training"
+msgstr "Last Training"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L27
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 27]
+#, no-c-format
+msgid "The cadre of the most recent training."
+msgstr "The cadre of the most recent training."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L30
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 30]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L102
+#: 102]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L121
+#: 121]
+#, no-c-format
+msgid "Cadre"
+msgstr "Cadre"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L37
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 37]
+#, no-c-format
+msgid "Demographic details for this person."
+msgstr "Demographic details for this person."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L40
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 40]
+#, no-c-format
+msgid "Demographic"
+msgstr "Demographic"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L51
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 51]
+#, no-c-format
+msgid "Search for any person in the system with most recent training."
+msgstr "Search for any person in the system with most recent training."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L64
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 64]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L69
+#: 69]
+#, no-c-format
+msgid "Surname"
+msgstr "Surname"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L74
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 74]
+#, no-c-format
+msgid "Firstname"
+msgstr "First name"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L79
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 79]
+#, no-c-format
+msgid "Other Names"
+msgstr "Other Names"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L90
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 90]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L95
+#: 95]
+#, no-c-format
+msgid "Index Number"
+msgstr "Index Number"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L107
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 107]
+#, no-c-format
+msgid "Training Cadre ID"
+msgstr "Training Cadre ID"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L112
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 112]
+#, no-c-format
+msgid "Intake Date"
+msgstr "Intake Date"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L130
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 130]
+#, no-c-format
+msgid "Search people in the system."
+msgstr "Search people in the system."
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml#L54
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/SearchPeople/configs/en_US/ihris-qualify-CustomReports-search-people.xml
+#: line 54]
+#, no-c-format
+msgid "Search Reports"
+msgstr "Search Reports"

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Person" path="/I2CE">
+  <metadata>
+    <version>4.1.10.0.1</version>
+  </metadata>
+  <configurationGroup name="Person" path="/I2CE" locale="de">
+    <version>4.1.9.0.1</version>
+    <configurationGroup name="page_feedback_messages" path="/modules/forms/page_feedback_messages">
+      <configuration name="person_save" locale="de">
+        <value>Dieser Datensatz wurde gespeichert.</value>
+      </configuration>
+      <configuration name="person_child_save" locale="de">
+        <value>Dieser Datensatz wurde gespeichert.</value>
+      </configuration>
+      <configuration name="person_child_delete_success" locale="de">
+        <value>Das angeforderte Formular wurde gelöscht.</value>
+      </configuration>
+      <configuration name="person_child_delete_fail" locale="de">
+        <value>Beim Löschen dieses Formulars ist ein Fehler aufgetreten.</value>
+      </configuration>
+      <configuration name="person_child_delete_not_permitted" locale="de">
+        <value>Du hast keine Berechtigung, dieses Formular zu löschen.</value>
+      </configuration>
+      <configuration name="person_child_delete_not_allowed" locale="de">
+        <value>Dieses Formular kann nicht gelöscht werden.</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="invalid_formfield_message" path="/modules/forms/formfield_messages" locale="de">
+      <configuration name="person_surname" path="person/surname/unique">
+        <value>Doppelte Datensätze stimmen mit dem Namen dieses Datensatzes überein.:</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="de">
+      <configuration name="person_can_view" locale="de">
+        <value>Kann die Seite zur Person ansehen</value>
+      </configuration>
+      <configuration name="person_can_edit" locale="de">
+        <value>Kann die Seite zur Person bearbeiten</value>
+      </configuration>
+      <configuration name="person_can_view_child_forms" locale="de">
+        <value>Kann alle zu einer Person gehörigen Datenblätter einsehen</value>
+      </configuration>
+      <configuration name="person_can_edit_child_forms" locale="de">
+        <value>Kann alle zu einer Person gehörigen Datenblätter bearbeiten</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="person">
+          <configuration name="display" values="single" locale="de"></configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="de">
+              <value>Dieses Datenblatt enthält grundlegende Informationen zu einer Person, wie Name und Wohnort</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Person">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Nachname</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Vorname</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Weitere Namen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="nationality">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Nationalität</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="residence">
+              <configuration name="headers" type="delimited" values="many" locale="de">
+                <value>default:Wohnort</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="person">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="de">
+            <value>Mitarbeiter hinzufügen/aktualisieren</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="view">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="de">
+            <value>Person anzeigen</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

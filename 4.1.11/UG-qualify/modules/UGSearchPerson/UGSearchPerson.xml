@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="UGSearchPerson">
+  <metadata>
+    <displayName>Search Person changes for Uganda</displayName>
+    <category>Application Option</category>
+    <description>Changes to the search person relationship for Uganda.</description>
+    <version>4.1.6</version>
+    <requirement name="ihris-qualify-CustomReports-search-people">
+      <atLeast version="4.0" />
+    </requirement>
+  </metadata>
+  <configurationGroup name="person_license_join" path="//modules/CustomReports/relationships/search_people/joins/person_license">
+    <displayName>Person License relationship details for Uganda</displayName>
+    <version>4.0.6</version>
+    <configuration name="description">
+      <displayName>Description</displayName>
+      <value>The license for this person.</value>
+    </configuration>
+    <configuration name="display_name">
+      <displayName>Display Name</displayName>
+      <value>Person License</value>
+    </configuration>
+    <configuration name="drop_empty">
+      <displayName>Drop Empty</displayName>
+      <value>0</value>
+    </configuration>
+    <configuration name="form">
+      <displayName>Form</displayName>
+      <value>person_license</value>
+    </configuration>
+    <configuration name="join_style">
+      <displayName>Join Style</displayName>
+      <value>child</value>
+    </configuration>
+    
+    <configurationGroup name="report_search_person_license" path="//modules/CustomReports/reports/search_people/reporting_forms/person_license">
+      <displayName>Person License details for search person for Uganda</displayName>
+      <version>4.0.6</version>
+      <configuration name="drop_empty">
+        <displayName>Drop Empty</displayName>
+        <value>0</value>
+      </configuration>
+      <configurationGroup name="fields">
+        <displayName>Fields</displayName>
+        <configurationGroup name="license_number">
+          <displayName>License Number</displayName>
+          <configuration name="enabled">
+            <displayName>Enabled</displayName>
+            <value>1</value>
+          </configuration>
+          <configuration name="header">
+            <displayName>Header</displayName>
+            <value>License Number</value>
+          </configuration>
+          <configurationGroup name="limits">
+            <displayName>Limits</displayName>
+            <configurationGroup name="between">
+              <displayName>Between</displayName>
+              <configuration name="enabled">
+                <displayName>Enabled</displayName>
+                <value>0</value>
+              </configuration>
+              <configuration name="header">
+                <displayName>Header</displayName>
+                <value>Between Person License License Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="equals">
+              <displayName>Equals</displayName>
+              <configuration name="enabled">
+                <displayName>Enabled</displayName>
+                <value>1</value>
+              </configuration>
+              <configuration name="header">
+                <displayName>Header</displayName>
+                <value>License Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="greaterthan">
+              <displayName>Greaterthan</displayName>
+              <configuration name="enabled">
+                <displayName>Enabled</displayName>
+                <value>0</value>
+              </configuration>
+              <configuration name="header">
+                <displayName>Header</displayName>
+                <value>Greaterthan Person License License Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="greaterthan_equals">
+              <displayName>Greaterthan Equals</displayName>
+              <configuration name="enabled">
+                <displayName>Enabled</displayName>
+                <value>0</value>
+              </configuration>
+              <configuration name="header">
+                <displayName>Header</displayName>
+                <value>Greaterthan Equals Person License License Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="in">
+              <displayName>In</displayName>
+              <configuration name="enabled">
+                <displayName>Enabled</displayName>
+                <value>0</value>
+              </configuration>
+              <configuration name="header">
+                <displayName>Header</displayName>
+                <value>In Person License License Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="lessthan">
+              <displayName>Lessthan</displayName>
+              <configuration name="enabled">
+                <displayName>Enabled</displayName>
+                <value>0</value>
+              </configuration>
+              <configuration name="header">
+                <displayName>Header</displayName>
+                <value>Lessthan Person License License Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="lessthan_equals">
+              <displayName>Lessthan Equals</displayName>
+              <configuration name="enabled">
+                <displayName>Enabled</displayName>
+                <value>0</value>
+              </configuration>
+              <configuration name="header">
+                <displayName>Header</displayName>
+                <value>Lessthan Equals Person License License Number</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="null_not_null">
+              <displayName>Null Not Null</displayName>
+              <configuration name="enabled">
+                <displayName>Enabled</displayName>
+                <value>0</value>
+              </configuration>
+              <configuration name="header">
+                <displayName>Header</displayName>
+                <value>Null Not Null Person License License Number</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+          <configuration name="link">
+            <displayName>Link</displayName>
+            <value></value>
+          </configuration>
+          <configuration name="link_append">
+            <displayName>Link Append</displayName>
+            <value></value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    
+  </configurationGroup>
+</I2CEConfiguration>

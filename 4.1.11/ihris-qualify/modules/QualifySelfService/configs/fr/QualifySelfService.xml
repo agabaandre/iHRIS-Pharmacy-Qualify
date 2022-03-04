@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="QualifySelfService" path="/">
+  <metadata>
+    <version>4.1.9.0.1</version>
+  </metadata>
+  <configurationGroup name="QualifySelfService" path="/" locale="fr">
+    <version>4.1.9.0.1</version>
+    <configurationGroup name="roles" path="/I2CE/formsData/forms/role">
+      <configurationGroup name="professionals">
+        <configurationGroup name="fields">
+          <configuration name="name" values="single" locale="fr">
+            <value>Professionnels</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

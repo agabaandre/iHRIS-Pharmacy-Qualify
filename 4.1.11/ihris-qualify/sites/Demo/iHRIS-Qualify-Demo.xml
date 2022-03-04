@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-site-demo">
+  <metadata>
+    <displayName>iHRIS Qualify Demo</displayName>
+    <category>Site</category>
+    <description>the iHRIS Qualify Demo Site</description>
+    <version>4.2.2.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <requirement name="ihris-qualify">
+      <atLeast version="4.2" />
+      <lessThan version="4.3" />
+    </requirement>
+    <requirement name="UserAccess">
+      <atLeast version="4.2" />
+      <lessThan version="4.3" />
+    </requirement>
+    <enable name="default-locales" />
+    <enable name="ReportArchiver" />
+    <enable name="PersonArchivedScan" />
+    <enable name="PersonContact" />
+    <enable name="PersonDemographic" />
+    <enable name="PersonID" />
+    <enable name="ihris-qualify-sample-data" />
+    <enable name="magicDataBrowser" />
+    <enable name="stub" />
+    <enable name="StretchPage" />
+    <enable name="messageBox" />
+    <enable name="messageNotice" />
+    <path name="classes">
+      <value>./lib</value>
+    </path>
+    <path name="templates">
+      <value>./templates</value>
+    </path>
+    <path name="css">
+      <value>./css</value>
+    </path>
+    <path name="scripts">
+      <value>./scripts</value>
+    </path>
+    <path name="modules">
+      <value>./modules</value>
+    </path>
+    <path name="images">
+      <value>./images</value>
+    </path>
+    <priority>300</priority>
+  </metadata>
+  <configurationGroup name="ihris-qualify-site-demo" path="/I2CE">
+    <displayName>iHRIS Qualify Demo Site</displayName>
+    <status>advanced:false</status>
+    <configurationGroup name="feedback">
+      <displayName>Feedback Information</displayName>
+      <status>required:false</status>
+      <configuration name="email" path="to" values="single">
+        <displayName>Email Address</displayName>
+      </configuration>
+      <configuration name="subject" values="single">
+        <displayName>Subject Line</displayName>
+      </configuration>
+    </configurationGroup>
+    <configuration name="file_search_stale_time" path="/I2CE/fileSearch/stale_time">
+      <displayName>Stale Time</displayName>
+      <description>The time in seconds until a file found in the file search utility is considered stale. If stale, it will search for the file, if not stale, it will use the previously found location of the file (it will cache the file location). If negative, then we do not cache the file location.</description>
+      <status>required:true</status>
+      <status>validate:integer,nonempty</status>
+      <value>600</value>
+    </configuration>
+    <configurationGroup name="template">
+      <displayName>Template Information</displayName>
+      <description>Various Default Information About The Templating System</description>
+      <status>advanced:false</status>
+      <status>required:true</status>
+      <configuration name="prefix_title" values="single" locale="en_US">
+        <displayName>Page title prefix</displayName>
+        <description>Do I really want this here... should we have an attribute to declare it to overwrite?</description>
+        <value>iHRIS Qualify Demo</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="pdf_options" path="/modules/report-pdf/PDF/display-options">
+      <displayName>PDF Options</displayName>
+      <status>visible:false</status>
+      <configurationGroup name="header">
+        <displayName>Header Options</displayName>
+        <configuration name="text" locale="en_US">
+          <displayName>Header Text</displayName>
+          <value>iHRIS Qualify Demo</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

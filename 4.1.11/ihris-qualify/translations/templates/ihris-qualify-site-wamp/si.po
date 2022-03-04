@@ -1,0 +1,216 @@
+# Sinhalese translation for ihris-qualify
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the ihris-qualify package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ihris-qualify\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-10 08:59-0400\n"
+"PO-Revision-Date: 2014-01-13 15:00+0000\n"
+"Last-Translator: Waruna Harshana Kodituwakku <vharshana@gmail.com>\n"
+"Language-Team: Sinhalese <si@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-04-16 05:48+0000\n"
+"X-Generator: Launchpad (build 17995)\n"
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_thanks.html#L3'>sites/wamp/templates/en_US/feedback_thanks.html</a>
+#, no-c-format
+msgid "Thank you for your feedback."
+msgstr "ඔබගේ ප්‍රතිචාරය වෙනුවෙන් ස්තූතියි."
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_thanks.html#L6'>sites/wamp/templates/en_US/feedback_thanks.html</a>
+#, no-c-format
+msgid "return"
+msgstr "ආපසු යන්න"
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/intro.html#L5'>sites/wamp/templates/en_US/intro.html</a>
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/main.html#L7'>sites/wamp/templates/en_US/main.html</a>
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/main.html#L32'>sites/wamp/templates/en_US/main.html</a>
+#, no-c-format
+msgid "iHRIS Qualify"
+msgstr "iHRIS Qualify"
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/intro.html#L8'>sites/wamp/templates/en_US/intro.html</a>
+#, no-c-format
+msgid "The Capacity Project"
+msgstr "ධාරිතා ව්‍යාපෘතිය"
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/welcome.html#L10'>sites/wamp/templates/en_US/welcome.html</a>
+#, no-c-format
+msgid ""
+"To get started using iHRIS Qualify, please click one of the options below. "
+"Return to this page at any time by clicking the Home button in the bar "
+"above. If you need help with any function, click the Help button. We "
+"encourage you to send us any errors you find, suggestions for improvements "
+"or additional features, and any other feedback you may have about this "
+"software; contact us at any time by clicking the Feedback button or visiting "
+"the"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/welcome.html#L11'>sites/wamp/templates/en_US/welcome.html</a>
+#, no-c-format
+msgid "HRIS Strengthening Website"
+msgstr "HRIS ශක්තිදායකත්ව වෙබ් අඩවිය"
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/intro.html#L3'>sites/wamp/templates/en_US/intro.html</a>
+#, no-c-format
+msgid "Welcome"
+msgstr "ආයුබෝවන්"
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/intro.html#L8'>sites/wamp/templates/en_US/intro.html</a>
+#, no-c-format
+msgid ""
+"is a health worker training, licensing and certification tracking system. "
+"The system enables a licensing or certification authority for a health "
+"worker cadre, such as nurses or physicians, to track data on the complete "
+"cadre in a country from pre-service training through attrition. iHRIS "
+"Qualify is a free, Open Source software solution developed by"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/intro.html#L10'>sites/wamp/templates/en_US/intro.html</a>
+#, no-c-format
+msgid ""
+"an innovative global initiative to help developing countries build and "
+"sustain the health workforce."
+msgstr ""
+"යනු සංවර්ධනය වෙමින් පවතින රටවල් වලට සෞඛ්‍ය ක්ෂේත්‍ර ශ්‍රම බලකාය තැනීමට සහ "
+"පවත්වාගෙන යාමට උදව් වන  නව්‍ය ජාත්‍යන්තර මුල් පිරීමකි."
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L6'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid ""
+"If you have a bug report, problem with the page, feature request or "
+"question, please contact us by filling out and submitting the following "
+"form. Your comments and email address will be kept private in accordance "
+"with the Capacity Project's"
+msgstr ""
+"ඔබට ද්‍යෝෂ වාර්තාවක්, ගැටලුවක්, විශේෂාංග අයදුමක් හෝ ප්‍රශ්නයක් තිබේ නම් "
+"කරුණාකර පහත ෆෝරමය පුරවා යොමු කිරීමෙන් අපව සම්බන්ධ කරගත හැක. ඔබගේ අදහස් සහ "
+"විද්‍යුත් තැපැල් ලිපිනය ධාරිතා ව්‍යාපෘතියට අනුකූලව සහ රහසිගතව තබාගනු ලැබේ."
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L6'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "privacy policy"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L10'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid ""
+". We will use your email address only to reply to your request. You may also "
+"contact us by emailing us directly at"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L14'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Site Feedback Form"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L21'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Comments"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L26'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Name"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L31'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Company"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L36'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Title"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L41'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Industry"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L45'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Address"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L50'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "City"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L55'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "State/Province"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L60'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Postal Code"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L65'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Country"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L70'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Telephone"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L75'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Fax"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/feedback_form.html#L80'>sites/wamp/templates/en_US/feedback_form.html</a>
+#, no-c-format
+msgid "Email"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/welcome.html#L3'>sites/wamp/templates/en_US/welcome.html</a>
+#, no-c-format
+msgid "Welcome, %s"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/main.html#L33'>sites/wamp/templates/en_US/main.html</a>
+#, no-c-format
+msgid "Offline Site"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/main.html#L38'>sites/wamp/templates/en_US/main.html</a>
+#, no-c-format
+msgid "Home"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/main.html#L41'>sites/wamp/templates/en_US/main.html</a>
+#, no-c-format
+msgid "Help"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/main.html#L43'>sites/wamp/templates/en_US/main.html</a>
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/main.html#L44'>sites/wamp/templates/en_US/main.html</a>
+#, no-c-format
+msgid "Feedback"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/main.html#L45'>sites/wamp/templates/en_US/main.html</a>
+#, no-c-format
+msgid "iHRIS Website"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/main.html#L48'>sites/wamp/templates/en_US/main.html</a>
+#, no-c-format
+msgid "Log out as %s"
+msgstr ""
+
+#: <a href='http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/sites/wamp/templates/en_US/main.html#L69'>sites/wamp/templates/en_US/main.html</a>
+#, no-c-format
+msgid "iHRIS Qualify Version"
+msgstr ""

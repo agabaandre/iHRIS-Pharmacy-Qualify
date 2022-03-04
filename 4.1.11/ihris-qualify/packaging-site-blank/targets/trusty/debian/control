@@ -1,0 +1,16 @@
+Source: ihris-qualify-site
+Maintainer: Carl Leitner <litlfred@ibiblio.org>
+Section: web
+Priority: optional
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 7)
+Homepage: http://launchpad.net/ihris-qualify
+
+
+Package: ihris-qualify-site
+Architecture: all
+Depends: ihris-qualify
+Pre-Depends: mysql-server, dbconfig-common
+Recommends: 
+Description: iHRIS Qualify Site
+ Site for the default iHRIS Qualify install

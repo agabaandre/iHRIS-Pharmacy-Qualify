@@ -1,0 +1,51 @@
+<div id="siteContent">
+<br style="clear: both;"><div role="records">
+<h2><a href="person" class="updateRecords">Aggiungi Persona</a></h2>
+<p>
+Aggiungi un nuovo record per uno studente o una professione. Per un record, aggiorna il contatto e le informazioni personali; aggiungi dettagli dei programmi di formazione in corso o completati; registra le prove d'esame e i risultati; problemi con le registrazioni, licenze e rinnovi delle licenze; e registra le private pratice licenses, le richieste di verifica trasferimento, le azioni disciplinari e i deployments.
+</p>
+
+<hr></div>
+
+<span type="module" name="SelfService" ifenabled="true" task="can_view_own_personnel">
+  <span type="module" name="SelfService" if="!userHasRecord()">
+    
+  </span>
+  <span type="module" name="SelfService" if="userHasRecord()">
+    <h2><span type="module" name="SelfService" call="linkToPersonRecord('view?id=')">View Your Record</span></h2>
+    <p>
+      View your own details.
+    </p>
+  </span>
+</span>
+
+<div task="custom_reports_can_access">
+<h2><a href="search" class="searchRecords">Cerca inserimento</a></h2>
+<p>
+Cerca persona da esaminare, stampare o aggiornare.
+</p>
+</div>
+
+
+<span type="module" name="CustomReports" ifenabled="true">
+  <div role="manager|decision_maker">
+    <hr><h2><a href="CustomReports/view/reportViews" class="createRecords">Visualizza Rapporti</a></h2>
+    <p>
+      I report consentono vari tipi di analisi sui dati delle risorse umane. Personalizza, visualizza e stampa liste di dipendenti o studenti, grafici statistici e altri rapporti standard. L'accesso è limitato ai gestori delle Data Operations e ai Decision Makers.
+    </p>
+  </div>
+</span>
+
+
+<div role="manager">
+<hr><h2><a href="configure" class="adminDatabase">Configura il sistema</a></h2>
+<p>
+Configura i moduli, gestisci il database e crea o aggiorna gli utenti.
+</p>
+</div>
+
+
+
+<hr><h2><a href="password">Cambia Password</a></h2>
+
+</div>

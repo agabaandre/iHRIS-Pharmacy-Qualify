@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-csd-qus">
+  <metadata>
+    <displayName>CSD Query For Updated Services (iHRIS Qualify)</displayName>
+    <className>iHRIS_Module_QualifyCSD</className>
+    <category>Application Component</category>
+    <description>CSD Query For Updated Services (iHRIS Qualify)</description>
+    <creator>Intrahealth Informatics</creator>
+    <email>hris@capacityproject.org</email>
+    <link>https://launchpad.net/ihris-qualify</link>
+    <version>4.2.2.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <path name="XSLTS">
+      <value>./xslts</value>
+    </path>
+    <path name="classes">
+      <value>./lib</value>
+    </path>
+    <requirement name="ihris-qualify">
+      <atLeast version="4.2" />
+      <lessThan version="4.3" />
+    </requirement>
+    <requirement name="Person-CSD">
+      <atLeast version="4.2.0.4" />
+      <lessThan version="4.3" />
+    </requirement>
+    <requirement name="csd_cache">
+      <atLeast version="4.2.0.4" />
+      <lessThan version="4.3" />
+    </requirement>
+    <requirement name="csd_cache">
+      <atLeast version="4.2.0.4" />
+      <lessThan version="4.3" />
+    </requirement>
+    <requirement name="csd_geography_default">
+      <atLeast version="4.2.0.2" />
+      <lessThan version="4.3" />
+    </requirement>
+  </metadata>
+  <configurationGroup name="ihris-qualify-csd-qus" path="/">
+    <configurationGroup name="qus_page" path="/modules/csd_cache/csd_qualify_default">
+      <version>4.2.0.17</version>
+      <configurationGroup name="args">
+        <configuration name="directory">
+          <value>provider</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="csd_uuid_person" path="/modules/forms/formClasses/iHRIS_Person/fields/csd_uuid">
+      <version>4.2.0.20.3</version>
+      <configuration name="formfield">
+        <value>STRING_LINE</value>
+      </configuration>
+      <configuration name="headers" type="delimited" locale="en_US">
+        <value>default:CSD Entity ID</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="csd_cache" path="/modules/csd_cache/csd_health_facility_default">
+      <version>4.2.0.20</version>
+      <configurationGroup name="args">
+        <configuration name="directory">
+          <value>facility</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="relationship" path="/modules/CustomReports/relationships/csd_health_facility_default">
+      <version>4.2.0.17</version>
+      <configuration name="form">
+        <value>health_facility</value>
+      </configuration>
+      <configuration name="display_name">
+        <value>CSD Health Facility Export (Default Qualify)</value>
+      </configuration>
+      <configuration name="description">
+        <value />
+      </configuration>
+      <configurationGroup name="reporting_functions"></configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="facility_contact">
+          <configuration name="limit_one">
+            <value>0</value>
+          </configuration>
+          <configuration name="form">
+            <value>facility_contact</value>
+          </configuration>
+          <configuration name="display_name">
+            <value>Facility Contact</value>
+          </configuration>
+          <configuration name="join_style">
+            <value>child</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="county">
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+          <configuration name="form">
+            <value>county</value>
+          </configuration>
+          <configuration name="display_name">
+            <displayName>Display Name</displayName>
+            <value>county</value>
+          </configuration>
+          <configurationGroup name="join_data">
+            <configuration name="field">
+              <value>location</value>
+            </configuration>
+          </configurationGroup>
+          <configuration name="join_style">
+            <value>parent_field</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+          <configuration name="form">
+            <value>district</value>
+          </configuration>
+          <configuration name="display_name">
+            <value>district</value>
+          </configuration>
+          <configurationGroup name="join_data">
+            <configuration name="field">
+              <value>location</value>
+            </configuration>
+          </configurationGroup>
+          <configuration name="join_style">
+            <value>parent_field</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_type">
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+          <configuration name="form">
+            <value>facility_type</value>
+          </configuration>
+          <configuration name="description">
+            <value />
+          </configuration>
+          <configuration name="display_name">
+            <value>facility_type</value>
+          </configuration>
+          <configurationGroup name="join_data">
+            <configuration name="field">
+              <value>facility_type</value>
+            </configuration>
+          </configurationGroup>
+          <configuration name="join_style">
+            <value>parent_field</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="csd_qualify_query_updated_services" path="/modules/CustomReports/relationships/csd_qualify_default">
+      <version>4.2.0.10</version>
+      <configuration name="description">
+        <value>Relationship containing forms needed in the Query for Updated Services for professional councils</value>
+      </configuration>
+      <configuration name="display_name">
+        <value>CSD Query for Updated Services (Qualify)</value>
+      </configuration>
+      <configuration name="form">
+        <value>person</value>
+      </configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="contact">
+          <configuration name="display_name">
+            <value>contact</value>
+          </configuration>
+          <configuration name="form">
+            <value>contact</value>
+          </configuration>
+          <configuration name="join_style">
+            <value>child</value>
+          </configuration>
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configuration name="display_name">
+            <value>demographic</value>
+          </configuration>
+          <configuration name="form">
+            <value>demographic</value>
+          </configuration>
+          <configuration name="join_style">
+            <value>child</value>
+          </configuration>
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="deployment">
+          <configuration name="display_name">
+            <value>deployment</value>
+          </configuration>
+          <configuration name="form">
+            <value>deployment</value>
+          </configuration>
+          <configuration name="join_style">
+            <value>child</value>
+          </configuration>
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_personal">
+          <version>4.2.0.20.1</version>
+          <configuration name="display_name">
+            <value>person_contact_personal</value>
+          </configuration>
+          <configuration name="form">
+            <value>person_contact_personal</value>
+          </configuration>
+          <configuration name="join_style">
+            <value>child</value>
+          </configuration>
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_work">
+          <configuration name="display_name">
+            <value>person_contact_work</value>
+          </configuration>
+          <configuration name="form">
+            <value>person_contact_work</value>
+          </configuration>
+          <configuration name="join_style">
+            <value>child</value>
+          </configuration>
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_id_pin">
+          <configuration name="display_name">
+            <value>person_id_pin</value>
+          </configuration>
+          <configuration name="drop_empty">
+            <value>0</value>
+          </configuration>
+          <configuration name="form">
+            <value>person_id</value>
+          </configuration>
+          <configurationGroup name="join_data">
+            <configuration name="displaystyle">
+              <value>default</value>
+            </configuration>
+          </configurationGroup>
+          <configuration name="join_style">
+            <value>child</value>
+          </configuration>
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+          <configurationGroup name="where">
+            <configurationGroup name="data">
+              <configuration name="value">
+                <value>id_type|2</value>
+              </configuration>
+            </configurationGroup>
+            <configuration name="field">
+              <value>id_type</value>
+            </configuration>
+            <configuration name="operator">
+              <value>FIELD_LIMIT</value>
+            </configuration>
+            <configuration name="style">
+              <value>equals</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="person_id_registration">
+          <configuration name="display_name">
+            <value>person_id_registration</value>
+          </configuration>
+          <configuration name="drop_empty">
+            <value>0</value>
+          </configuration>
+          <configuration name="form">
+            <value>person_id</value>
+          </configuration>
+          <configurationGroup name="join_data">
+            <configuration name="displaystyle">
+              <value>default</value>
+            </configuration>
+          </configurationGroup>
+          <configuration name="join_style">
+            <value>child</value>
+          </configuration>
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+          <configurationGroup name="where">
+            <configurationGroup name="data">
+              <configuration name="value">
+                <value>id_type|1</value>
+              </configuration>
+            </configurationGroup>
+            <configuration name="field">
+              <value>id_type</value>
+            </configuration>
+            <configuration name="operator">
+              <value>FIELD_LIMIT</value>
+            </configuration>
+            <configuration name="style">
+              <value>equals</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="person_photo_passport">
+          <configuration name="display_name">
+            <value>person passport photo</value>
+          </configuration>
+          <configuration name="form">
+            <value>person_photo_passport</value>
+          </configuration>
+          <configuration name="join_style">
+            <value>child</value>
+          </configuration>
+          <configuration name="limit_one">
+            <value>1</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configuration name="display_name">
+            <value>training</value>
+          </configuration>
+          <configuration name="drop_empty">
+            <value>0</value>
+          </configuration>
+          <configuration name="form">
+            <value>training</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="license">
+              <configuration name="display_name">
+                <value>license</value>
+              </configuration>
+              <configuration name="drop_empty">
+                <value>0</value>
+              </configuration>
+              <configuration name="form">
+                <value>license</value>
+              </configuration>
+              <configurationGroup name="join_data">
+                <configuration name="displaystyle">
+                  <value>default</value>
+                </configuration>
+              </configurationGroup>
+              <configuration name="join_style">
+                <value>child</value>
+              </configuration>
+              <configuration name="limit_one">
+                <value>0</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration">
+              <configuration name="display_name">
+                <value>registration</value>
+              </configuration>
+              <configuration name="drop_empty">
+                <value>0</value>
+              </configuration>
+              <configuration name="form">
+                <value>registration</value>
+              </configuration>
+              <configurationGroup name="join_data">
+                <configuration name="displaystyle">
+                  <value>default</value>
+                </configuration>
+              </configurationGroup>
+              <configuration name="join_style">
+                <value>child</value>
+              </configuration>
+              <configuration name="limit_one">
+                <value>1</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+          <configurationGroup name="join_data">
+            <configuration name="displaystyle">
+              <value>default</value>
+            </configuration>
+          </configurationGroup>
+          <configuration name="join_style">
+            <value>child</value>
+          </configuration>
+          <configuration name="limit_one">
+            <value>0</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

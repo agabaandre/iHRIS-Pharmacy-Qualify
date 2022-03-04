@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="training-course" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="training-course" path="/I2CE" locale="tl">
+    <version>4.1.9.1.1</version>
+    <configurationGroup name="tranlatable_strings" locale="tl" path="/modules/training-course/translatable-strings" type="delimited"></configurationGroup>
+    <configurationGroup name="invalid_messages" path="/modules/forms/formfield_messages" locale="tl">
+      <configuration name="work" path="scheduled_training_course/end_date/bad_date">
+        <value>Ang petsa ng pagwawakas ay dapat na maging pagkalipas ng petsa ng pagsisimula.</value>
+      </configuration>
+      <configuration name="work" path="person_scheduled_training_course/training_course_mod/bad_mod"></configuration>
+    </configurationGroup>
+    <configurationGroup name="formsdata" path="/I2CE/formsData/forms">
+      <configurationGroup name="training_course_status">
+        <configurationGroup name="open">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="tl">
+              <value>Buksan</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="closed">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="tl">
+              <value>Nakasara na</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_course_evaluation">
+        <configurationGroup name="pass">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="tl">
+              <value>Pumasa</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="fail">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="tl">
+              <value>Nabigo</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="incomplete">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="tl">
+              <value>Kulang</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="not_evaluated">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="tl">
+              <value>Hindi Nasuri</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="roles" path="roles/names">
+      <configurationGroup name="training_manager">
+        <configuration name="display_name" values="single" locale="tl">
+          <value>Tagapamahala ng Pagsasanay</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_training_course_status" locale="tl">
+        <value>Baguhin ang tala ng katayuan ng kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_status" locale="tl">
+        <value>Tingnan ang tala ng katayuan ng kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_mod" locale="tl"></configuration>
+      <configuration name="can_view_database_list_training_course_mod" locale="tl"></configuration>
+      <configuration name="can_edit_database_list_training_course_status" locale="tl">
+        <value>Baguhin ang tala ng katayuan ng kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_status" locale="tl">
+        <value>Tingnan ang tala ng katayuan ng kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_evaluation" locale="tl">
+        <value>Baguhin ang tala ng pagsusuri ng kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_evaluation" locale="tl">
+        <value>Tingnan ang tala ng pagsusuri ng kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_category" locale="tl">
+        <value>Baguhin ang tala ng kategorya ng kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_category" locale="tl">
+        <value>tingnan ang tala ng kategorya ng kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course" locale="tl">
+        <value>Baguhin ang tala ng kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_edit_database_list_scheduled_training_course" locale="tl">
+        <value>Baguhin ang tala ng kategorya ng natakdang kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_requestor" locale="tl">
+        <value>Baguhin ang tala ng humiling ng kurso sa pagsasanay</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_requestor" locale="tl">
+        <value>Baguhin ang tala ng humiling ng kurso sa pagsasanay</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course" locale="tl">
+        <value>Tingnan ang tala ng kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_edit_scheduled_training_course" locale="tl">
+        <value>Baguhin ang isang nakatakdang kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_view_database_list_scheduled_training_course" locale="tl">
+        <value>Tingnan ang tala ng kategorya ng nakatakdang kurso ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_edit_training_course_database_lists" locale="tl">
+        <value>Baguhin ang ilang mga talang may kaugnayan sa modyul ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_view_training_course_database_lists" locale="tl">
+        <value>Tingnan ang ilang mga tala na may kaugnayan sa modyul ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_edit_all_training_course_database_lists" locale="tl">
+        <value>Baguhin ang lahat ng mga tala na may kaugnayan sa modyul ng pagsasanay</value>
+      </configuration>
+      <configuration name="can_view_all_training_course_database_lists" locale="tl">
+        <value>Tingnan ang lahat ng mga tala na may kaugnayan sa modyul ng pagsasanay</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="training_course_mod">
+          <configuration name="display" values="single" locale="tl"></configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_status">
+          <configuration name="display" values="single" locale="tl">
+            <value>Katayuan ng Kurso ng Pagsasanay</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_category">
+          <configuration name="display" values="single" locale="tl">
+            <value>Kategorya ng Kurso ng Pagsasanay</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course">
+          <configuration name="display" values="single" locale="tl">
+            <value>Kurso ng Pagsasanay</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="tl">
+              <value>Ang pormularyong ito ay humahawak ng saligang kabatiran tungkol sa isang kurso ng pagsasanay</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="scheduled_training_course">
+          <configuration name="display" values="single" locale="tl">
+            <value>Nakatakdang Kurso ng Pagsasanay</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_scheduled_training_course">
+          <configuration name="display" values="single" locale="tl">
+            <value>Itikanakdang Kurso ng Pagsasanay ng Tao</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_evaluation">
+          <configuration name="display" values="single" locale="tl">
+            <value>Pagsusuri ng Kurso ng Pagsasanay</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_requestor">
+          <configuration name="display" values="single" locale="tl">
+            <value>Tagapaghiling ng Pagsasanay</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Training_Course_Evaluation">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pangalan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="competency_evaluation">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pagsusuri ng Kakayahan sa Pagganap</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Training_Course">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course_mod">
+              <configuration name="headers" type="delimited" locale="tl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="has_certification_date">
+              <configuration name="headers" type="delimited" locale="tl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate">
+              <configuration name="headers" type="delimited" locale="tl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="topic">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Paksa</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Mga tala</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Institusyon ng Pagsasanay</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_funder">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Mga Tagapagpondo ng Pagsasanay</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="continuing_education_course">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Ibinigay ang mga Yunit ng Patuloy na Edukasyon</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_status">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Katayuan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_category">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Kategorya</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Person_Scheduled_Training_Course">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course_mod">
+              <configuration name="headers" type="delimited" locale="tl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="certification_date">
+              <configuration name="headers" locale="tl" type="delimited"></configuration>
+            </configurationGroup>
+            <configurationGroup name="attending">
+              <configuration name="headers" locale="tl" type="delimited"></configuration>
+            </configurationGroup>
+            <configurationGroup name="is_retraining">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Muling pagsasanay</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="completed">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Buo na</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="duty_commencement_date">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pagsisimula sa Tungkulin</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="request_date">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Petsa ng paghiling</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Mga tala</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="average">
+              <configuration name="headers" type="delimited" locale="tl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_evaluation">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pagsusuri</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_requestor">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Hiniling Ni</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="scheduled_training_course">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pagkakataon</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Scheduled_Training_Course">
+          <configurationGroup name="meta" path="meta/list/default">
+            <configuration name="display_string" locale="tl">
+              <value>%s sa %s</value>
+            </configuration>
+          </configurationGroup>
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course">
+              <configuration name="headers" type="delimited" values="many" locale="tl">
+                <value>default:Kurso ng Pagsasanay</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Sityo</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="num_students">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Pinakamataas na Bilang ng mga Mag-aaral</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Mga tala</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="instructors">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Mga Tagapagturo</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Petsa ng Pagsisimula</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="tl">
+                <value>default:Petsa ng Pagwawakas</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" values="many" locale="tl">
+                <value>default:Kinalalagyan</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="editstudents">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="tl"></configuration>
+          <configuration name="action_header" values="single" locale="tl"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_training_participation" path="/modules/CustomReports/relationships/student_training_participation">
+        <configuration name="display_name" locale="tl"></configuration>
+        <configuration name="description" locale="tl"></configuration>
+        <configurationGroup name="joins">
+          <configurationGroup name="person_scheduled_training_course">
+            <configuration name="display_name" locale="tl"></configuration>
+            <configurationGroup name="joins">
+              <configurationGroup name="person">
+                <configuration name="display_name" locale="tl"></configuration>
+                <configurationGroup name="joins">
+                  <configurationGroup name="person_position">
+                    <configuration name="display_name" locale="tl"></configuration>
+                    <configurationGroup name="joins">
+                      <configurationGroup name="position">
+                        <configuration name="display_name" locale="tl"></configuration>
+                        <configurationGroup name="joins">
+                          <configurationGroup name="facility">
+                            <configuration name="display_name" locale="tl"></configuration>
+                            <configurationGroup name="joins">
+                              <configurationGroup name="facility_contact">
+                                <configuration name="display_name" locale="tl"></configuration>
+                              </configurationGroup>
+                            </configurationGroup>
+                          </configurationGroup>
+                        </configurationGroup>
+                      </configurationGroup>
+                    </configurationGroup>
+                  </configurationGroup>
+                  <configurationGroup name="person_contact">
+                    <configuration name="display_name" locale="tl"></configuration>
+                  </configurationGroup>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+          <configurationGroup name="training_course">
+            <configuration name="display_name" locale="tl">
+              <value>Kurso ng Pagsasanay</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="schedule-person" path="/modules/training-course/page/schedule-person">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="tl">
+            <value>Magdagdag/Magsapanahon ng Nakatakdang Kurso sa Pagsasanay ng Tao</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,341 @@
+# Polish translation for ihris-qualify
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the ihris-qualify package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ihris-qualify\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-09-14 08:02+0000\n"
+"PO-Revision-Date: 2014-01-13 15:00+0000\n"
+"Last-Translator: Łukasz Cieliński <lukasc@mp.pl>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-04-16 05:48+0000\n"
+"X-Generator: Launchpad (build 17995)\n"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L11 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 11]
+#, no-c-format
+msgid "Person"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L14 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 14]
+#, no-c-format
+msgid "The person relationship with first training details."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L19 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 19]
+#, no-c-format
+msgid "The results of the exam and registration for the first training."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L24 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 24]
+#, no-c-format
+msgid "The year the first training occurred."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L29 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 29]
+#, no-c-format
+msgid "The year the exam was taken."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L34 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 34]
+#, no-c-format
+msgid "A yes/no to determine if the person is still in training or not."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L41 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 41]
+#, no-c-format
+msgid "The demographic information for this person."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L44 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 44]
+#, no-c-format
+msgid "Demographic"
+msgstr "Dane demograficzne"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L49 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 49]
+#, no-c-format
+msgid "The district where this person was born."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L52 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 52]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L272 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 272]
+#, no-c-format
+msgid "Birth District"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L59 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 59]
+#, no-c-format
+msgid "The most recent deployment for this person."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L62 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 62]
+#, no-c-format
+msgid "Deployment"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L67 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 67]
+#, no-c-format
+msgid "The first training this person entered."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L70 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 70]
+#, no-c-format
+msgid "First Training"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L75 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 75]
+#, no-c-format
+msgid "The cadre of the first training."
+msgstr "Osoby prowadzące pierwsze szkolenie"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L78 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 78]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L170 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 170]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L247 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 247]
+#, no-c-format
+msgid "Cadre"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L83 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 83]
+#, no-c-format
+msgid "The exam details of the first training."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L86 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 86]
+#, no-c-format
+msgid "Exam"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L91 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 91]
+#, no-c-format
+msgid "The registration details of the first training."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L94 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 94]
+#, no-c-format
+msgid "Registration"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L99 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 99]
+#, no-c-format
+msgid "The training institution where the first training occurred."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L102 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 102]
+#, no-c-format
+msgid "Training Institution"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L107 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 107]
+#, no-c-format
+msgid "The district where the training institution is located."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L110 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 110]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L215 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 215]
+#, no-c-format
+msgid "Institution District"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L117 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 117]
+#, no-c-format
+msgid "The current training disruption for this training if there is one."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L120 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 120]
+#, no-c-format
+msgid "Training Disruption"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L130 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 130]
+#, no-c-format
+msgid "Person Report"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L133 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 133]
+#, no-c-format
+msgid "Reports related to people in the system with their first training."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L144 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 144]
+#, no-c-format
+msgid "Surname"
+msgstr "Nazwisko"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L149 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 149]
+#, no-c-format
+msgid "First Name"
+msgstr "Imię"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L154 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 154]
+#, no-c-format
+msgid "Other Names"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L163 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 163]
+#, no-c-format
+msgid "Index Number"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L175 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 175]
+#, no-c-format
+msgid "Training Cadre ID"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L182 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 182]
+#, no-c-format
+msgid "Intake Date After"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L187 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 187]
+#, no-c-format
+msgid "Intake Date Before"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L192 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 192]
+#, no-c-format
+msgid "Intake Date"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L197 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 197]
+#, no-c-format
+msgid "Graduation Date"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L206 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 206]
+#, no-c-format
+msgid "Disruption Date"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L224 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 224]
+#, no-c-format
+msgid "Registration Number"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L233 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 233]
+#, no-c-format
+msgid "Exam Date"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L238 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 238]
+#, no-c-format
+msgid "Exam Results"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L258 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 258]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L263 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 263]
+#, no-c-format
+msgid "Gender"
+msgstr "Płeć"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L281 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 281]
+#, no-c-format
+msgid "Registration Results"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L292 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 292]
+#, no-c-format
+msgid "Top Birth District"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L299 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 299]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L338 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 338]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L377 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 377]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L416 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 416]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L455 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 455]
+#, no-c-format
+msgid "Pie Chart(Simple)"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L304 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 304]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L343 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 343]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L382 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 382]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L421 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 421]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L460 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 460]
+#, no-c-format
+msgid "Bar Chart(Simple)"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L309 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 309]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L348 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 348]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L387 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 387]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L426 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 426]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L465 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 465]
+#, no-c-format
+msgid "Column Chart(Simple)"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L314 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 314]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L353 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 353]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L392 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 392]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L431 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 431]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L470 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 470]
+#, no-c-format
+msgid "Stacked Column Chart(Simple)"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L319 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 319]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L358 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 358]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L397 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 397]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L436 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 436]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L475 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 475]
+#, no-c-format
+msgid "Scatter Plot"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L328 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 328]
+#, no-c-format
+msgid "The number of students entering training by year."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L331 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 331]
+#, no-c-format
+msgid "Student Intake Year"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L367 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 367]
+#, no-c-format
+msgid "The pass/fail results for each person's first training."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L370 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 370]
+#, no-c-format
+msgid "Pass/Fail by First Training"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L406 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 406]
+#, no-c-format
+msgid "The registration results for each person's first training."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L409 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 409]
+#, no-c-format
+msgid "Registration Results by First Training"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L445 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 445]
+#, no-c-format
+msgid ""
+"Students by intake year that are broken down by in or not in training."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L448 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 448]
+#, no-c-format
+msgid "Students in Training by Year"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L289 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 289]
+#, no-c-format
+msgid ""
+"A pie chart of the number of people entering training by their birth "
+"district."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml#L136 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/Person/configs/en_US/ihris-qualify-CustomReports-person.xml line 136]
+#, no-c-format
+msgid "Person Reports"
+msgstr ""

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-PrintedForms-registration" path="/modules/PrintedForms/forms/registration">
+  <metadata>
+    <version>4.2.2.0</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-PrintedForms-registration" path="/modules/PrintedForms/forms/registration" locale="en_US">
+    <version>4.2.0</version>
+    <configuration name="displayName" locale="en_US">
+      <value>Registration Certificate</value>
+    </configuration>
+    <configurationGroup name="elements">
+      <configurationGroup name="1">
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s, %s %s</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="2">
+        <configurationGroup name="definition">
+          <configuration name="printf" locale="en_US">
+            <value>%s</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="3">
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="4">
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="5">
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="6">
+        <configuration name="printf" path="definition/printf" locale="en_US">
+          <value>%s</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Service">
+  <metadata>
+    <displayName>Service</displayName>
+    <className>iHRIS_Module_Service</className>
+    <category>Application Component</category>
+    <description>Makes Service information available to the system</description>
+    <creator>Intrahealth Informatics</creator>
+    <email>hris@capacityproject.org</email>
+    <link>https://launchpad.net/i2ce</link>
+    <version>4.0.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <requirement name="Geography">
+      <atLeast version="4.0" />
+    </requirement>
+    <path name="classes">
+      <value>./lib</value>
+    </path>
+    <path name="modules">
+      <value>./modules</value>
+    </path>
+    <path name="templates">
+      <value>./templates</value>
+    </path>
+    <priority>150</priority>
+  </metadata>
+  <configurationGroup name="Service" path="/I2CE">
+    <displayName>Service</displayName>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_service" locale="en_US">
+        <version>3.2.2</version>
+        <value>Edit the service list</value>
+      </configuration>
+      <configuration name="can_view_database_list_service" locale="en_US">
+        <version>3.2.2</version>
+        <value>View the service list</value>
+      </configuration>
+      <configuration name="can_edit_database_list_service_type" locale="en_US">
+        <version>3.2.2</version>
+        <value>Edit the service type list</value>
+      </configuration>
+      <configuration name="can_view_database_list_service_type" locale="en_US">
+        <version>3.2.2</version>
+        <value>View the service type list</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks_trickle_down" path="/I2CE/tasks/task_trickle_down/">
+      <version>3.2.5</version>
+      <configuration name="can_edit_database_list_service" values="many">
+        <value>can_edit_organization_database_lists</value>
+        <value>can_view_database_list_service</value>
+      </configuration>
+      <configuration name="can_edit_database_list_service_type" values="many">
+        <value>can_edit_organization_database_lists</value>
+        <value>can_view_database_list_service_type</value>
+      </configuration>
+      <configuration name="can_edit_all_organization_database_lists" values="many">
+        <value>can_edit_database_list_service</value>
+        <value>can_edit_database_list_service_type</value>
+      </configuration>
+      <configuration name="can_view_all_organization_database_lists" values="many">
+        <value>can_view_database_list_service</value>
+        <value>can_view_database_list_service_type</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <displayName>Forms</displayName>
+      <description>Information about the forms made available by iHRIS-Common Service</description>
+      <configurationGroup name="forms">
+        <displayName>Forms available to the form factory</displayName>
+        <status>advanced:true</status>
+        <status>required:true</status>
+        <configurationGroup name="service">
+          <displayName>Service</displayName>
+          <description>The Service Form</description>
+          <version>3.2.4</version>
+          <configuration name="class" values="single">
+            <displayName>Class Name</displayName>
+            <description>The name of the class providing the form</description>
+            <value>I2CE_SimpleList</value>
+          </configuration>
+          <configuration name="display" values="single">
+            <displayName>Display name</displayName>
+            <description>The display name for this form</description>
+            <value>Service</value>
+          </configuration>
+          <configuration name="storage" values="single">
+            <displayName>Storage Mechanism</displayName>
+            <description>The storage mechanism for this form</description>
+            <value>magicdata</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <displayName>Meta information aboout this form</displayName>
+            <configuration name="description" locale="en_US">
+              <displayName>A description of the form</displayName>
+              <value>This form is used to descibe basic information about a service</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <!-- service -->
+        <configurationGroup name="service_type">
+          <displayName>Service Type</displayName>
+          <description>The Service Type Form</description>
+          <version>3.2.3</version>
+          <configuration name="class" values="single">
+            <displayName>Class Name</displayName>
+            <description>The name of the class providing the form</description>
+            <value>I2CE_SimpleList</value>
+          </configuration>
+          <configuration name="display" values="single" locale="en_US">
+            <displayName>Display name</displayName>
+            <description>The display name for this form</description>
+            <value>Service Type</value>
+          </configuration>
+          <configuration name="storage" values="single">
+            <displayName>Storage Mechanism</displayName>
+            <description>The storage mechanism for this form</description>
+            <value>magicdata</value>
+          </configuration>
+        </configurationGroup>
+        <!-- end of service_type -->
+      </configurationGroup>
+      <!-- End /modules/forms/forms-->
+  
+    </configurationGroup>
+    <!-- End /modules/forms -->
+  </configurationGroup>
+  <!-- Service -->
+</I2CEConfiguration>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-common-Job" path="/I2CE">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-common-Job" path="/I2CE" locale="cs">
+    <version>4.1.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_classification" locale="cs">
+        <value>Upravit klasifikační seznam</value>
+      </configuration>
+      <configuration name="can_view_database_list_classification" locale="cs">
+        <value>Zobrazit klasifikační seznam</value>
+      </configuration>
+      <configuration name="can_edit_database_list_job" locale="cs">
+        <value>Upravit seznam práce</value>
+      </configuration>
+      <configuration name="can_view_database_list_job" locale="cs">
+        <value>Zobrazit seznam práce</value>
+      </configuration>
+      <configuration name="can_edit_job_structure_database_lists" locale="cs">
+        <value>Může upravit některé databázové seznamy struktury práce</value>
+      </configuration>
+      <configuration name="can_view_job_structure_database_lists" locale="cs">
+        <value>Může zobrazit některé databázové seznamy struktury práce</value>
+      </configuration>
+      <configuration name="can_edit_all_job_structure_database_lists" locale="cs">
+        <value>Může upravit všechny databázové seznamy struktury práce</value>
+      </configuration>
+      <configuration name="can_view_all_job_structure_database_lists" locale="cs">
+        <value>Může zobrazitt všechny databázové seznamy struktury práce</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="job">
+          <configuration name="display" values="single" locale="cs">
+            <value>Práce</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="classification">
+          <configuration name="display" values="single" locale="cs">
+            <value>Klasifikace</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Classification">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Název</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="description">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Popis</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kód</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_SalaryGrade">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Název</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Začátek</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Konec</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="midpoint">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Střední bod</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Poznámky</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Job">
+          <configurationGroup name="fields">
+            <configurationGroup name="title">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Název</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kádr (Pouze profesionální zdravotníci)</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kód</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="description">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Popis</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="classification">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Klasifikace</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="RecordVerify" path="/I2CE">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="RecordVerify" path="/I2CE" locale="es">
+    <version>4.1.0.1</version>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="record_verify">
+          <configuration name="display" values="single" locale="es">
+            <value>Guardar Verificación</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="verify_change">
+          <configuration name="display" values="single" locale="es">
+            <value>Cambiar Verificación</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_RecordVerify">
+          <configurationGroup name="fields">
+            <configurationGroup name="verify_date">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Fecha Verificación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="verify_change">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Cambios Realizados</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="record_verify">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="es">
+            <value>Verificar registro</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,25 @@
+<div>
+	<div class="editRecord">
+	<p>Edit This Information</p>
+		<ul>
+			<li role='manager'><span type="form" name="registration:id" href="registration?id=" parent="true" >Correct this Information</span></li>
+      <span type="module" name="PrintedForms" ifenabled="true">
+        <span type="module" if="PrintedForms->hasValidForms('registration')">
+          <li task="printed_forms_can_access"><span type="form" href="PrintedForms/menu?id=" name="registration:id">Registration Certificate</span></li>
+        </span>
+      </span>
+		</ul>
+	</div> <!-- editRecord -->
+	
+	<div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<th colspan="2">Registration</th>
+		</tr>
+	   	<span type="form" name="registration:registration_number" showhead="default"></span>
+	   	<span type="form" name="registration:application_date" showhead="default" class="even"></span>
+	   	<span type="form" name="registration:registration_date" showhead="default"></span>
+	   	<span type="form" name="registration:practice_type" showhead="default" class="even"></span>
+	</table>
+	</div> <!-- dataTable -->
+</div>

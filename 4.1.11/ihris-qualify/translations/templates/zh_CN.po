@@ -1,0 +1,67 @@
+# Translation of iHRIS Qualify - Person Training Upload to Simplified Chinese (中文（简体）‎)
+# Exported from translatewiki.net
+#
+# Author: Liuxinyu970226
+# --
+# Copyright (c) 2011-2016 <hris@capacityproject.org> Capacity Project partnership via IntraHealth International, Inc.
+# Copyright (c) 2011-2016 Rosetta Contributors and Canonical Ltd
+# Copyright (c) 2011-2016 translatewiki.net contributors
+# This file is distributed under the same license as the iHRIS package.
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2015-09-14 08:02+0000\n"
+"PO-Revision-Date: 2016-06-22 14:45:00+0000\n"
+"Language: zh_cn\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-POT-Import-Date: 2014-03-23 17:16:51+0000\n"
+"X-Generator: MediaWiki 1.28.0-alpha; Translate 2016-04-06\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/configs/en_US/PersonTrainingUpload.xml#L13
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/configs/en_US/PersonTrainingUpload.xml
+#: line 13]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/upload_training.html#L3
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/upload_training.html
+#: 3]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/upload_training.html#L6
+#: 6]
+#, no-c-format
+msgid "Upload Continuing Education"
+msgstr "上传继续教育"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/upload_training.html#L11
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/upload_training.html
+#: line 11]
+#, no-c-format
+msgid "Select CSV file to upload"
+msgstr "选择CSV文件上传"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/upload_training.html#L19
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/upload_training.html
+#: line 19]
+#, no-c-format
+msgid "Has Headers?"
+msgstr "有标题吗？"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/upload_training.html#L23
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/upload_training.html
+#: line 23]
+#, no-c-format
+msgid "This file has headers."
+msgstr "文件有标题。"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/button_training_confirm.html#L5
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/button_training_confirm.html
+#: line 5]
+#, no-c-format
+msgid "Confirm"
+msgstr "确认"
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/button_training_save.html#L5
+#: ihris-qualify/4.0-dev/annotate/head%3A/modules/PersonTraining/modules/PersonTrainingUpload/templates/en_US/button_training_save.html
+#: line 5]
+#, no-c-format
+msgid "Save"
+msgstr "保存"

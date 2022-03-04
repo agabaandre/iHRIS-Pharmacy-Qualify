@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports">
+  <metadata>
+    <displayName>iHRIS Qualify Custom Reports</displayName>
+    <category>Application Option</category>
+    <description>The Qualify Reporting System</description>
+    <version>4.2.2.0</version>
+    <requirement name="CustomReports">
+      <atLeast version="4.2" />
+      <lessThan version="4.4" />
+    </requirement>
+    <enable name="CustomReports_PieChart" />
+    <enable name="CustomReports_Export" />
+    <enable name="CustomReports_PDF" />
+    <enable name="ihris-qualify-CustomReports-disruption" />
+    <enable name="ihris-qualify-CustomReports-exam" />
+    <enable name="ihris-qualify-CustomReports-institution" />
+    <enable name="ihris-qualify-CustomReports-license" />
+    <enable name="ihris-qualify-CustomReports-person" />
+    <enable name="ihris-qualify-CustomReports-registration" />
+    <enable name="ihris-qualify-CustomReports-search-people" />
+    <enable name="ihris-qualify-CustomReports-search-training" />
+    <path name="pdf_images">
+      <value>./pdf_images</value>
+    </path>
+    <path name="modules">
+      <value>./Reports</value>
+    </path>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports" path="/modules/CustomReports">
+    <displayName>iHRIS Qualify Custom Reports</displayName>
+    <configurationGroup name="role_trickle_down" path="/I2CE/tasks/role_trickle_down">
+      <status>visible:false</status>
+      <configuration name="manager" values="many">
+        <status>uniquemerge:true</status>
+        <value>custom_reports_can_access_reports</value>
+        <value>custom_reports_can_edit_reportViews</value>
+        <value>custom_reports_can_view_reportViews</value>
+      </configuration>
+      <configuration name="decision_maker" values="many">
+        <status>uniquemerge:true</status>
+        <value>custom_reports_can_view_reportViews</value>
+      </configuration>
+      <configuration name="registration" values="many">
+        <status>uniquemerge:true</status>
+        <value>custom_reports_can_view_reportViews</value>
+      </configuration>
+      <configuration name="records" values="many">
+        <status>uniquemerge:true</status>
+        <value>custom_reports_can_view_reportViews</value>
+      </configuration>
+    </configurationGroup>
+    <!-- role_trickle_down -->
+    <configurationGroup name="pdf_options" path="displays/PDF/display_options">
+      <displayName>PDF Options</displayName>
+      <configurationGroup name="header">
+        <displayName>Header Options</displayName>
+        <configuration name="title_prefix">
+          <displayName>Header Title</displayName>
+          <value>iHRIS Qualify</value>
+        </configuration>
+        <configuration name="text_prefix">
+          <displayName>Header Text</displayName>
+          <value>iHRIS Qualify Site</value>
+        </configuration>
+        <configurationGroup name="logo">
+          <displayName>Logo</displayName>
+          <configuration name="file">
+            <displayName>file</displayName>
+            <value>iHRISQualify_logo_whiteBG.png</value>
+          </configuration>
+          <configuration name="width">
+            <displayName>width</displayName>
+            <value>0.6</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

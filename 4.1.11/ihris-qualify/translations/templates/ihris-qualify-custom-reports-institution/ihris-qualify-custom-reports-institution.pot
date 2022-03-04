@@ -1,0 +1,100 @@
+# Translation Template of ihris-qualify module (ihris-qualify-CustomReports-institution Version 4.2.0)
+# Copyright (C) 2015 <hris@capacityproject.org> Capacity Project partnership via IntraHealth International, Inc.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ihris-qualify@ihris-qualify-CustomReports-institution 4.2.0\n"
+"POT-Creation-Date: 2015-09-14 08:02+0000\n"
+"Last-Translator: Intrahealth <hris@capacityproject.org>\n"
+"Language-Team: Intrahealth <hris@capacityproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L11 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 11]
+#, no-c-format
+msgid "Training Institution"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L14 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 14]
+#, no-c-format
+msgid "Relationship for all training institutions in the system."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L19 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 19]
+#, no-c-format
+msgid "The contact details for this institution."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L22 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 22]
+#, no-c-format
+msgid "Contact"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L27 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 27]
+#, no-c-format
+msgid "The facility agent for this institution."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L30 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 30]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L62 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 62]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L102 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 102]
+#, no-c-format
+msgid "Facility Agent"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L35 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 35]
+#, no-c-format
+msgid "The district where this institution is located."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L38 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 38]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L93 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 93]
+#, no-c-format
+msgid "District"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L46 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 46]
+#, no-c-format
+msgid "Training Institution Reports"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L49 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 49]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L120 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 120]
+#, no-c-format
+msgid "A list of all training institutions."
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L67 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 67]
+#, no-c-format
+msgid "Training Institution Facility Agent ID"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L72 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 72]
+#, no-c-format
+msgid "Training Institution Name"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L79 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 79]
+#, no-c-format
+msgid "Training Institution Location"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L84 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 84]
+#, no-c-format
+msgid "Training Institution Location ID"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L111 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 111]
+#, no-c-format
+msgid "Mailing Address"
+msgstr ""
+
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L52 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 52]
+#: [http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml#L123 ihris-qualify/4.0-dev/annotate/head%3A/modules/QualifyCustomReports/Reports/TrainingInstitution/configs/en_US/ihris-qualify-CustomReports-institution.xml line 123]
+#, no-c-format
+msgid "Training Institutions"
+msgstr ""
+

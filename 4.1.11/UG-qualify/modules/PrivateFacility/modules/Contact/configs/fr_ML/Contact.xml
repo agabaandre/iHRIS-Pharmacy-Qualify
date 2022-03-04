@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="PersonContact" path="/I2CE">
+  <metadata>
+    <version>4.0.9.0</version>
+  </metadata>
+  <configurationGroup name="PersonContact" path="/I2CE" locale="fr_ML">
+    <version>4.0.9.0</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="fr_ML">
+      <configuration name="person_can_view_child_form_person_contact_work" locale="fr_ML">
+        <value>Peut afficher le formulaire enfant des coordonn&#233;es professionnelles d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_work" locale="fr_ML">
+        <value>Peut &#233;diter le formulaire enfant des coordonn&#233;es professionnelles d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_emergency" locale="fr_ML">
+        <value>Peut afficher le formulaire enfant de contact d'urgence d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_emergency" locale="fr_ML">
+        <value>Peut &#233;diter le formulaire enfant de contact d'urgence d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_personal" locale="fr_ML">
+        <value>Peut afficher le formulaire enfant des coordonn&#233;es personnelles d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_personal" locale="fr_ML">
+        <value>Peut &#233;diter le formulaire enfant des coordonn&#233;es personnelles d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_other" locale="fr_ML">
+        <value>Peut afficher le formulaire enfant des autres contacts d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_other" locale="fr_ML">
+        <value>Peut &#233;diter le formulaire enfant des autres contacts d&#8217;une personne</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="person_contact_work">
+          <configuration name="display" values="single" locale="fr_ML">
+            <value>Coordonn&#233;es professionnelles</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_emergency">
+          <configuration name="display" values="single" locale="fr_ML">
+            <value>Contact d'urgence</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_other">
+          <configuration name="display" values="single" locale="fr_ML">
+            <value>Autres coordonn&#233;es</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_personal">
+          <configuration name="display" values="single" locale="fr_ML">
+            <value>Les coordonn&#233;es personnelles</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="contact">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="fr_ML">
+            <value>Ajouter/mettre &#224; jour les informations de contact</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

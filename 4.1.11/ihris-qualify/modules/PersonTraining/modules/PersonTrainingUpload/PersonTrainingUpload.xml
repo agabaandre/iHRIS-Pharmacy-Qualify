@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-PersonTrainingUpload">
+  <metadata>
+    <displayName>Person Training Upload</displayName>
+    <category>Application Component</category>
+    <description>Creates a page for uploading training information for a person.</description>
+    <creator>Intrahealth Informatics</creator>
+    <email>hris@capacityproject.org</email>
+    <link>https://launchpad.net/i2ce</link>
+    <version>4.2.2.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <requirement name="ihris-qualify-PersonTraining">
+      <atLeast version="4.2" />
+      <lessThan version="4.3" />
+    </requirement>
+    <path name="classes">
+      <value>./lib</value>
+    </path>
+    <path name="templates">
+      <value>./templates</value>
+    </path>
+    <priority>150</priority>
+  </metadata>
+  <configurationGroup name="ihris-qualify-PersonTrainingUpload" path="/I2CE">
+    <displayName>Person Training Upload</displayName>
+    <configurationGroup name="page">
+      <displayName>Pages</displayName>
+      <description>Information about various pages made available by the system</description>
+      <configurationGroup name="uploadtraining">
+        <displayName>Upload Training page</displayName>
+        <description>The page 'uploadtraining' which is used to add training to a person via CSV file upload.</description>
+        <configuration name="class" values="single">
+          <value>iHRIS_PageUploadTraining</value>
+        </configuration>
+        <configuration name="style" values="single">
+          <value>shell</value>
+        </configuration>
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US">
+            <value>Upload Continuing Education</value>
+          </configuration>
+          <configuration name="defaultHTMLFile" values="single">
+            <value>upload_training.html</value>
+          </configuration>
+          <configuration name="tasks" values="many">
+            <value>person_can_edit</value>
+          </configuration>
+          <configuration name="action_permission" type="delimited">
+            <value>view:task(person_can_view)</value>
+            <value>edit:task(person_can_edit)</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <!-- upload training-->
+    </configurationGroup>
+    <!-- page -->
+  </configurationGroup>
+  <!-- ihris-qualify-PersonTrainingUpload -->
+</I2CEConfiguration>

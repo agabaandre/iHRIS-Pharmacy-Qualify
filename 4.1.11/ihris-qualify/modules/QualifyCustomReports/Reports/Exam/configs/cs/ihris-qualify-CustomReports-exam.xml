@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-exam" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-exam" path="//modules/CustomReports" locale="cs">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-exam" path="relationships/exam">
+      <configuration name="display_name" locale="cs">
+        <value>Zkouška</value>
+      </configuration>
+      <configuration name="description" locale="cs">
+        <value>Vztah pro zkoušky.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="exam_year">
+          <configuration name="description" locale="cs">
+            <value>Rok, kdy bylasloužka složena.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="training">
+          <configuration name="description" locale="cs">
+            <value>Školení spojené s touto zkouškou</value>
+          </configuration>
+          <configuration name="display_name" locale="cs">
+            <value>Školení</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="cs">
+                <value>Kádr pro toto školení.</value>
+              </configuration>
+              <configuration name="display_name" locale="cs">
+                <value>Kádr</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-exam" path="reports/exam">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="cs">
+          <value>Záznamy zkoušky</value>
+        </configuration>
+        <configuration name="description" locale="cs">
+          <value>Záznamy spojené se zkouškou.</value>
+        </configuration>
+        <configuration name="category" locale="cs">
+          <value>Záznamy výuky</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="header" locale="cs">
+                <value>Datum zkoušky</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="try">
+              <configuration name="header" locale="cs">
+                <value>Pokus</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="cs">
+                    <value>Výsledky</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="cs">
+                <value>Výsledky</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_number">
+              <configuration name="header" locale="cs">
+                <value>Číslo zkoušky</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="cs">
+                    <value>Kádr</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="cs">
+                <value>ID výukového kádru</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="cs">
+                    <value>Datum přijetí po</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="cs">
+                    <value>Datum přijetí před</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="cs">
+                <value>Datum přijetí</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="cs">
+                <value>Kádr</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="exam_pass_fail">
+        <configuration name="description" locale="cs">
+          <value>Porovnání úspěchu/neúspěchu pro všechny zkoušky</value>
+        </configuration>
+        <configuration name="display_name" locale="cs">
+          <value>Úspěšné/Neúspěšné složení zkoušky</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="cs">
+                  <value>Koláčový graf (jednoduchý)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="cs">
+                  <value>Pruhový graf (jednoduchý)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="cs">
+                  <value>Sloupcový graf (Jednoduchý)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="cs">
+                  <value>Skládaný sloupcový graf (Jednoduchý)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="cs">
+                  <value>Bodový graf</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam_pass_fail_year">
+        <configuration name="description" locale="cs">
+          <value>Porovnání úspěšného/neúspěšného složení všech zkoušek podle roku.</value>
+        </configuration>
+        <configuration name="display_name" locale="cs">
+          <value>Úspěšné/Neúspěšné složení podle roku</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="cs">
+                  <value>Koláčový graf (jednoduchý)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="cs">
+                  <value>Pruhový graf (jednoduchý)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="cs">
+                  <value>Sloupcový graf (Jednoduchý)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="cs">
+                  <value>Skládaný sloupcový graf (Jednoduchý)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="cs">
+                  <value>Bodový graf</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

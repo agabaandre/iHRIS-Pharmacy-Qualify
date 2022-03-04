@@ -1,0 +1,88 @@
+ <div id="siteContent">
+    <h1>Opleiding bekijken: <span type="form" name="training:cadre"></span> - <span type="form" name="person:surname"></span>, <span type="form" name="person:firstname"></span></h1>
+    <p><span type="form" name="person:id" href="view?id=">Terug naar hoofdkaart</span></p>
+
+	<div class="recordsData">
+	<h3><a name="jump_training">Opleidingsgegevens</a></h3>
+	<p class="editRecordsData" id="training_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('training', this );">Verbergen</a>
+		</p>
+
+	<div id="training">
+		<div class="editRecord">
+	<p>Gegevens bewerken</p>
+		<ul><li role="manager"><span type="form" name="training:id" href="training?id=" parent="true">Gegevens corrigeren</span></li>
+			<li role="records"><span type="form" ifset="!training:graduation" name="training:id" href="graduate?id=" parent="true">Afstudeerdatum toevoegen</span></li>
+		</ul></div> <!-- editRecord -->
+	
+	<div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0"><tr><th colspan="2">Indexgegevens</th>
+		</tr><span type="form" name="training:index_num" showhead="default"></span>
+		<span type="form" name="training:intake_date" showhead="default" class="even"></span>
+		<span type="form" name="training:graduation" showhead="default"></span>
+		
+		<span type="form" ifset="training:trained_outside" ifvalue="1" name="training:out_country" showhead="default" class="even"></span>
+		<span type="form" ifset="training:trained_outside" ifvalue="1" name="training:out_institution" showhead="default"></span>
+		
+		<span type="form" ifset="training:trained_outside" ifvalue="!1" name="training:training_institution" showhead="default" class="even"></span>
+		
+	</table></div> <!-- dataTable -->
+	
+	<div id="training_disrupt"></div>
+	
+	<div class="editRecord">
+	<p>Gegevens bewerken</p>
+		<ul><li role="records"><span type="form" ifset="exam:id" name="exam:id" href="exam?id=" parent="true">Gegevens bijwerken</span></li>
+		</ul></div> <!-- editRecord -->
+	
+	<div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0"><tr><th colspan="2">Examengegevens</th>
+		</tr><tbody id="exam"></tbody></table></div> <!-- dataTable -->
+	
+	</div> <!-- training -->
+	<br style="clear: both;"></div> <!-- recordsData -->
+
+	<div class="recordsData">
+	<h3><a name="jump_registration">Registratiegegevens</a></h3>
+	<p class="editRecordsData" id="registration_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('registration', this );">Verbergen</a>
+		</p>
+
+	<div id="registration"></div> <!-- contact -->
+	<br style="clear: both;"></div> <!-- recordsData -->
+	
+	<div class="recordsData">
+	<h3><a name="jump_license">Licentiegegevens</a></h3>
+	<p class="editRecordsData" id="license_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('license', this );">Verbergen</a>
+		</p>
+
+	<div id="license"></div>
+	<br style="clear: both;"></div> <!--  recordsData -->
+
+	<div class="recordsData">
+	<h3><a name="jump_education">Permanente vorming</a></h3>
+	<p class="editRecordsData"><a href="" class="hide" title="Hide" onclick="return hideDiv('education', this );">Verbergen</a>
+    	<span role="registration" type="form" ifset="license:id" name="training:id" href="continuing_education?parent=">Permanente vorming toevoegen</span>
+		</p>
+
+	<div id="continuing_education"></div>
+	<br style="clear: both;"></div> <!--  recordsData -->
+
+	<div class="recordsData">
+	<h3><a name="jump_ppractice">Licentiegegevens privékliniek</a></h3>
+	<p class="editRecordsData"><a href="" class="hide" title="Hide" onclick="return hideDiv('private_practice', this );">Verbergen</a>
+    	<span role="registration" type="form" ifset="license:id" name="training:id" href="private_practice?parent=">Licentie voor privékliniek toevoegen</span>
+		</p>
+
+	<div id="private_practice"></div>
+	<br style="clear: both;"></div> <!--  recordsData -->
+
+	<div class="recordsData">
+	<h3><a name="jump_disciplinary">Disciplinaire aanschrijving</a></h3>
+	<p class="editRecordsData" id="disciplinary_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('disciplinary', this );">Verbergen</a>
+		</p>
+
+	<div id="disciplinary_action"></div>
+	<br style="clear: both;"></div> <!--  recordsData -->
+
+
+    <!--<a href="construction">Print</a>-->
+</div>

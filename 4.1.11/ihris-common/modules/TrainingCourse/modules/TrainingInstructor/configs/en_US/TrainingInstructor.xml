@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="training-instructor" path="/I2CE">
+  <metadata>
+    <version>4.1.2.0</version>
+  </metadata>
+  <configurationGroup name="training-instructor" path="/I2CE" locale="en_US">
+    <version>4.1.2.0</version>
+    <configurationGroup name="formClass" path="/modules/forms/formClasses/iHRIS_Scheduled_Training_Course">
+      <configurationGroup name="fields">
+        <configurationGroup name="training_instructor">
+          <configuration name="headers" values="many" type="delimited" locale="en_US">
+            <value>default:Registered Instructor</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configurationGroup name="display">
+              <configurationGroup name="person">
+                <configurationGroup name="default">
+                  <configuration name="printf" locale="en_US">
+                    <value>%s, %s</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

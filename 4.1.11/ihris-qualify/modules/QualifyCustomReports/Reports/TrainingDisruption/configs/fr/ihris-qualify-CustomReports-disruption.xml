@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-disruption" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-disruption" path="//modules/CustomReports" locale="fr">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-disruption" path="relationships/training_disruption">
+      <configuration name="display_name" locale="fr">
+        <value>Interruption de formation</value>
+      </configuration>
+      <configuration name="description" locale="fr">
+        <value>Relation pour interruption de formation.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="disruption_year">
+          <configuration name="description" locale="fr">
+            <value>L'année ou a eu lieu cette interruption.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="resumed">
+          <configuration name="description" locale="fr">
+            <value>Une chaîne pour déterminer si cette interruption a été reprise ou pas.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="disruption_reason">
+          <configuration name="description" locale="fr">
+            <value>La raison de cette interruption.</value>
+          </configuration>
+          <configuration name="display_name" locale="fr">
+            <value>Motif d'interruption</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="disruption_category">
+              <configuration name="description" locale="fr">
+                <value>La catégorie pour le motif de cette interruption.</value>
+              </configuration>
+              <configuration name="display_name" locale="fr">
+                <value>Catégorie d'interruption</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configuration name="description" locale="fr">
+            <value>La formation qui a été interrompue</value>
+          </configuration>
+          <configuration name="display_name" locale="fr">
+            <value>Formation</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="fr">
+                <value>Le cadre de la formation.</value>
+              </configuration>
+              <configuration name="display_name" locale="fr"></configuration>
+            </configurationGroup>
+            <configurationGroup name="person">
+              <configuration name="description" locale="fr">
+                <value>La personne qui suit la formation.</value>
+              </configuration>
+              <configuration name="display_name" locale="fr">
+                <value>Personne</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="demographic">
+                  <configuration name="description" locale="fr">
+                    <value>Les détails démographiques sur la personne qui suit cette formation.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="fr">
+                    <value>Données démographiques</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-disruption" path="reports/training_disruption">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="fr">
+          <value>Interruption de formation</value>
+        </configuration>
+        <configuration name="description" locale="fr">
+          <value>Rapports liés à des perturbations de la formation.</value>
+        </configuration>
+        <configuration name="category" locale="fr">
+          <value>Rapports sur la formation</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="fr"></configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="birth_date">
+              <configuration name="header" locale="fr">
+                <value>Date de naissance</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="fr">
+                    <value>Date de naissance après</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="fr">
+                    <value>Date de naissance avant</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="gender">
+              <configuration name="header" locale="fr">
+                <value>Sexe</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="fr">
+                    <value>Sexe</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="disruption_category">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="fr">
+                <value>Catégorie d'interruption</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="disruption_reason">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="fr">
+                <value>Motif d'interruption</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_disruption_category">
+              <configuration name="header" locale="fr">
+                <value>ID de catégorie de perturbation</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="fr">
+                    <value>Catégorie d'interruption</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_date">
+              <configuration name="header" locale="fr">
+                <value>Date d’interruption</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="disruption_reason">
+              <configuration name="header" locale="fr">
+                <value>ID de la raison de perturbation</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="fr">
+                    <value>Motif d'interruption</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="resumption_date">
+              <configuration name="header" locale="fr">
+                <value>Date de reprise</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="cadre">
+              <configuration name="header" locale="fr">
+                <value>Cadre de formation</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="in">
+                  <configuration name="header" locale="fr"></configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configuration name="header" locale="fr">
+                <value>Date d’admission</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="fr">
+                    <value>Après la date d'admission</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="fr">
+                    <value>Avant la date d'admission</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="discontinuation_category">
+        <configuration name="description" locale="fr">
+          <value>Un camembert de toutes les catégories d'abandon.</value>
+        </configuration>
+        <configuration name="display_name" locale="fr">
+          <value>Abandons par catégorie</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="fr">
+                  <value>Camembert (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme à barres horizontales (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme à colonnes (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="fr">
+                  <value>Histogramme empilé (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme de dispersion</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="discontinuation_reason">
+        <configuration name="description" locale="fr">
+          <value>Un graphique de tous les abandons par raison.</value>
+        </configuration>
+        <configuration name="display_name" locale="fr">
+          <value>Abandons par motif</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="fr">
+                  <value>Camembert (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme à barres horizontales (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme à colonnes (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="fr">
+                  <value>Histogramme empilé (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme de dispersion</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="discontinuation_year">
+        <configuration name="description" locale="fr">
+          <value>Un graphique de tous les abandons par année.</value>
+        </configuration>
+        <configuration name="display_name" locale="fr">
+          <value>Abandons par année</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="fr">
+                  <value>Camembert (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme à barres horizontales (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme à colonnes (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="fr">
+                  <value>Histogramme empilé (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme de dispersion</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="resumption">
+        <configuration name="description" locale="fr">
+          <value>Un camembert des perturbations qui ont été reprises ou non.</value>
+        </configuration>
+        <configuration name="display_name" locale="fr">
+          <value>Rapport de reprise</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="fr">
+                  <value>Camembert (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme à barres horizontales (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme à colonnes (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="fr">
+                  <value>Histogramme empilé (Simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="fr">
+                  <value>Diagramme de dispersion</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

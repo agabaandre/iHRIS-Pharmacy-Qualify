@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-exam" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-exam" path="//modules/CustomReports" locale="ar">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-exam" path="relationships/exam">
+      <configuration name="display_name" locale="ar">
+        <value>امتحان</value>
+      </configuration>
+      <configuration name="description" locale="ar">
+        <value>علاقة&#160;للامتحانات.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="exam_year">
+          <configuration name="description" locale="ar">
+            <value>في العام&#160;الذي اتخذ&#160;فيه هذا الامتحان.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="training">
+          <configuration name="description" locale="ar">
+            <value>التدريب&#160;المرتبط بهذا&#160;الامتحان.</value>
+          </configuration>
+          <configuration name="display_name" locale="ar">
+            <value>تدريب</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="ar">
+                <value>إطار&#160; التدريب.</value>
+              </configuration>
+              <configuration name="display_name" locale="ar">
+                <value>إطار</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-exam" path="reports/exam">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="ar">
+          <value>تقارير الامتحان</value>
+        </configuration>
+        <configuration name="description" locale="ar">
+          <value>التقارير المتعلقة&#160;بالامتحانات.</value>
+        </configuration>
+        <configuration name="category" locale="ar">
+          <value>تقارير التدريب</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="header" locale="ar">
+                <value>تاريخ الامتحان</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="try">
+              <configuration name="header" locale="ar">
+                <value>محاولة</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="ar">
+                    <value>النتائج</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="ar">
+                <value>النتائج</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_number">
+              <configuration name="header" locale="ar">
+                <value>رقم الامتحان</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="ar">
+                    <value>إطار</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="ar">
+                <value>رقم تعريف إطار التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="ar">
+                    <value>بعد تاريخ&#160;التأدية</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="ar">
+                    <value>قبل تاريخ&#160;التأدية</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="ar">
+                <value>تاريخ تأدية</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="ar">
+                <value>إطار</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="exam_pass_fail">
+        <configuration name="description" locale="ar">
+          <value>مقارنة نجاح/رسوب&#160; &#160;لجميع&#160;الامتحانات.</value>
+        </configuration>
+        <configuration name="display_name" locale="ar">
+          <value>امتحان&#160;نجاح /رسوب</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="ar">
+                  <value>مخطط دائري&#160;(بسيط)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="ar">
+                  <value>مخطط بياني&#160;(بسيط)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="ar">
+                  <value>مخطط بياني عمودي (بسيط)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="ar">
+                  <value>رسم بياني عمودي (بسيط)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="ar">
+                  <value>رسم بياني بالنقاط المبعثرة</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam_pass_fail_year">
+        <configuration name="description" locale="ar">
+          <value>مقارنة سنوية نجاح/رسوب&#160; &#160;لجميع&#160;الامتحانات.</value>
+        </configuration>
+        <configuration name="display_name" locale="ar">
+          <value>إمتحان نجاح/رسوب&#160;&#160;في سنة</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="ar">
+                  <value>مخطط دائري&#160;(بسيط)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="ar">
+                  <value>مخطط بياني&#160;(بسيط)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="ar">
+                  <value>مخطط بياني عمودي (بسيط)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="ar">
+                  <value>رسم بياني عمودي (بسيط)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="ar">
+                  <value>رسم بياني بالنقاط المبعثرة</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

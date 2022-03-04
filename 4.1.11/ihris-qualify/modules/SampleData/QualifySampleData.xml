@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-sample-data">
+  <metadata>
+    <displayName>iHRIS Qualify Sample Data</displayName>
+    <className>iHRIS_Module_Qualify_SampleData</className>
+    <category>Site</category>
+    <description>iHRIS Qualify Sample Data</description>
+    <version>4.2.2.0</version>
+    <requirement name="ihris-qualify-base-data">
+      <atLeast version="4.2" />
+      <lessThan version="4.3" />
+    </requirement>
+    <enable name="QualifySampleData-verify_change" />
+    <path name="sql">
+      <value>./sql</value>
+    </path>
+    <path name="modules">
+      <value>./modules</value>
+    </path>
+  </metadata>
+</I2CEConfiguration>

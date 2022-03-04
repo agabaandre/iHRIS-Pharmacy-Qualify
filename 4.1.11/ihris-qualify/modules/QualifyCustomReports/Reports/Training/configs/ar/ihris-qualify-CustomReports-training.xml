@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-training" path="/modules/CustomReports">
+  <metadata>
+    <version>4.1.4.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-training" path="/modules/CustomReports" locale="ar">
+    <version>4.1.4.0.1</version>
+    <configurationGroup name="training-relationship" path="relationships/training">
+      <configuration name="display_name" locale="ar">
+        <value>تدريب</value>
+      </configuration>
+      <configuration name="description" locale="ar">
+        <value>علاقة&#160;التدريب مع جميع&#160;الدورات التدريبية&#160;التي تم إدخالها&#160;في النظام.</value>
+      </configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="person">
+          <configuration name="description" locale="ar">
+            <value>الشخص&#160;الذي تابع&#160;هذا التدريب.</value>
+          </configuration>
+          <configuration name="display_name" locale="ar">
+            <value>شخص</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="personal_contact">
+              <configuration name="description" locale="ar">
+                <value>معلومات الاتصال&#160;الشخصية لشخص&#160;الملتحق &#160;بالتدريب.</value>
+              </configuration>
+              <configuration name="display_name" locale="ar">
+                <value>تفاصيل الاتصال لشخص</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configuration name="description" locale="ar">
+            <value>الإطار الذي تم تدريبه في هذا التدريب</value>
+          </configuration>
+          <configuration name="display_name" locale="ar">
+            <value>إطار</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="qualification">
+              <configuration name="description" locale="ar">
+                <value>المؤهلات&#160;المرتبطة بهذا&#160;الإطار.</value>
+              </configuration>
+              <configuration name="display_name" locale="ar">
+                <value>المؤهل</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configuration name="description" locale="ar">
+            <value>تسجيل&#160;لهذا&#160;التدريب.</value>
+          </configuration>
+          <configuration name="display_name" locale="ar">
+            <value>تسجيل</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="license">
+          <configuration name="description" locale="ar">
+            <value>الرخصة الحالية&#160;لهذا&#160;التدريب.</value>
+          </configuration>
+          <configuration name="display_name" locale="ar">
+            <value>ترخيص</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam">
+          <configuration name="description" locale="ar">
+            <value>تفاصيل&#160;الامتحان&#160;لهذا&#160;التدريب.</value>
+          </configuration>
+          <configuration name="display_name" locale="ar">
+            <value>امتحان</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_institution">
+          <configuration name="description" locale="ar">
+            <value>مؤسسة التدريب&#160;التي وقع فيها التدريب</value>
+          </configuration>
+          <configuration name="display_name" locale="ar">
+            <value>مؤسسة&#160;التدريب</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="institution_district">
+              <configuration name="description" locale="ar"></configuration>
+              <configuration name="display_name" locale="ar">
+                <value>إقليم المؤسسة.</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="training-report" path="reports/training">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="ar">
+          <value>تقرير التدريب</value>
+        </configuration>
+        <configuration name="description" locale="ar">
+          <value>التقارير التي تستند إلى&#160;التدريبات&#160;الفردية في النظام.</value>
+        </configuration>
+        <configuration name="category" locale="ar">
+          <value>تقارير التدريب</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="index_num">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="ar">
+                    <value>رقم المؤشر</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="ar">
+                <value>رقم المؤشر</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="ar">
+                    <value>إطار</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="ar">
+                <value>رقم تعريف إطار التدريب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="ar">
+                    <value>تاريخ&#160;بعد التأدية</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="ar">
+                    <value>تاريخ قبل التأدية</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="ar">
+                <value>تناول&#160;التأدية</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="license">
+          <configurationGroup name="fields">
+            <configurationGroup name="license_number">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="ar">
+                    <value>رقم الترخيص</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="ar">
+                <value>رقم الترخيص</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="header" locale="ar">
+                <value>تاريخ انتهاء الترخيص</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="ar">
+                    <value>رقم التسجيل</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="ar">
+                <value>رقم التسجيل</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="ar">
+                <value>إطار</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="person">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="header" locale="ar">
+                <value>لقب</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="ar">
+                <value>الاسم الأول</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="header" locale="ar">
+                <value>أسماء أخرى</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

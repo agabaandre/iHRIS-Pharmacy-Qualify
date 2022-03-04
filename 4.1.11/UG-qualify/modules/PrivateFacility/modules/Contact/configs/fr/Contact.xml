@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="PersonContact" path="/I2CE">
+  <metadata>
+    <version>4.0.9.0</version>
+  </metadata>
+  <configurationGroup name="PersonContact" path="/I2CE" locale="fr">
+    <version>4.0.9.0</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="fr">
+      <configuration name="person_can_view_child_form_person_contact_work" locale="fr">
+        <value>Peut afficher le formulaire enfant de l&#8217;adresse professionnelle d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_work" locale="fr">
+        <value>Peut &#233;diter le formulaire enfant de l&#8217;adresse professionnelle d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_emergency" locale="fr">
+        <value>Peut afficher le formulaire enfant de contact d'urgence d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_emergency" locale="fr">
+        <value>Peut &#233;diter le formulaire enfant de contact d'urgence d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_personal" locale="fr">
+        <value>Peut afficher le formulaire enfant du contact personnel d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_personal" locale="fr">
+        <value>Peut &#233;diter le formulaire enfant du contact personnel d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_other" locale="fr">
+        <value>Peut afficher le formulaire enfant des autres contacts d&#8217;une personne</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_other" locale="fr">
+        <value>Peut &#233;diter le formulaire enfant des autres contacts d&#8217;une personne</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="person_contact_work">
+          <configuration name="display" values="single" locale="fr">
+            <value>Coordonn&#233;es professionnelles</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_emergency">
+          <configuration name="display" values="single" locale="fr">
+            <value>Contact d'urgence</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_other">
+          <configuration name="display" values="single" locale="fr">
+            <value>Autres coordonn&#233;es</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_personal">
+          <configuration name="display" values="single" locale="fr">
+            <value>Contact personnel</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="contact">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="fr">
+            <value>Actualiser informations de contact</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

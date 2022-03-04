@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="training-course" path="/I2CE">
+  <metadata>
+    <version>4.1.11.0.1</version>
+  </metadata>
+  <configurationGroup name="training-course" path="/I2CE" locale="cs">
+    <version>4.1.9.1.1</version>
+    <configurationGroup name="tranlatable_strings" locale="cs" path="/modules/training-course/translatable-strings" type="delimited"></configurationGroup>
+    <configurationGroup name="invalid_messages" path="/modules/forms/formfield_messages" locale="cs">
+      <configuration name="work" path="scheduled_training_course/end_date/bad_date">
+        <value>Konečné datum musí být po počátečním.</value>
+      </configuration>
+      <configuration name="work" path="person_scheduled_training_course/training_course_mod/bad_mod"></configuration>
+    </configurationGroup>
+    <configurationGroup name="formsdata" path="/I2CE/formsData/forms">
+      <configurationGroup name="training_course_status">
+        <configurationGroup name="open">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="cs">
+              <value>Otevřený</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="closed">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="cs">
+              <value>Uzavřený</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="training_course_evaluation">
+        <configurationGroup name="pass">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="cs">
+              <value>Úspěšný</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="fail">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="cs">
+              <value>Neúspěšný</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="incomplete">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="cs">
+              <value>Nedokončený</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="not_evaluated">
+          <configurationGroup name="fields">
+            <configuration name="name" locale="cs">
+              <value>Nehodnoceno</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="roles" path="roles/names">
+      <configurationGroup name="training_manager">
+        <configuration name="display_name" values="single" locale="cs">
+          <value>Ředitel výcviku</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_training_course_status" locale="cs">
+        <value>Upravit seznam stavů výcvíkového kurzu</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_status" locale="cs">
+        <value>Zobrazit seznam stavů výcvíkového kurzu</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_mod" locale="cs"></configuration>
+      <configuration name="can_view_database_list_training_course_mod" locale="cs"></configuration>
+      <configuration name="can_edit_database_list_training_course_status" locale="cs">
+        <value>Upravit seznam stavů výcvíkového kurzu</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_status" locale="cs">
+        <value>Zobrazit seznam stavů výcvíkového kurzu</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_evaluation" locale="cs">
+        <value>Upravit seznam hodnocení výcvíkového kurzu</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_evaluation" locale="cs">
+        <value>Zobrazit seznam hodnocení výcvíkového kurzu</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_category" locale="cs">
+        <value>Upravit seznam kategorií výcvíkového kurzu</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_category" locale="cs">
+        <value>Zrazit seznam kategorií výcvíkového kurzu</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course" locale="cs">
+        <value>Upravit seznam výcvikových kurzů</value>
+      </configuration>
+      <configuration name="can_edit_database_list_scheduled_training_course" locale="cs">
+        <value>Upravit seznam kategorií naplánovaného výcvíkového kurzu</value>
+      </configuration>
+      <configuration name="can_edit_database_list_training_course_requestor" locale="cs">
+        <value>Upravit seznam žadatelů výcvikového kurzu</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course_requestor" locale="cs">
+        <value>Upravit seznam žadatelů výcvikového kurzu</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_course" locale="cs">
+        <value>Zobrazit seznam výcvikových kurzů</value>
+      </configuration>
+      <configuration name="can_edit_scheduled_training_course" locale="cs">
+        <value>Upravit naplánovaný výcvikový kurz</value>
+      </configuration>
+      <configuration name="can_view_database_list_scheduled_training_course" locale="cs">
+        <value>Zobrazit seznam kategorií naplánovaného výcvíkového kurzu</value>
+      </configuration>
+      <configuration name="can_edit_training_course_database_lists" locale="cs">
+        <value>Upravit jisté seznamy spojené s výcvikovým modulem</value>
+      </configuration>
+      <configuration name="can_view_training_course_database_lists" locale="cs">
+        <value>Zobrazit jisté seznamy spojené s výcvikovým modulem</value>
+      </configuration>
+      <configuration name="can_edit_all_training_course_database_lists" locale="cs">
+        <value>Upravit všechny seznamy spojené s výcvikovým modulem</value>
+      </configuration>
+      <configuration name="can_view_all_training_course_database_lists" locale="cs">
+        <value>Zobrazit všechny seznamy spojené s výcvikovým modulem</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="training_course_mod">
+          <configuration name="display" values="single" locale="cs"></configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_status">
+          <configuration name="display" values="single" locale="cs">
+            <value>Stav výcvikového kurzu</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_category">
+          <configuration name="display" values="single" locale="cs">
+            <value>Kategorie výcvikového kurzu</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course">
+          <configuration name="display" values="single" locale="cs">
+            <value>Výcvikový kurz</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="cs">
+              <value>Tento formulář obsahuje základní informace o výcvikovém kurzu</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="scheduled_training_course">
+          <configuration name="display" values="single" locale="cs">
+            <value>Naplánovaný výcvikový kurz</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_scheduled_training_course">
+          <configuration name="display" values="single" locale="cs">
+            <value>Výcvikový kurz naplánovaný osobou</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_evaluation">
+          <configuration name="display" values="single" locale="cs">
+            <value>Hodnocení výcvikového kurzu</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_course_requestor">
+          <configuration name="display" values="single" locale="cs">
+            <value>Žadatel výcviku</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Training_Course_Evaluation">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Název</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="competency_evaluation">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Vyhodnocení kompetence</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Training_Course">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course_mod">
+              <configuration name="headers" type="delimited" locale="cs"></configuration>
+            </configurationGroup>
+            <configurationGroup name="has_certification_date">
+              <configuration name="headers" type="delimited" locale="cs"></configuration>
+            </configurationGroup>
+            <configurationGroup name="certificate">
+              <configuration name="headers" type="delimited" locale="cs"></configuration>
+            </configurationGroup>
+            <configurationGroup name="topic">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Téma</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Poznámky</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Učiliště</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_funder">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Investoři výcviku</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="continuing_education_course">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Poskytnutá CEU</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_status">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Stav</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_category">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Kategorie</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Person_Scheduled_Training_Course">
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course_mod">
+              <configuration name="headers" type="delimited" locale="cs"></configuration>
+            </configurationGroup>
+            <configurationGroup name="certification_date">
+              <configuration name="headers" locale="cs" type="delimited"></configuration>
+            </configurationGroup>
+            <configurationGroup name="attending">
+              <configuration name="headers" locale="cs" type="delimited"></configuration>
+            </configurationGroup>
+            <configurationGroup name="is_retraining">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Rekvalifikace</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="completed">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Dokončeno</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="duty_commencement_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Zahájení povinnosti</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="request_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum žádosti</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Poznámky</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="average">
+              <configuration name="headers" type="delimited" locale="cs"></configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_evaluation">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Vyhodnocení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_course_requestor">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Žadatel</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="scheduled_training_course">
+              <configuration name="headers" type="delimited" locale="cs"></configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Scheduled_Training_Course">
+          <configurationGroup name="meta" path="meta/list/default">
+            <configuration name="display_string" locale="cs">
+              <value>%s v %s</value>
+            </configuration>
+          </configurationGroup>
+          <configurationGroup name="fields">
+            <configurationGroup name="training_course">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Výcvikový kurz</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Místo</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="num_students">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Maximální počet studentů</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Poznámky</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="instructors">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Přednášející</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum zahájení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Datum ukončení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Umístění</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="editstudents">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs"></configuration>
+          <configuration name="action_header" values="single" locale="cs"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_training_participation" path="/modules/CustomReports/relationships/student_training_participation">
+        <configuration name="display_name" locale="cs"></configuration>
+        <configuration name="description" locale="cs"></configuration>
+        <configurationGroup name="joins">
+          <configurationGroup name="person_scheduled_training_course">
+            <configuration name="display_name" locale="cs"></configuration>
+            <configurationGroup name="joins">
+              <configurationGroup name="person">
+                <configuration name="display_name" locale="cs"></configuration>
+                <configurationGroup name="joins">
+                  <configurationGroup name="person_position">
+                    <configuration name="display_name" locale="cs"></configuration>
+                    <configurationGroup name="joins">
+                      <configurationGroup name="position">
+                        <configuration name="display_name" locale="cs"></configuration>
+                        <configurationGroup name="joins">
+                          <configurationGroup name="facility">
+                            <configuration name="display_name" locale="cs"></configuration>
+                            <configurationGroup name="joins">
+                              <configurationGroup name="facility_contact">
+                                <configuration name="display_name" locale="cs"></configuration>
+                              </configurationGroup>
+                            </configurationGroup>
+                          </configurationGroup>
+                        </configurationGroup>
+                      </configurationGroup>
+                    </configurationGroup>
+                  </configurationGroup>
+                  <configurationGroup name="person_contact">
+                    <configuration name="display_name" locale="cs"></configuration>
+                  </configurationGroup>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+          <configurationGroup name="training_course">
+            <configuration name="display_name" locale="cs">
+              <value>Výcvikový kurz</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="schedule-person" path="/modules/training-course/page/schedule-person">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/Aktualizovat výcvikový kurz naplánovaný osobou</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

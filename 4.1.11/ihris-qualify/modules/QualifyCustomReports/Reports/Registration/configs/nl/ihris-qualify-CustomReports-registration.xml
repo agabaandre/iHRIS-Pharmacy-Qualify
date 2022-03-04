@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-registration" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-registration" path="//modules/CustomReports" locale="nl">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-registration" path="relationships/registration">
+      <configuration name="display_name" locale="nl">
+        <value>Registratie</value>
+      </configuration>
+      <configuration name="description" locale="nl">
+        <value>Relatie voor rapportages over registraties.</value>
+      </configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="training">
+          <configuration name="description" locale="nl">
+            <value>De opleiding die gekoppeld is aan deze registratie.</value>
+          </configuration>
+          <configuration name="display_name" locale="nl">
+            <value>Opleiding</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="nl">
+                <value>Het kader dat bij deze opleiding hoort.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Kader</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="person">
+              <configuration name="description" locale="nl">
+                <value>De persoon die deze opleiding gevolgd heeft.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Persoon</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="personal_contact">
+                  <configuration name="description" locale="nl">
+                    <value>De persoonlijke contactgegevens voor deze persoon.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="nl">
+                    <value>Persoonlijk contactpersoon</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-registration" path="reports/registration">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="nl">
+          <value>Registratierapportage</value>
+        </configuration>
+        <configuration name="description" locale="nl">
+          <value>Rapportages gebaseerd op registraties in het systeem.</value>
+        </configuration>
+        <configuration name="category" locale="nl">
+          <value>Opleidingsrapportages</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configuration name="header" locale="nl">
+                <value>Registratienummer</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration_date">
+              <configuration name="header" locale="nl">
+                <value>Registratiedatum</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="nl">
+                    <value>Registratiedatum na</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="nl">
+                    <value>Registratiedatum voor</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="nl">
+                    <value>Kader</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="nl">
+                <value>Opleidingkader-ID</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="nl">
+                    <value>Opnamedatum na</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="nl">
+                    <value>Opnamedatum voor</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="nl">
+                <value>Opnamedatum</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="person">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="header" locale="nl">
+                <value>Achternaam</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="nl">
+                <value>Voornaam</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="personal_contact">
+          <configurationGroup name="fields">
+            <configurationGroup name="address">
+              <configuration name="header" locale="nl">
+                <value>Postadres</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="nl">
+                <value>Kader</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportView-registration" path="reportViews/registration">
+      <configuration name="description" locale="nl">
+        <value>Een lijst met alle geregistreerde gezondheidswerkers.</value>
+      </configuration>
+      <configuration name="display_name" locale="nl">
+        <value>Geregistreerde gezondheidswerkers</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

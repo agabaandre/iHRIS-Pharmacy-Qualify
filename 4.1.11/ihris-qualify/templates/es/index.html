@@ -1,0 +1,51 @@
+<div id="siteContent">
+<br style="clear: both;"><div role="records">
+<h2><a href="person" class="updateRecords">Añadir Persona</a></h2>
+<p>
+Añadir un nuevo registro para un estudiante o profesional de la salud. Para un registro, actualice información personal y de contacto; añada detalles de programas de entrenamiento en curso o completos; guarde inscripciones y resultados de examen; emita registros, licencias y renovaciones de licencias; y registre licencias de prácticas privadas, emigración pedidos de verificación, acciones disciplinarias y despliegues.
+</p>
+
+<hr></div>
+
+<span type="module" name="SelfService" ifenabled="true" task="can_view_own_personnel">
+  <span type="module" name="SelfService" if="!userHasRecord()">
+    
+  </span>
+  <span type="module" name="SelfService" if="userHasRecord()">
+    <h2><span type="module" name="SelfService" call="linkToPersonRecord('view?id=')">Ver su registro</span></h2>
+    <p>
+      Ver sus propios datos.
+    </p>
+  </span>
+</span>
+
+<div task="custom_reports_can_access">
+<h2><a href="search" class="searchRecords">Buscar Registros</a></h2>
+<p>
+Buscar cualquier registro de persona en el sistema para verlo, imprimirlo o actualizarlo.
+</p>
+</div>
+
+
+<span type="module" name="CustomReports" ifenabled="true">
+  <div role="manager|decision_maker">
+    <hr><h2><a href="CustomReports/view/reportViews" class="createRecords">Ver Reportes</a></h2>
+    <p>
+      Los informes permiten el análisis de los datos de recursos humanos de varias maneras. Personalice, muestre e imprima listas de trabajadores o estudiantes, tablas estadísticas y otros informes estándar. El acceso está limitado a los Administradores de Operaciones de Datos y a los Tomadores de Decisiones.
+    </p>
+  </div>
+</span>
+
+
+<div role="manager">
+<hr><h2><a href="configure" class="adminDatabase">Configurar Sistema</a></h2>
+<p>
+Configurar módulos, administrar la base de datos y crear o actualizar cuentas de usuario.
+</p>
+</div>
+
+
+
+<hr><h2><a href="password">Cambiar Contraseña</a></h2>
+
+</div>

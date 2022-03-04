@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-person" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-person" path="//modules/CustomReports" locale="nl">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-person" path="relationships/person">
+      <configuration name="display_name" locale="nl">
+        <value>Persoon</value>
+      </configuration>
+      <configuration name="description" locale="nl">
+        <value>De persoonsrelatie met de eerste opleidingsgegevens.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="reg_results">
+          <configuration name="description" locale="nl">
+            <value>De resultaten van het examen en registratie voor de eerste opleiding.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="intake_year">
+          <configuration name="description" locale="nl">
+            <value>Het jaar waarin de eerste opleiding heeft plaatsgevonden.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_year">
+          <configuration name="description" locale="nl">
+            <value>Het jaar waarin het examen is afgenomen.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="in_training">
+          <configuration name="description" locale="nl">
+            <value>Ja of nee om te bepalen of deze persoon nog steeds een opleiding volgt.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="demographic">
+          <configuration name="description" locale="nl">
+            <value>Demografische gegevens voor deze persoon.</value>
+          </configuration>
+          <configuration name="display_name" locale="nl">
+            <value>Demografie</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="birth_district">
+              <configuration name="description" locale="nl">
+                <value>Het district waar deze persoon is geboren.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Geboortedistrict</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="deployment">
+          <configuration name="description" locale="nl">
+            <value>De meest recente inzet voor deze persoon.</value>
+          </configuration>
+          <configuration name="display_name" locale="nl">
+            <value>Inzet</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="first_training">
+          <configuration name="description" locale="nl">
+            <value>De eerste opleiding die deze persoon is gaan volgen.</value>
+          </configuration>
+          <configuration name="display_name" locale="nl">
+            <value>Eerste opleiding</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="nl">
+                <value>Het kader van de eerste opleiding.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Kader</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam">
+              <configuration name="description" locale="nl">
+                <value>De examengegevens voor de eerste opleiding.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Examen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration">
+              <configuration name="description" locale="nl">
+                <value>De registratiegegevens voor de eerste opleiding.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Registratie</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="description" locale="nl">
+                <value>De opleidingsinstelling waar de eerste opleiding heeft plaatsgevonden.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Opleidingsinstituut</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="institution_district">
+                  <configuration name="description" locale="nl">
+                    <value>Het district waar de opleidingsinstelling is gelegen.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="nl">
+                    <value>Instellingsdistrict</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="training_disrupt">
+              <configuration name="description" locale="nl">
+                <value>De huidige opleidingsonderbreking voor deze opleiding als die er is.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Opleidingsonderbreking</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-person" path="reports/person">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="nl">
+          <value>Persoonsrapportage</value>
+        </configuration>
+        <configuration name="description" locale="nl">
+          <value>Rapportages over mensen in het systeem met hun eerste opleiding.</value>
+        </configuration>
+        <configuration name="category" locale="nl">
+          <value>Persoonsrapportages</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="header" locale="nl">
+                <value>Achternaam</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="nl">
+                <value>Voornaam</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="header" locale="nl">
+                <value>Andere namen</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="first_training">
+          <configurationGroup name="fields">
+            <configurationGroup name="index_num">
+              <configuration name="header" locale="nl">
+                <value>Indexnummer</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="nl">
+                    <value>Kader</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="nl">
+                <value>Opleidingkader-ID</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="nl">
+                    <value>Opnamedatum na</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="nl">
+                    <value>Opnamedatum voor</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="nl">
+                <value>Opnamedatum</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="graduation">
+              <configuration name="header" locale="nl">
+                <value>Afstudeerdatum</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training_disrupt">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_date">
+              <configuration name="header" locale="nl">
+                <value>Datum onderbreking</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="institution_district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="nl">
+                <value>Instellingsdistrict</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configuration name="header" locale="nl">
+                <value>Registratienummer</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="exam">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="header" locale="nl">
+                <value>Examendatum</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configuration name="header" locale="nl">
+                <value>Examenresultaten</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="nl">
+                <value>Kader</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="gender">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="nl">
+                    <value>Geslacht</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="nl">
+                <value>Geslacht</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="birth_district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="nl">
+                <value>Geboortedistrict</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="reg_results">
+          <configuration name="header" locale="nl">
+            <value>Registratieresultaten</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="top_birth_district">
+        <configuration name="description" locale="nl">
+          <value>Een cirkeldiagram van het aantal mensen in opleiding per geboortedistrict.</value>
+        </configuration>
+        <configuration name="display_name" locale="nl">
+          <value>District met de meeste geboorten</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="nl">
+                  <value>Cirkeldiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="nl">
+                  <value>Staafdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="nl">
+                  <value>Kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="nl">
+                  <value>Gestapeld kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="nl">
+                  <value>Spreidingsdiagram</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_intake_year">
+        <configuration name="description" locale="nl">
+          <value>Het aantal studenten dat een opleiding aanvangt per jaar.</value>
+        </configuration>
+        <configuration name="display_name" locale="nl">
+          <value>Opnamejaar student</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="nl">
+                  <value>Cirkeldiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="nl">
+                  <value>Staafdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="nl">
+                  <value>Kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="nl">
+                  <value>Gestapeld kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="nl">
+                  <value>Spreidingsdiagram</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="pass_fail_person">
+        <configuration name="description" locale="nl">
+          <value>De resultaten met betrekking tot slagen en zakken van de eerste opleiding van iedere persoon.</value>
+        </configuration>
+        <configuration name="display_name" locale="nl">
+          <value>Slagen of zakken per eerste opleiding</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="nl">
+                  <value>Cirkeldiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="nl">
+                  <value>Staafdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="nl">
+                  <value>Kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="nl">
+                  <value>Gestapeld kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="nl">
+                  <value>Spreidingsdiagram</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="final_exam_reg">
+        <configuration name="description" locale="nl">
+          <value>De registratieresultaten voor de eerste opleiding van iedere persoon.</value>
+        </configuration>
+        <configuration name="display_name" locale="nl">
+          <value>Registratieresultaten per eerste opleiding</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="nl">
+                  <value>Cirkeldiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="nl">
+                  <value>Staafdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="nl">
+                  <value>Kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="nl">
+                  <value>Gestapeld kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="nl">
+                  <value>Spreidingsdiagram</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_training_year">
+        <configuration name="description" locale="nl">
+          <value>Studenten per opnamejaar gesorteerd op nog in opleiding of niet langer in opleiding.</value>
+        </configuration>
+        <configuration name="display_name" locale="nl">
+          <value>Studenten in opleiding per jaar</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="nl">
+                  <value>Cirkeldiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="nl">
+                  <value>Staafdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="nl">
+                  <value>Kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="nl">
+                  <value>Gestapeld kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="nl">
+                  <value>Spreidingsdiagram</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

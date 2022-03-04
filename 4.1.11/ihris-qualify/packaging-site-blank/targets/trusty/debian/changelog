@@ -1,0 +1,167 @@
+ihris-qualify-site (4.2.1.2~trusty) trusty; urgency=medium
+
+  * Ubuntu Blank Site Release Version 4.2.1.2 647: Carl Leitner
+    2015-10-26 {4.2.1.1-ubuntu-site-blank-release} "Ubuntu Blank Site
+    Release Version 4.2.1.1"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Mon, 26 Oct 2015 15:04:22 +0000
+
+ihris-qualify-site (4.2.1.1~trusty) trusty; urgency=medium
+
+  * Ubuntu Blank Site Release Version 4.2.1.1 646:
+    Carl Leitner 2015-10-26 {4.2.1.1-ubuntu-site-release,
+    4.2.1.0-ubuntu-site-blank-release} "Ubuntu Site Release Version
+    4.2.1.1"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Mon, 26 Oct 2015 15:01:43 +0000
+
+ihris-qualify-site (4.2.0.10~trusty) trusty; urgency=medium
+
+  * Ubuntu Blank Site Release Version 4.2.0.10 623: Sovello Hildebrand
+    2015-08-07 {4.2.0.5-ubuntu-site-release} "Ubuntu Site Release
+    Version 4.2.0.5" 622: Sovello Hildebrand 2015-08-07 set class
+    attribute for main site wrapper 621: Sovello Hildebrand 2015-08-07
+    set auto-hide main in main.html file for blank and demo sites 620:
+    Sovello Hildebrand 2015-08-06 {4.2.0.9-ubuntu-site-blank-release}
+    "Ubuntu Blank Site Release Version 4.2.0.9"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Fri, 07 Aug 2015 14:15:44 +0000
+
+ihris-qualify-site (4.2.0.9~trusty) trusty; urgency=medium
+
+  * Ubuntu Blank Site Release Version 4.2.0.9 619: Sovello Hildebrand
+    2015-08-06 set correct paths for copying site config values
+    file, set path to copy the correct blank site and set correct
+    path to site config file 618: Sovello Hildebrand 2015-08-06
+    {4.2.0.4-ubuntu-site-release} "Ubuntu Site Release Version 4.2.0.4"
+    617: Sovello Hildebrand 2015-08-06 {4.2.0.11-ubuntu-release}
+    "Ubuntu Release Version 4.2.0.11" 616: Sovello Hildebrand
+    2015-08-06 change path for copying sites config values 615: Sovello
+    Hildebrand 2015-08-06 set option to increment release version
+    default to yes and push path to be the default bound location
+    614: Sovello Hildebrand 2015-08-06 set option to increment
+    release version default to yes 613: Launchpad Translations
+    on behalf of intrahealth+informatics 2015-08-06 Launchpad
+    automatic translations update.  612: Sovello Hildebrand
+    2015-07-30 comments out step to get user defined release
+    version 611: Sovello Hildebrand 2015-07-30 update mechanism
+    to extract i2ce commit path 610: Sovello Hildebrand 2015-07-30
+    modifies mechanism to extract i2ce and branch commit path 609:
+    Sovello Hildebrand 2015-07-29 {4.2.0.10-ubuntu-release} "Ubuntu
+    Release Version 4.2.0.10" 608: Launchpad Translations on behalf of
+    intrahealth+informatics 2015-07-24 Launchpad automatic translations
+    update.  607: Siebrand Mazeland 2015-07-23 Localisation updates
+    from https://translatewiki.net.  606: Launchpad Translations
+    on behalf of intrahealth+informatics 2015-07-22 Launchpad
+    automatic translations update.  605: Siebrand Mazeland 2015-07-14
+    Localisation updates from https://translatewiki.net.  604:
+    Launchpad Translations on behalf of intrahealth+informatics
+    2015-07-09 Launchpad automatic translations update.  603:
+    Siebrand Mazeland 2015-07-08 Localisation updates from
+    https://translatewiki.net.  602: Siebrand Mazeland 2015-07-01
+    Localisation updates from https://translatewiki.net.  601:
+    Launchpad Translations on behalf of intrahealth+informatics
+    2015-06-26 Launchpad automatic translations update.  600:
+    Siebrand Mazeland 2015-06-22 Localisation updates from
+    https://translatewiki.net.  599: Siebrand Mazeland 2015-06-18
+    Localisation updates from https://translatewiki.net.  598:
+    Launchpad Translations on behalf of intrahealth+informatics
+    2015-06-09 Launchpad automatic translations update.  597:
+    Siebrand Mazeland 2015-06-08 Localisation updates from
+    https://translatewiki.net.  596: Launchpad Translations on behalf
+    of intrahealth+informatics 2015-06-02 Launchpad automatic
+    translations update.  595: Siebrand Mazeland 2015-05-25
+    Localisation updates from https://translatewiki.net.  594:
+    Launchpad Translations on behalf of intrahealth+informatics
+    2015-05-24 Launchpad automatic translations update.  593:
+    Siebrand Mazeland 2015-05-16 Localisation updates from
+    https://translatewiki.net.  592: Launchpad Translations on behalf
+    of intrahealth+informatics 2015-05-05 Launchpad automatic
+    translations update.  591: Siebrand Mazeland 2015-05-04
+    Localisation updates from https://translatewiki.net.  590:
+    Launchpad Translations on behalf of intrahealth+informatics
+    2015-03-31 Launchpad automatic translations update.  589: Carl
+    Leitner 2015-03-25 updated logic for surname ignore 588: Carl
+    Leitner 2015-03-23 {4.2.0.8-ubuntu-site-blank-release} "Ubuntu
+    Blank Site Release Version 4.2.0.8"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Thu, 06 Aug 2015 17:28:10 +0000
+
+ihris-qualify-site (4.2.0.8~trusty) trusty; urgency=medium
+
+  * Ubuntu Blank Site Release Version 4.2.0.8 587: Carl Leitner
+    2015-03-23 {4.2.0.3-ubuntu-site-release} "Ubuntu Site Release
+    Version 4.2.0.3" 586: Carl Leitner 2015-03-23 added missing config
+    files for ubuntu packaging (were accidently kept out b/c bzr
+    ignored) 585: Carl Leitner 2015-03-23 {4.2.0.2-ubuntu-site-release}
+    "Ubuntu Site Release Version 4.2.0.2" 584: Carl Leitner 2015-03-23
+    {4.2.0.7-ubuntu-site-blank-release} "Ubuntu Blank Site Release
+    Version 4.2.0.7"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Mon, 23 Mar 2015 12:39:06 +0000
+
+ihris-qualify-site (4.2.0.7~trusty) trusty; urgency=medium
+
+  * Ubuntu Blank Site Release Version 4.2.0.7 583: Launchpad
+    Translations on behalf of intrahealth+informatics 2015-03-12
+    Launchpad automatic translations update.  582: Carl Leitner
+    2015-03-12 {4.2.0.6-ubuntu-site-blank-release} "Ubuntu Blank Site
+    Release Version 4.2.0.6"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Mon, 23 Mar 2015 12:35:38 +0000
+
+ihris-qualify-site (4.2.0.6~trusty) trusty; urgency=medium
+
+  * Ubuntu Blank Site Release Version 4.2.0.6 581: Carl Leitner
+    2015-03-12 {4.2.0.5-ubuntu-site-blank-release} "Ubuntu Blank Site
+    Release Version 4.2.0.5"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Thu, 12 Mar 2015 01:57:03 +0000
+
+ihris-qualify-site (4.2.0.5~trusty) trusty; urgency=medium
+
+  * Ubuntu Blank Site Release Version 4.2.0.5 580: Carl Leitner
+    2015-03-12 {4.2.0.4-ubuntu-site-blank-release} "Ubuntu Site Release
+    Version 4.2.0.4"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Thu, 12 Mar 2015 01:53:42 +0000
+
+ihris-qualify-site (4.2.0.4~trusty) trusty; urgency=medium
+
+  * Ubuntu Site Release Version 4.2.0.4 579: Carl Leitner 2015-03-12
+    {4.2.0.3-ubuntu-site-blank-release} "Ubuntu Site Release Version
+    4.2.0.3"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Thu, 12 Mar 2015 01:52:56 +0000
+
+ihris-qualify-site (4.2.0.3~trusty) trusty; urgency=medium
+
+  * Ubuntu Site Release Version 4.2.0.3 578: Carl Leitner 2015-03-12
+    {4.2.0.2-ubuntu-site-blank-release} "Ubuntu Site Release Version
+    4.2.0.2"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Thu, 12 Mar 2015 01:44:06 +0000
+
+ihris-qualify-site (4.2.0.2~trusty) trusty; urgency=medium
+
+  * Ubuntu Site Release Version 4.2.0.2 577: Carl Leitner 2015-03-12
+    {4.2.0.1-ubuntu-site-blank-release} "Ubuntu Site Release Version
+    4.2.0.1"
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Thu, 12 Mar 2015 01:39:37 +0000
+
+ihris-qualify-site (4.2.0.1~trusty) trusty; urgency=medium
+
+  * Ubuntu Site Release Version 4.2.0.1 576: Carl Leitner 2015-03-12
+    {4.2.0.0-ubuntu-site-blank-release} initial blank site ubuntu
+    packaging commit
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Thu, 12 Mar 2015 01:30:38 +0000
+
+ihris-qualify-site (4.2.0.0~trusty) trusty; urgency=medium
+
+  * Ubuntu Release Version 4.2.0.0
+    -Initial Packaging
+    --http://bazaar.launchpad.net/~intrahealth+informatics/ihris-qualify/4.2-dev
+
+ -- Carl Leitner <litlfred@ibiblio.org>  Tue, 17 Feb 2015 08:08:59 -0500

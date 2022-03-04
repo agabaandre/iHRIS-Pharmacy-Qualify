@@ -1,0 +1,76 @@
+<div id="siteContent">
+  <h1>View PrivateFacility: <span type="form" name="privatefacility:name" />, <span type="form" name="privatefacility:location" /></h1>
+
+  <div class="recordsData">
+    <h3><a name="jump_individual">Health Unit Information</a></h3>
+    <p class="editRecordsData" id="individual_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('individual', this );">Hide</a>
+    
+    </p>
+    
+    <div id="individual">
+      <div class="editRecord" task='person_can_edit'>
+	<p>Edit This Information</p>
+	<ul>
+	  <li><span type="form" name="privatefacility:id" href="privatefacility?id=" >Update this Information</span></li>
+	  <li><span type="form" name="privatefacility:id" parent="true" href="field_history?field=name,location,privatefacility_type&amp;type=privatefacility&amp;id=">
+	    View Name History</span></li>
+	</ul>
+      </div> <!-- editRecord -->
+      
+      <div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+	    <th colspan="2">Name / Nationality</th>
+	  </tr>
+	  <span type="form" name="privatefacility:name" showhead="default"></span>
+	  <span type="form" name="privatefacility:owner" showhead="default"></span>
+	  <span type="form" name="privatefacility:owner_phone" showhead="default"></span>
+	  <span type="form" name="privatefacility:owner_email" showhead="default"></span>
+	  <span type="form" name="privatefacility:service_type" showhead="default" class="even"></span>
+	  <span type="form" name="privatefacility:privatefacility_type" showhead="default" class="even"></span>
+	  <span type="form" name="privatefacility:location" showhead="location" mline="true"></span>
+	  <span type="form" name="privatefacility:supervisor" showhead="default"></span>
+	  <span type="form" name="privatefacility:supervisor_phone" showhead="default"></span>
+	  <span type="form" name="privatefacility:supervisor_email" showhead="default"></span>
+	</table>
+      </div> <!-- dataTable -->
+       
+      <span type="module" name="FacilityService" ifenabled="true">
+        
+	  <div class="recordsData">
+	<h3><a name="jump_registration">Facility Services Provided</a></h3>
+	<p class="editRecordsData" id="service_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('facility_registration', this );">Hide</a>
+  <span type="form" name="privatefacility:id" href="facility_service?parent=">Add Service Provided</span>
+		</p>
+
+	<div id="facility_service"></div> <!-- contact -->
+	<br style="clear: both;" />
+	</div> <!-- recordsData -->
+      </span>
+
+	      <span type="module" name="FacilityRegistration" ifenabled="true">
+        
+	  <div class="recordsData">
+	<h3><a name="jump_registration">Registration Information</a></h3>
+	<p class="editRecordsData" id="registration_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('facility_registration', this );">Hide</a>
+		</p>
+
+	<div id="facility_registration"></div> <!-- contact -->
+	<br style="clear: both;" />
+	</div> <!-- recordsData -->
+      </span>
+	
+      <span type="module" name="FacilityLicense" ifenabled="true">
+	<div class="recordsData">
+	<h3><a name="jump_license">License Information</a></h3>
+	<p class="editRecordsData" id="license_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('facility_license', this );">Hide</a>
+		</p>
+
+	<div id="facility_license"></div>
+	<br style="clear: both;" />	
+	</div> <!--  recordsData -->
+  </span>
+
+    </div>
+  </div>
+</div>

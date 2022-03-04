@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-common-Job" path="/I2CE">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-common-Job" path="/I2CE" locale="es">
+    <version>4.1.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_classification" locale="es">
+        <value>Editar la lista de clasificación</value>
+      </configuration>
+      <configuration name="can_view_database_list_classification" locale="es">
+        <value>Ver la lista de clasificación</value>
+      </configuration>
+      <configuration name="can_edit_database_list_job" locale="es">
+        <value>Editar la lista de trabajo</value>
+      </configuration>
+      <configuration name="can_view_database_list_job" locale="es">
+        <value>Ver la lista de trabajo</value>
+      </configuration>
+      <configuration name="can_edit_job_structure_database_lists" locale="es">
+        <value>Se puede editar parte de la estructura de la lista en la base de datos</value>
+      </configuration>
+      <configuration name="can_view_job_structure_database_lists" locale="es">
+        <value>Se puede ver parte de la estructura de la lista en la base de datos</value>
+      </configuration>
+      <configuration name="can_edit_all_job_structure_database_lists" locale="es">
+        <value>Se puede editar toda la estructura de trabajo en la lista de la base de datos</value>
+      </configuration>
+      <configuration name="can_view_all_job_structure_database_lists" locale="es">
+        <value>Se puede ver toda la estructura de trabajo en la lista de la base de datos</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="job">
+          <configuration name="display" values="single" locale="es">
+            <value>Empleo</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="classification">
+          <configuration name="display" values="single" locale="es">
+            <value>Clasificación</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Classification">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Nombre</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="description">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Descripción</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Código</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_SalaryGrade">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Nombre</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Inicio</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Fin</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="midpoint">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Punto medio</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Notas</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Job">
+          <configurationGroup name="fields">
+            <configurationGroup name="title">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Título</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Grupo (Sólo profesionales de la salud)</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Código</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="description">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Descripción</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="classification">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Clasificación</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

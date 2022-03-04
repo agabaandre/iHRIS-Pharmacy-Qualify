@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="QualifySelfServiceRegister">
+  <metadata>
+    <displayName>Self Service Application</displayName>
+    <category>Application Component</category>
+    <creator>Carl Leitner</creator>
+    <email>litlfred@ibiblio.org</email>
+    <link>https://launchpad.net/i2ce</link>
+    <version>4.2.2.0</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <path name="classes">
+      <value>./lib</value>
+    </path>
+    <path name="templates">
+      <value>./templates</value>
+    </path>
+    <requirement name="QualifySelfService">
+      <atLeast version="4.1" />
+    </requirement>
+  </metadata>
+  <configurationGroup name="QualifySelfServiceRegister" path="/">
+    <configurationGroup name="SS" path="/modules/SelfService">
+      <configurationGroup name="page">
+        <configurationGroup name="register">
+          <version>4.0.7.19</version>
+          <configuration name="style" values="single">
+            <value>shell</value>
+          </configuration>
+          <configuration name="class" values="single">
+            <displayName>Page Class</displayName>
+            <description>The class responsible for displaying this page</description>
+            <status>required:true</status>
+            <value>iHRIS_Page_SelfService_Register</value>
+          </configuration>
+          <configurationGroup name="args">
+            <displayName>Page Options</displayName>
+            <description>The options that control the access and display of all pages</description>
+            <configuration name="title" values="single" locale="en_US">
+              <displayName>Page Title</displayName>
+              <description>Page Title</description>
+              <status>required:true</status>
+              <value>Add/Update Person</value>
+            </configuration>
+            <configuration name="access" values="many">
+              <value>all</value>
+            </configuration>
+            <configuration name="defaultHTMLFile" values="many">
+              <displayName>Default HTML File</displayName>
+              <description>The default HTML File for this page</description>
+              <value>form_self_service_register.html</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

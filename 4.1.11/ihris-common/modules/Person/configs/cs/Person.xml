@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Person" path="/I2CE">
+  <metadata>
+    <version>4.1.10.0.1</version>
+  </metadata>
+  <configurationGroup name="Person" path="/I2CE" locale="cs">
+    <version>4.1.9.0.1</version>
+    <configurationGroup name="page_feedback_messages" path="/modules/forms/page_feedback_messages">
+      <configuration name="person_save" locale="cs">
+        <value>Tento záznam byl uložen.</value>
+      </configuration>
+      <configuration name="person_child_save" locale="cs">
+        <value>Tento záznam byl uložen.</value>
+      </configuration>
+      <configuration name="person_child_delete_success" locale="cs"></configuration>
+      <configuration name="person_child_delete_fail" locale="cs"></configuration>
+      <configuration name="person_child_delete_not_permitted" locale="cs"></configuration>
+      <configuration name="person_child_delete_not_allowed" locale="cs"></configuration>
+    </configurationGroup>
+    <configurationGroup name="invalid_formfield_message" path="/modules/forms/formfield_messages" locale="cs">
+      <configuration name="person_surname" path="person/surname/unique">
+        <value>Duplicitní záznamy odpovídající názvu tohoto záznamu:</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="cs">
+      <configuration name="person_can_view" locale="cs">
+        <value>Může zobrazit stránku osoby</value>
+      </configuration>
+      <configuration name="person_can_edit" locale="cs">
+        <value>Může upravit stránku osoby</value>
+      </configuration>
+      <configuration name="person_can_view_child_forms" locale="cs">
+        <value>Může zobrazit všechny podřazené formuláře osoby</value>
+      </configuration>
+      <configuration name="person_can_edit_child_forms" locale="cs">
+        <value>Může upravit všechny podřazené formuláře osoby</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="person">
+          <configuration name="display" values="single" locale="cs">
+            <value>Osoba</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="cs">
+              <value>Tento formulář obsahuje základní informace o osobách jako jejich jména a bydliště.</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Person">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Příjmení</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Křestní jméno</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Další jména</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="nationality">
+              <configuration name="headers" type="delimited" locale="cs">
+                <value>default:Národnost</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="residence">
+              <configuration name="headers" type="delimited" values="many" locale="cs">
+                <value>default:Bydliště</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="person">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Přidat/Aktualizovat osobu</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="view">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="cs">
+            <value>Zobrazit osobu</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

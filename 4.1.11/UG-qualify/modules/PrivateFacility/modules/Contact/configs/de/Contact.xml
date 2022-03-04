@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="PersonContact" path="/I2CE">
+  <metadata>
+    <version>4.0.9.0</version>
+  </metadata>
+  <configurationGroup name="PersonContact" path="/I2CE" locale="de">
+    <version>4.0.9.0</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="de">
+      <configuration name="person_can_view_child_form_person_contact_work" locale="de">
+        <value>Kann das zum Arbeitskontakt eines Mitarbeiters geh&#246;rende Datenblatt einsehen</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_work" locale="de">
+        <value>Kann das zum Arbeitskontakt eines Mitarbeiters geh&#246;rende Datenblatt bearbeiten</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_emergency" locale="de">
+        <value>Kann das zum Notfallkontakt eines Mitarbeiters geh&#246;rende Datenblatt einsehen</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_emergency" locale="de">
+        <value>Kann das zum Notfallkontakt eines Mitarbeiters geh&#246;rende Datenblatt bearbeiten</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_personal" locale="de">
+        <value>Kann das zum pers&#246;nlichen Kontakt eines Mitarbeiters geh&#246;rende Datenblatt einsehen</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_personal" locale="de">
+        <value>Kann das zum pers&#246;nlichen Kontakt eines Mitarbeiters geh&#246;rende Datenblatt bearbeiten</value>
+      </configuration>
+      <configuration name="person_can_view_child_form_person_contact_other" locale="de">
+        <value>Kann das zu einem anderen Kontakt eines Mitarbeiters geh&#246;rende Datenblatt einsehen</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_contact_other" locale="de">
+        <value>Kann das zu einem anderen Kontakt eines Mitarbeiters geh&#246;rende Datenblatt bearbeiten</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="person_contact_work">
+          <configuration name="display" values="single" locale="de">
+            <value>Arbeitskontakt</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_emergency">
+          <configuration name="display" values="single" locale="de">
+            <value>Notfallkontakt</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_other">
+          <configuration name="display" values="single" locale="de">
+            <value>Anderer Kontakt</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_contact_personal">
+          <configuration name="display" values="single" locale="de">
+            <value>Pers&#246;nlicher Kontakt</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="contact">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="de">
+            <value>Kontaktinformation hinzuf&#252;gen/ aktualisieren</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

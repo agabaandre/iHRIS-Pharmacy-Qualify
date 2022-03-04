@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-institution" path="/modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-institution" path="/modules/CustomReports" locale="fr">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-institution" path="relationships/institution">
+      <configuration name="display_name" locale="fr">
+        <value>Établissement de formation</value>
+      </configuration>
+      <configuration name="description" locale="fr">
+        <value>Relation pour tous les établissements de formation dans le système.</value>
+      </configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="facility_contact">
+          <configuration name="description" locale="fr">
+            <value>Les coordonnées de cette institution.</value>
+          </configuration>
+          <configuration name="display_name" locale="fr"></configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_agent">
+          <configuration name="description" locale="fr">
+            <value>L'agent d'installation pour cette institution.</value>
+          </configuration>
+          <configuration name="display_name" locale="fr">
+            <value>Agent d'installation</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configuration name="description" locale="fr">
+            <value>Le quartier où cet établissement est situé.</value>
+          </configuration>
+          <configuration name="display_name" locale="fr"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-institution" path="reports/institution">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="fr">
+          <value>Rapports de l'établissement de formation</value>
+        </configuration>
+        <configuration name="description" locale="fr">
+          <value>Une liste de toutes les institutions de formation.</value>
+        </configuration>
+        <configuration name="category" locale="fr">
+          <value>Établissement de formation</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="facility_agent">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="fr">
+                    <value>Agent d'installation</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="fr">
+                <value>ID de l'agent d'installation de l'institution de formation.</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="header" locale="fr">
+                <value>Nom de l'établissement de formation</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="fr">
+                    <value>Emplacement de l'établissement de formation</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="fr">
+                <value>ID de l'emplacement de l'établissement de formation</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="fr"></configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="facility_agent">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="fr">
+                <value>Agent d'installation</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="facility_contact">
+          <configurationGroup name="fields">
+            <configurationGroup name="address">
+              <configuration name="header" locale="fr">
+                <value>Adresse postale</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportView-institution" path="reportViews/institution">
+      <configuration name="description" locale="fr">
+        <value>Une liste de toutes les institutions de formation.</value>
+      </configuration>
+      <configuration name="display_name" locale="fr">
+        <value>Établissement de formation</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

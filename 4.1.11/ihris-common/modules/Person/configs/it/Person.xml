@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Person" path="/I2CE">
+  <metadata>
+    <version>4.1.10.0.1</version>
+  </metadata>
+  <configurationGroup name="Person" path="/I2CE" locale="it">
+    <version>4.1.9.0.1</version>
+    <configurationGroup name="page_feedback_messages" path="/modules/forms/page_feedback_messages">
+      <configuration name="person_save" locale="it">
+        <value>Questo record è stato salvato.</value>
+      </configuration>
+      <configuration name="person_child_save" locale="it">
+        <value>Questo record è stato salvato.</value>
+      </configuration>
+      <configuration name="person_child_delete_success" locale="it"></configuration>
+      <configuration name="person_child_delete_fail" locale="it"></configuration>
+      <configuration name="person_child_delete_not_permitted" locale="it"></configuration>
+      <configuration name="person_child_delete_not_allowed" locale="it"></configuration>
+    </configurationGroup>
+    <configurationGroup name="invalid_formfield_message" path="/modules/forms/formfield_messages" locale="it">
+      <configuration name="person_surname" path="person/surname/unique">
+        <value>Alcuni record duplicati corrispondono al nome di questo record:</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="it">
+      <configuration name="person_can_view" locale="it">
+        <value>Visualizza la pagina della persona</value>
+      </configuration>
+      <configuration name="person_can_edit" locale="it">
+        <value>Modifica la pagina della persona</value>
+      </configuration>
+      <configuration name="person_can_view_child_forms" locale="it">
+        <value>Visualizza tutti i sottomoduli di una persona</value>
+      </configuration>
+      <configuration name="person_can_edit_child_forms" locale="it">
+        <value>Modifica tutti i sottomoduli di una persona</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="person">
+          <configuration name="display" values="single" locale="it">
+            <value>Persona</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="it">
+              <value>Questo modulo contiene le informazioni di base su una persona, come il nome e la residenza</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Person">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Cognome</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Nome</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Altri nomi</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="nationality">
+              <configuration name="headers" type="delimited" locale="it">
+                <value>default:Nazionalità</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="residence">
+              <configuration name="headers" type="delimited" values="many" locale="it">
+                <value>default:Residenza</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="person">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="it">
+            <value>Aggiungi/aggiorna persona</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="view">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="it">
+            <value>Visualizza persona</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

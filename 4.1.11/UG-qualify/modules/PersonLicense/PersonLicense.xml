@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name='PersonLicense'>     
+  <metadata>
+    <displayName>PersonLicense</displayName>   
+    <className>iHRIS_Module_PersonLicense</className>
+    <category>Application Component</category>
+    <description>Makes a license associated with a person instead of a training</description>
+    <version>4.1.11</version>
+    <path name='classes'>
+      <value>./lib</value>
+    </path>
+    <path name='templates'>
+      <value>./templates</value>
+    </path>
+    <priority>325</priority>
+  </metadata>
+  
+  <configurationGroup name='PersonLicense' path='/I2CE'>
+    <displayName>PersonLicense</displayName>
+    
+    <configurationGroup name='forms' path='/modules/forms'>
+      <displayName>Forms</displayName>
+      <description>Information about the forms made available by iHRIS-Qualify RecordVerify</description>
+      
+      <configurationGroup name='forms'>
+        <displayName>Forms available to the form factory</displayName>
+        <status>advanced:true</status>
+        <status>required:true</status>
+
+        <configurationGroup name='person_license'>
+          <displayName>Person License</displayName>
+          <description>The Person License Form</description>
+          <configuration name='class' values='single'>
+            <displayName>Class Name</displayName>
+            <description>The name of the class providing the form</description>
+            <value>iHRIS_PersonLicense</value>
+          </configuration>
+          <configuration name='display' values='single'>
+            <displayName>Display name</displayName>
+            <description>The display name for this form</description>
+            <value>Person License</value>
+          </configuration>
+        </configurationGroup> <!-- person_license -->
+
+        <configurationGroup name='person_disciplinary_action'>
+          <displayName>Person Disciplinary Action</displayName>
+          <description>The Person Disciplinary Action Form</description>
+          <configuration name='class' values='single'>
+            <displayName>Class Name</displayName>
+            <description>The name of the class providing the form</description>
+            <value>iHRIS_DisciplinaryAction</value>
+          </configuration>
+          <configuration name='display' values='single'>
+            <displayName>Display name</displayName>
+            <description>The display name for this form</description>
+            <value>Disciplinary Action</value> 
+          </configuration> 
+        </configurationGroup> <!-- person_disciplinary_action -->
+
+
+        <configurationGroup name='person_meta' path='/modules/forms/forms/person/meta'>
+          <displayName>MetaData on the form</displayName>
+          <configuration name='child_forms' values='many' > 
+            <status>uniquemerge:true</status>
+            <displayName>Child Forms</displayName>
+            <value>person_license</value>
+            <value>person_disciplinary_action</value>
+          </configuration>
+        </configurationGroup> <!-- person_meta -->
+        
+      </configurationGroup> <!-- End /modules/forms/forms-->
+      
+      
+      <configurationGroup name="formClasses" >
+        <displayName>Form Class Configuration</displayName>
+
+
+        <configurationGroup name="iHRIS_PersonLicense">
+          <displayName>Configuration for the class 'iHRIS_PersonLicense'</displayName>
+          <configuration name="extends">
+            <displayName>The class this form extends</displayName>
+            <value>iHRIS_License</value>
+          </configuration>
+          <configurationGroup name="fields">
+            <displayName>The fields defined for this form</displayName>
+            <configurationGroup name="receipt_number">
+              <displayName>The field 'license_number'</displayName>
+              <configuration name="formfield">
+                <displayName>The form field type</displayName>
+                <value>INT</value>
+              </configuration>
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <displayName>The headers for this field.</displayName>
+                <version>3.2.1</version>
+                <value>default:Receipt Number</value>
+              </configuration>
+              <configuration name="required" type="boolean">
+                <displayName>This field is required to be set</displayName>
+                <value>False</value>
+              </configuration>
+              <configuration name="unique" type="boolean">
+                <displayName>This field is required to be set</displayName>
+                <value>True</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="serial_number">
+              <displayName>The field 'license_number'</displayName>
+              <configuration name="formfield">
+                <displayName>The form field type</displayName>
+                <value>STRING_LINE</value>
+              </configuration>
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <displayName>The headers for this field.</displayName>
+                <version>3.2.1</version>
+                <value>default:Serial Number</value>
+              </configuration>
+              <configuration name="required" type="boolean">
+                <displayName>This field is required to be set</displayName>
+                <value>False</value>
+              </configuration>
+              <configuration name="unique" type="boolean">
+                <displayName>This field is required to be set</displayName>
+                <value>True</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup> <!-- iHRIS_PersonLicense -->
+
+
+      </configurationGroup> <!-- End /modules/forms/formClasses -->
+      
+    </configurationGroup> <!-- End /modules/forms -->
+    
+    
+    <configurationGroup name='page'>
+      <displayName>Pages</displayName>
+      <description>Information about various pages made available by the system</description>
+      <status>required:true</status>
+
+      <configuration name='view_training_class' path='/I2CE/page/view_training/class'>
+        <displayName>Page Class</displayName>
+        <description>The class responsible for displaying this page</description>
+        <status>overwrite:true</status>
+        <value>iHRIS_PageViewTrainingPL</value>
+      </configuration>
+      <configuration name='view_class' path='/I2CE/page/view/class'>
+        <displayName>Page Class</displayName>
+        <description>Change the class responsible for displaying this page for this module</description>
+        <version>4.1.11</version>
+        <value>iHRIS_PageView</value>
+      </configuration>
+      <configuration name='search_class' path='/I2CE/page/search/class'>
+        <displayName>Page Class</displayName>
+        <description>Change the class responsible for displaying this page for this module</description>
+        <version>4.1.11</version>
+        <value>iHRIS_PageSearch</value>
+      </configuration>
+
+
+      <configurationGroup name='person_license'>
+	<version>4.1.11</version>
+        <displayName>Record Verify Page</displayName>
+        <description> The page 'person_license' which has the action of: Add/Update License</description>
+        <configuration name='class' values='single'>
+	  <version>4.1.11</version>
+          <displayName>Page Class</displayName>
+          <description>The class responsible for displaying this page</description>
+          <status>required:true</status>
+          <value>iHRIS_PageFormPersonLicense</value>
+        </configuration>
+        <configuration name='style' values='single'>
+          <displayName>Page Style</displayName>
+          <description>The Page Style</description>
+          <value>ihris_common_page_form_parent_person</value>
+        </configuration>
+        <configurationGroup name='args'>
+          <displayName>Page Options</displayName>
+          <description>The options that control the access and display of all pages</description>
+          <configuration name='title' values='single'>
+            <displayName>Page Title</displayName>
+            <description>Page Title</description>
+            <status>required:true</status>
+            <value>Add/Update License Information</value>
+          </configuration>
+          <configuration name='page_form' values='single'>
+            <displayName>Form</displayName>
+            <description>The form this page is using</description>
+            <status>required:true</status>
+            <value>person_license</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup> <!-- person_license -->
+
+
+      <configurationGroup name='person_renew'>
+        <displayName>Renew Page </displayName>
+        <description> The page 'person_renew' which has the action of: Renew License Information</description>
+        <configuration name='class' values='single'>
+          <displayName>Page Class</displayName>
+          <description>The class responsible for displaying this page</description>
+          <status>required:true</status>
+          <value>iHRIS_PageFormPersonRenew</value>
+        </configuration>
+        <configuration name='style' values='single'>
+          <displayName>Page Style</displayName>
+          <description>The Page Style</description>
+          <value>ihris_common_page_form_parent_person</value>
+        </configuration>
+        <configurationGroup name='args'>
+          <displayName>Page Options</displayName>
+          <description>The options that control the access and display of all pages</description>
+          <configuration name='title' values='single'>
+            <displayName>Page Title</displayName>
+            <description>Page Title</description>
+            <status>required:true</status>
+            <value>Renew License Information</value>
+          </configuration>
+          <configuration name='page_form' values='single'>
+            <displayName>Form</displayName>
+            <description>The form this page is using</description>
+            <status>required:true</status>
+            <value>person_license</value>
+          </configuration>
+          <configuration name='access' values='many'>
+            <displayName>Page Access</displayName>
+            <description>All of the roles that have access to this page</description>
+            <status>required:false</status>
+            <value>registration</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup> <!-- person_renew -->
+
+      <configurationGroup name='person_disciplinary_action'>
+        <displayName>Disciplinary Action Page</displayName>
+        <description> The page 'person_disciplinary_action' which has the action of: Add/Update Disciplinary Action</description>
+        <configuration name='class' values='single'>
+          <displayName>Page Class</displayName>
+          <description>The class responsible for displaying this page</description>
+          <status>required:true</status>
+          <value>iHRIS_PageFormParentPerson</value>
+        </configuration>
+        <configuration name='class' values='single'>
+          <displayName>Page Class</displayName>
+          <description>The class responsible for displaying this page</description>
+          <status>required:true</status>
+          <value>iHRIS_PageFormPersonDisciplinaryAction</value>
+        </configuration>
+        <configuration name='style' values='single'>
+          <displayName>Page Style</displayName>
+          <description>The Page Style</description>
+          <value>ihris_common_page_form_parent_person</value>
+        </configuration>
+        <configurationGroup name='args'>
+          <displayName>Page Options</displayName>
+          <description>The options that control the access and display of all pages</description>
+          <configuration name='title' values='single'>
+            <displayName>Page Title</displayName>
+            <description>Page Title</description>
+            <status>required:true</status>
+            <value>Add/Update Disciplinary Action</value>
+          </configuration>
+          <configuration name='page_form' values='single'>
+            <displayName>Form</displayName>
+            <description>The form this page is using</description>
+            <status>required:true</status>
+            <value>person_disciplinary_action</value>
+          </configuration>
+          <configuration name='access' values='many'>
+            <displayName>Page Access</displayName>
+            <description>All of the roles that have access to this page</description>
+            <status>required:false</status>
+            <value>registration</value>
+          </configuration>
+          <configuration name='edit_access' values='many'>
+            <displayName>Page Access</displayName>
+            <description>All of the roles that have access to this page</description>
+            <status>required:false</status>
+            <value>manager</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup> <!-- person_disciplinary_action -->
+
+      <configurationGroup name='person_disciplinary_reinstate'>
+        <displayName>Disciplinary Reinstate Page </displayName>
+        <description> The page 'person_disciplinary_reinstate' which has the action of: Reinstate License after Disciplinary Action</description>
+        <configuration name='class' values='single'>
+          <displayName>Page Class</displayName>
+          <description>The class responsible for displaying this page</description>
+          <status>required:true</status>
+          <value>iHRIS_PageFormPersonDisciplinaryReinstate</value>
+        </configuration>
+        <configuration name='style' values='single'>
+          <displayName>Page Style</displayName>
+          <description>The Page Style</description>
+          <value>ihris_common_page_form_parent_person</value>
+        </configuration>
+        <configurationGroup name='args'>
+          <displayName>Page Options</displayName>
+          <description>The options that control the access and display of all pages</description>
+          <configuration name='title' values='single'>
+            <displayName>Page Title</displayName>
+            <description>Page Title</description>
+            <status>required:true</status>
+            <value>Reinstate License after Disciplinary Action</value>
+          </configuration>
+          <configuration name='page_form' values='single'>
+            <displayName>Form</displayName>
+            <description>The form this page is using</description>
+            <status>required:true</status>
+            <value>person_disciplinary_action</value>
+          </configuration>
+          <configuration name='access' values='many'>
+            <displayName>Page Access</displayName>
+            <description>All of the roles that have access to this page</description>
+            <status>required:false</status>
+            <value>registration</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+
+
+
+    </configurationGroup> <!-- page -->
+    
+    
+  </configurationGroup> <!-- RecordVerify -->
+</I2CEConfiguration>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-common-Job" path="/I2CE">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-common-Job" path="/I2CE" locale="nl">
+    <version>4.1.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description">
+      <configuration name="can_edit_database_list_classification" locale="nl">
+        <value>Classificatielijst bewerken</value>
+      </configuration>
+      <configuration name="can_view_database_list_classification" locale="nl">
+        <value>Classificatielijst bekijken</value>
+      </configuration>
+      <configuration name="can_edit_database_list_job" locale="nl">
+        <value>Functielijst bewerken</value>
+      </configuration>
+      <configuration name="can_view_database_list_job" locale="nl">
+        <value>Functielijst bekijken</value>
+      </configuration>
+      <configuration name="can_edit_job_structure_database_lists" locale="nl">
+        <value>Kan een aantal functiestructuurlijsten in de database bewerken</value>
+      </configuration>
+      <configuration name="can_view_job_structure_database_lists" locale="nl">
+        <value>Kan een aantal functiestructuurlijsten in de database bekijken</value>
+      </configuration>
+      <configuration name="can_edit_all_job_structure_database_lists" locale="nl">
+        <value>Kan alle functiestructuurdatabaselijsten bewerken</value>
+      </configuration>
+      <configuration name="can_view_all_job_structure_database_lists" locale="nl">
+        <value>Kan alle functiestructuurdatabaselijsten bekijken</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="job">
+          <configuration name="display" values="single" locale="nl">
+            <value>Functie</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="classification">
+          <configuration name="display" values="single" locale="nl">
+            <value>Classificatie</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Classification">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Naam</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="description">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Beschrijving</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="nl"></configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_SalaryGrade">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Naam</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Begin</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Eind</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="midpoint">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Gemiddeld salaris</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="notes">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Opmerkingen</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Job">
+          <configurationGroup name="fields">
+            <configurationGroup name="title">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Titel</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Kader (alleen gezondheidswerkers)</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="nl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="description">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Beschrijving</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="classification">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Classificatie</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

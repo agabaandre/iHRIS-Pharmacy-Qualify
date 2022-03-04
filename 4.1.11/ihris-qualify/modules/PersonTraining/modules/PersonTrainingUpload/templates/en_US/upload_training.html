@@ -1,0 +1,35 @@
+<div id="siteContent">
+  <h1>Upload Continuing Education
+    <div id="error" />
+    <form method="POST" enctype="multipart/form-data">
+      <table class="multiFormTable" border="0" cellpadding="0" cellspacing="0">
+        <tr><th>Upload Continuing Education</th></tr>
+        <tr>
+          <td>
+            <p>
+              <span class="field_head required_field">
+                <label for="trainings">Select CSV file to upload</label>
+                <span class="required_field_notice">*</span>
+              </span>
+              <br />
+              <span class="form_field">
+                <input type="file" id="trainings" name="trainings" /><br />
+              </span>
+            </p>
+            <p><span class="field_head">Has Headers?</span>
+            <br />
+            <span class="form_field">
+              <input type="checkbox" id="has_header:trainings" name="has_header:trainings" value="1" checked="checked" />
+              <label for="has_header:trainings">This file has headers.</label>
+            </span>
+            </p>
+          </td>
+        </tr>
+        <tr class="submitCell">
+          <td colspan="2">
+            <div id="button" />
+          </td>
+        </tr>
+      </table>
+    </form>
+</div>

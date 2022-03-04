@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-PersonTraining" path="/I2CE">
+  <metadata>
+    <version>4.2.2.0</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-PersonTraining" path="/I2CE" locale="en_US">
+    <version>4.2.0</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="en_US">
+      <configuration name="person_can_view_child_form_person_training" locale="en_US">
+        <value>Can view person_training child form of a person</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_training" locale="en_US">
+        <value>Can edit person_training child forms of a person</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="person_training">
+          <configuration name="display" values="single" locale="en_US">
+            <value>Continuing Education</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_PersonTraining">
+          <configurationGroup name="fields">
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Start Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:End Date</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Training Course</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="provider">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Training Provider</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:Training Location</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cpd_credit">
+              <configuration name="headers" type="delimited" locale="en_US">
+                <value>default:CPD Credit</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="person_training">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US">
+            <value>Continuing Education</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

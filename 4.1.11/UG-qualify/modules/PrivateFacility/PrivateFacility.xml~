@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="PrivateFacility">
+  <metadata>
+    <displayName>PrivateFacility</displayName>
+    <className>iHRIS_Module_PrivateFacility</className>
+    <category>Application Component</category>
+    <description>Makes PrivateFacility information available to the system</description>
+    <creator>Intrahealth Informatics</creator>
+    <email>hris@capacityproject.org</email>
+    <link>https://launchpad.net/i2ce</link>
+    <version>4.0.10.6</version>
+    <path name="configs">
+      <value>./configs</value>
+    </path>
+    <requirement name="Geography">
+      <atLeast version="4.0" />
+      <lessThan version="4.1" />
+    </requirement>
+    <requirement name="ReferenceField">
+      <atLeast version="4.0" />
+      <lessThan version="4.1" />
+    </requirement>
+    <requirement name="CustomReports-Selector">
+      <atLeast version="4.0" />
+      <lessThan version="4.1" />
+    </requirement>
+    <requirement name="FacilityService">
+      <atLeast version="4.0" />
+      <lessThan version="4.1" />
+    </requirement>
+    <path name="classes">
+      <value>./lib</value>
+    </path>
+    <path name="modules">
+      <value>./modules</value>
+    </path>
+    <path name="templates">
+      <value>./templates</value>
+    </path>
+    <priority>150</priority>
+  </metadata>
+  <configurationGroup name="PrivateFacility" path="/I2CE">
+    <displayName>PrivateFacility</displayName>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="en_US">
+      <configuration name="person_can_view" locale="en_US">
+        <version>3.2.2</version>
+        <value>Can view the person page</value>
+      </configuration>
+      <configuration name="person_can_edit" locale="en_US">
+        <version>3.2.2</version>
+        <value>Can edit the person page</value>
+      </configuration>
+      <configuration name="person_can_view_child_forms" locale="en_US">
+        <version>3.2.2</version>
+        <value>Can view all of the child forms of a person</value>
+      </configuration>
+      <configuration name="person_can_edit_child_forms" locale="en_US">
+        <version>3.2.2</version>
+        <value>Can edit all of the child forms of a person</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks_trickle_down" path="/I2CE/tasks/task_trickle_down/">
+      <configuration name="person_can_edit_child_forms" values="many">
+        <version>3.2.2</version>
+        <value>person_can_view_child_forms</value>
+        <value>person_can_view</value>
+      </configuration>
+      <configuration name="person_can_edit" values="many">
+        <version>3.2.2</version>
+        <value>person_can_view</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <displayName>Forms</displayName>
+      <description>Information about the forms made available by iHRIS-Common PrivateFacility</description>
+      <configurationGroup name="forms">
+        <displayName>Forms available to the form factory</displayName>
+        <status>advanced:true</status>
+        <status>required:true</status>
+        <configurationGroup name="privatefacility_type">
+          <version>4.0.9.5</version>
+              <configuration name="class" values="single">
+                <value>I2CE_SimpleList</value>
+              </configuration>
+              <configuration name="display" values="single" locale="en_US">
+                <value>Private Health Unit Type</value>
+              </configuration>
+              <configuration name="storage" values="single">
+                <value>magicdata</value>
+              </configuration>
+      </configurationGroup>
+        <configurationGroup name="privatefacility">
+          <displayName>PrivateFacility</displayName>
+          <description>The PrivateFacility Form</description>
+          <configuration name="class" values="single">
+            <displayName>Class Name</displayName>
+            <description>The name of the class providing the form</description>
+            <value>iHRIS_PrivateFacility</value>
+          </configuration>
+          <configuration name="display" values="single" locale="en_US">
+            <displayName>Display name</displayName>
+            <description>The display name for this form</description>
+            <value>PrivateFacility</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <displayName>MetaData on the form</displayName>
+            <configuration name="description" locale="en_US">
+              <displayName>A description of the form</displayName>
+              <value>This form holds basic information about a private facility such as their names and location</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+        <!-- privatefacility -->
+      </configurationGroup>
+      <!-- End /modules/forms/forms-->
+      <configurationGroup name="formClasses">
+        <displayName>Form Class Configuration</displayName>
+        <configurationGroup name="iHRIS_PrivateFacility">
+          <displayName>Configuration for the class 'iHRIS_PrivateFacility'</displayName>
+          <configuration name="extends">
+            <displayName>The class this form extends</displayName>
+            <value>I2CE_Form</value>
+          </configuration>
+          <configurationGroup name="fields">
+            <displayName>The fields defined for this form</displayName>
+            <version>3.2.3</version>
+            <configurationGroup name="name">
+              <displayName>The field 'name'</displayName>
+              <configuration name="formfield">
+                <displayName>The form field type</displayName>
+                <value>STRING_LINE</value>
+              </configuration>
+              <configuration name="headers" type="delimited" locale="en_US">
+                <displayName>The headers for this field.</displayName>
+                <version>3.2.1</version>
+                <value>default:Name</value>
+              </configuration>
+              <configuration name="required" type="boolean">
+                <displayName>This field is required to be set</displayName>
+                <value>true</value>
+              </configuration>
+              <configurationGroup name="meta">
+                <displayName>Info</displayName>
+                <description>&gt;Meta information about this field</description>
+                <configuration name="linked_page">
+                  <displayName>Linked Page</displayName>
+                  <description>A page to link to from the field. The id of the form we are looking at is appended onto the link</description>
+                  <version>4.0.10.0</version>
+                  <value>viewprivate?id=</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="privatefacility_type">
+              <displayName>The field 'nationality'</displayName>
+              <configuration name="formfield">
+                <displayName>The form field type</displayName>
+                <version>3.2.7</version>
+                <value>MAP</value>
+              </configuration>
+              <configuration name="headers" type="delimited" locale="en_US">
+                <displayName>The headers for this field.</displayName>
+                <version>3.2.1</version>
+                <value>default:Health Unit Type</value>
+              </configuration>
+              <configuration name="required" type="boolean">
+                <displayName>This field is required to be set</displayName>
+                <value>true</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name_ignore">
+              <displayName>The field 'name_ignore'</displayName>
+              <configuration name="formfield">
+                <displayName>The form field type</displayName>
+                <value>BOOL</value>
+              </configuration>
+              <configuration name="in_db" type="boolean">
+                <displayName>Store the field in the database</displayName>
+                <value>false</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <version>3.2.7</version>
+              <displayName>The field 'location'</displayName>
+              <configuration name="formfield">
+                <displayName>The form field type</displayName>
+                <value>MAP</value>
+              </configuration>
+              <configurationGroup name="meta">
+                <configuration name="form" values="many">
+                  <value>county</value>
+                  <value>district</value>
+                </configuration>
+                <configurationGroup name="limits">
+                  <version>3.2.13</version>
+                  <configurationGroup name="default">
+                    <configurationGroup name="country">
+                      <configuration name="operator">
+                        <value>FIELD_LIMIT</value>
+                      </configuration>
+                      <configuration name="field">
+                        <value>location</value>
+                      </configuration>
+                      <configuration name="style">
+                        <value>yes</value>
+                      </configuration>
+                    </configurationGroup>
+                  </configurationGroup>
+                </configurationGroup>
+                <configurationGroup name="display">
+                  <configurationGroup name="default">
+                    <configuration name="fields">
+                      <value>county:district:[region]:country</value>
+                    </configuration>
+                  </configurationGroup>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <displayName>The headers for this field.</displayName>
+                <version>3.2.1</version>
+                <value>default:Location</value>
+              </configuration>
+              <configuration name="required" type="boolean">
+                <displayName>This field is required to be set</displayName>
+                <value>true</value>
+              </configuration>
+            </configurationGroup>
+
+            <configurationGroup name="supervisor">
+              <version>4.0.10.3</version>
+              <configuration name="formfield">
+                <value>REFERENCE</value>
+              </configuration>
+              <configuration name="headers" values="many" type="delimited" locale="en_US">
+                <value>default:Supervising Doctor</value>
+              </configuration>
+              <configurationGroup name="meta">
+                <configuration name="form" values="many">
+                  <value>person</value>
+                </configuration>
+                <configurationGroup name="display">
+                  <configurationGroup name="person">
+                    <configurationGroup name="default">
+                      <configuration name="printf" locale="en_US">
+                        <value>%s, %s</value>
+                      </configuration>
+                      <configuration name="printf_args" values="many" type="delimited">
+                        <value>0:surname</value>
+                        <value>1:firstname</value>
+                      </configuration>
+                    </configurationGroup>
+                  </configurationGroup>
+                </configurationGroup>
+                <configurationGroup name="reportSelect">
+                  <configurationGroup name="default">
+                    <configuration name="reportView">
+                      <value>search_people</value>
+                    </configuration>
+                  </configurationGroup>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup> <!-- supervisor field -->
+
+            <configurationGroup name="owner">
+              <version>4.0.10.4</version>
+              <configuration name="formfield">
+                <value>STRING_LINE</value>
+              </configuration>
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Owner</value>
+              </configuration>
+            </configurationGroup> <!-- owner -->
+            <configurationGroup name="owner_phone">
+              <version>4.0.10.4</version>
+              <configuration name="formfield">
+                <value>STRING_LINE</value>
+              </configuration>
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Owner Phone Number</value>
+              </configuration>
+            </configurationGroup> <!-- owner_phone -->
+            <configurationGroup name="owner_email">
+              <version>4.0.10.4</version>
+              <configuration name="formfield">
+                <value>STRING_LINE</value>
+              </configuration>
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Owner Email</value>
+              </configuration>
+            </configurationGroup> <!-- owner_email -->
+            <configurationGroup name="supervisor_phone">
+              <version>4.0.10.4</version>
+              <configuration name="formfield">
+                <value>STRING_LINE</value>
+              </configuration>
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Supervisor Phone Number</value>
+              </configuration>
+            </configurationGroup> <!-- supervisor_phone -->
+            <configurationGroup name="supervisor_email">
+              <version>4.0.10.4</version>
+              <configuration name="formfield">
+                <value>STRING_LINE</value>
+              </configuration>
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Supervisor Email</value>
+              </configuration>
+            </configurationGroup> <!-- supervisor_email -->
+
+            <configurationGroup name="service_type">
+              <version>4.0.10.6</version>
+              <configuration name="formfield">
+                <value>MAP</value>
+              </configuration>
+              <configuration name="headers" type="delimited" values="many" locale="en_US">
+                <value>default:Nature of Health Unit</value>
+              </configuration>
+            </configurationGroup> <!-- service_type -->
+   
+
+          </configurationGroup> <!-- end fields -->
+        </configurationGroup>
+        <!-- iHRIS_PrivateFacility -->
+      </configurationGroup>
+      <!-- End /modules/forms/formClasses -->
+    </configurationGroup>
+    <!-- End /modules/forms -->
+    <configurationGroup name="page">
+      <displayName>Pages</displayName>
+      <description>Information about various pages made available by the system</description>
+      <status>required:true</status>
+      <configurationGroup name="ihris_common_page_form_parent_privatefacility" path="/I2CE/template/page_styles/ihris_common_page_form_parent_privatefacility">
+        <displayName>Page Form Parent PrivateFacility</displayName>
+        <configuration name="class" values="single">
+          <displayName>Page Class</displayName>
+          <description>The class responsible for displaying this page</description>
+          <status>required:true</status>
+          <value>iHRIS_PageFormParentPrivateFacility</value>
+        </configuration>
+        <configuration name="style" values="single">
+          <displayName>Page Style</displayName>
+          <description>The page style that this style inherits from</description>
+          <value>shell</value>
+        </configuration>
+        <configurationGroup name="args">
+          <displayName>Arguements</displayName>
+          <description>Values passed to the pages constructor</description>
+          <configuration name="defaultHTMLFile" values="many">
+            <displayName>Default HTML File</displayName>
+            <description>The default html template file containing the page content</description>
+            <value>form_privatefacility_base.html</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <!-- ihris_common_page_form_parent_person -->
+      <configurationGroup name="privatefacility">
+        <displayName>PrivateFacility Page</displayName>
+        <description>The page 'person' which has the action of: Add/Update PrivateFacility</description>
+        <configuration name="style" values="single">
+          <displayName>Page Style</displayName>
+          <description>The Page Style</description>
+          <value>shell</value>
+        </configuration>
+        <configuration name="class" values="single">
+          <displayName>Page Class</displayName>
+          <description>The class responsible for displaying this page</description>
+          <version>3.2.5</version>
+          <status>required:true</status>
+          <value>iHRIS_PageFormPrivateFacility</value>
+        </configuration>
+        <configurationGroup name="args">
+          <displayName>Page Options</displayName>
+          <description>The options that control the access and display of all pages</description>
+          <configuration name="title" values="single" locale="en_US">
+            <displayName>Page Title</displayName>
+            <description>Page Title</description>
+            <status>required:true</status>
+            <value>Add/Update PrivateFacility</value>
+          </configuration>
+          <configuration name="tasks" values="many">
+            <version>3.2.2</version>
+            <value>person_can_edit</value>
+          </configuration>
+          <configuration name="defaultHTMLFile" values="many">
+            <displayName>Default HTML File</displayName>
+            <description>The default HTML File for this page</description>
+            <status>required:true</status>
+            <value>form_privatefacility.html</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <!-- privatefacility -->
+      <configurationGroup name="viewprivate">
+        <displayName>View Page</displayName>
+        <description>The page 'view' which has the action of: View PrivateFacility</description>
+        <version>4.0.10.0</version>
+        <configuration name="class" values="single">
+          <displayName>Page Class</displayName>
+          <description>The class responsible for displaying this page</description>
+          <status>required:true</status>
+          <value>iHRIS_PageViewPrivateFacility</value>
+        </configuration>
+        <configuration name="style" values="single">
+          <displayName>Page Style</displayName>
+          <description>The Page Style</description>
+          <value>shell</value>
+        </configuration>
+        <configurationGroup name="args">
+          <displayName>Page Options</displayName>
+          <description>The options that control the access and display of all pages</description>
+          <configuration name="title" values="single" locale="en_US">
+            <displayName>Page Title</displayName>
+            <description>Page Title</description>
+            <status>required:true</status>
+            <value>View PrivateFacility</value>
+          </configuration>
+          <configuration name="defaultHTMLFile" values="single">
+            <displayName>Default HTML File</displayName>
+            <description>The default HTML File for this page</description>
+            <status>required:true</status>
+            <value>view_privatefacility.html</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <!-- view -->
+
+      <configurationGroup name="history_private">
+        <displayName>Private Facility History</displayName>
+        <version>4.0.10.2</version>
+        <configuration name="class" values="single">
+          <value>iHRIS_PageHistoryPrivateFacility</value>
+        </configuration>
+        <configuration name="style" values="single">
+          <value>shell</value>
+        </configuration>
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="en_US">
+            <value>View History</value>
+          </configuration>
+          <configuration name="defaultHTMLFile" values="single">
+            <value>history_privatefacility.html</value>
+          </configuration>
+          <configuration name="access" values="many">
+            <value>all</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+
+     </configurationGroup>
+    <!-- page -->
+  </configurationGroup>
+  <!-- PrivateFacility -->
+</I2CEConfiguration>

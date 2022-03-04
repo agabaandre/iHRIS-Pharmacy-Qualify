@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-exam" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-exam" path="//modules/CustomReports" locale="tl">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-exam" path="relationships/exam">
+      <configuration name="display_name" locale="tl">
+        <value>Pagsusulit</value>
+      </configuration>
+      <configuration name="description" locale="tl">
+        <value>Kaugnayan para sa mga pagsusulit.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="exam_year">
+          <configuration name="description" locale="tl">
+            <value>Ang taon kung kailan kinuha ang pagsusulit na ito.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="training">
+          <configuration name="description" locale="tl">
+            <value>Ang pagsasanay na kaugnay ng pagsusulit na ito.</value>
+          </configuration>
+          <configuration name="display_name" locale="tl">
+            <value>Pagsasanay</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="tl">
+                <value>Ang tagapagsanay para sa pagsasanay na ito.</value>
+              </configuration>
+              <configuration name="display_name" locale="tl">
+                <value>Tagapagsanay</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-exam" path="reports/exam">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="tl">
+          <value>Mga Ulat sa Pagsusulit</value>
+        </configuration>
+        <configuration name="description" locale="tl">
+          <value>Mga ulat na may kaugnayan sa mga pagsusulit.</value>
+        </configuration>
+        <configuration name="category" locale="tl">
+          <value>Mga Ulat sa Pagsasanay</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="header" locale="tl">
+                <value>Petsa ng Pagsusulit</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="try">
+              <configuration name="header" locale="tl">
+                <value>Subukin</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="tl">
+                    <value>Mga kinalabasan</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="tl">
+                <value>Mga kinalabasan</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_number">
+              <configuration name="header" locale="tl">
+                <value>Bilang ng Pagsusulit</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="tl">
+                    <value>Tagapagsanay</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="tl">
+                <value>ID ng Tagapagsanay ng Pagsasanay</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="tl">
+                    <value>Petsa ng Pagkuha Pagkaraan ng</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="tl">
+                    <value>Petsa ng Pagkuha Bago ang</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="tl">
+                <value>Petsa ng Pagkuha</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="tl">
+                <value>Tagapagsanay</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="exam_pass_fail">
+        <configuration name="description" locale="tl">
+          <value>Isang paghahambing na nakapasa/nabigo para sa lahat ng mga pagsusulit.</value>
+        </configuration>
+        <configuration name="display_name" locale="tl">
+          <value>Nakapasa/Bumagsak sa Pagsusulit</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="tl">
+                  <value>Talangguhit na Bilog (Payak)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="tl">
+                  <value>Talangguhit na Bareta (Payak)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="tl">
+                  <value>Talangguhit na Pahaligi (Payak)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="tl">
+                  <value>Talangguhit ng Magkakapatong na Haligi (Payak)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="tl">
+                  <value>Nakakalat na Pagtutuldok</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam_pass_fail_year">
+        <configuration name="description" locale="tl">
+          <value>Isang paghahambing na nakapasa/bumagsak para sa lahat ng mga pagsusulit ayon sa taon.</value>
+        </configuration>
+        <configuration name="display_name" locale="tl">
+          <value>Pagpasa/Pagbagsak sa Pagsusulit ayon sa Taon</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="tl">
+                  <value>Talangguhit na Bilog (Payak)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="tl">
+                  <value>Talangguhit na Bareta (Payak)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="tl">
+                  <value>Talangguhit na Pahaligi (Payak)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="tl">
+                  <value>Talangguhit ng Magkakapatong na Haligi (Payak)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="tl">
+                  <value>Nakakalat na Pagtutuldok</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

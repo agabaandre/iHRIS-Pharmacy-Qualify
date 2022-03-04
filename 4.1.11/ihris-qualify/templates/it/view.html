@@ -1,0 +1,183 @@
+ <div id="siteContent">
+    <h1>Visualizza persona: <span type="form" name="person:surname"></span>, <span type="form" name="person:firstname"></span></h1>
+
+	<div class="recordsData">
+	<h3><a name="jump_individual">Informazione personale</a></h3>
+	<p class="editRecordsData" id="individual_links">
+	  <a href="" class="hide" title="Hide" onclick="return hideDiv('individual', this );">Nascondi</a>
+	  <span type="module" name="PersonID" enabled="true">
+	    <span task="person_can_edit_child_form_person_id" type="form" name="person:id" href="person_id?parent=">Aggiungi identità</span>
+	  </span>
+	  <span task="person_can_edit_child_form_demographic" type="form" name="person:id" href="demographic?parent=" ifset="!demographic:id">Aggiungi informazione demografica</span>
+	  <span task="person_can_edit_child_form_education" type="form" name="person:id" href="education?parent=" ifset="!education:id">Aggiungi informazione sulla formazione</span>
+	  <span type="module" name="PersonPassportPhoto" enabled="true">
+	    <span task="person_can_edit_child_form_person_photo_passport" type="form" name="person:id" href="person_photo_passport?parent=" ifset="!person_photo_passport:id">Aggiungi foto d'identità</span>
+	  </span>
+	  <span type="module" name="PrintedForms" ifenabled="true">
+	    <span task="printed_forms_can_access">
+	      <span type="module" if="PrintedForms-&gt;hasValidForms('person')">
+		<span type="form" href="PrintedForms/menu?id=" name="person:id">Moduli Standardizzati</span>
+	      </span>
+	    </span>
+	  </span>
+
+	</p>
+	
+	<div id="individual">
+	<div class="editRecord">
+	<p>Modifica questa informazione</p>
+		<ul><li task="person_can_edit"><span type="form" name="person:id" href="person?id=">Aggiorna questa informazione</span></li>
+			<li><span type="form" name="person:id" parent="true" href="field_history?field=surname,firstname,othername&amp;template=fullname&amp;type=person&amp;id=">Visualizza lo storico del nome</span></li>
+		</ul></div> <!-- editRecord -->
+	
+	<div class="dataTable">
+	<table border="0" cellspacing="0" cellpadding="0"><tr><th colspan="2">Nome/ Nazionalità</th>
+		</tr><span type="form" name="person:surname" showhead="default"></span>
+		<span type="form" name="person:firstname" showhead="default" class="even"></span>
+		<span type="form" name="person:othername" showhead="default"></span>
+		<span type="form" name="person:nationality" showhead="default" class="even"></span>
+		<span type="form" name="person:residence" showhead="default"></span>
+		<span type="form" name="person:home" showhead="default" class="even"></span>
+	</table></div> <!-- dataTable -->
+	
+	<div id="person_photo_passport"></div>
+
+	<div id="person_id"></div>
+	
+	<div id="demographic"></div>
+	
+	<div id="education"></div>
+	
+
+	
+	</div> <!-- individual -->
+	
+	<br style="clear: both;"></div> <!-- recordsData -->
+
+	<span name="PersonContact" type="moduled" ifenabled="true">
+	  <div class="recordsData">
+	    <h3><a name="jump_contact">Informazioni contatto</a></h3>
+	    <p class="editRecordsData" id="contact_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('contact', this );">Nascondi</a>
+	    </p>
+	    
+        <div id="contact">
+            <div id="person_contact_work"></div> <!-- work contact -->
+            <div id="person_contact_personal"></div> <!-- personal contact -->
+            <div id="person_contact_emergency"></div> <!-- emergency contact -->
+            <div id="person_contact_other"></div> <!-- other contact -->
+        </div> <!-- contact -->
+	    <br style="clear: both;"></div> <!-- recordsData -->
+	</span>
+	
+
+
+	<span type="module" name="nextOfKin" ifenabled="true">
+	  <div class="recordsData" task="person_can_view_child_form_nextofkin">
+	    <h3><a name="jump_nextofkin">Successivo dell'Informazione sul Gruppo</a></h3>
+	    <p class="editRecordsData">
+	      <a href="" class="hide" title="Hide" onclick="return hideDiv('nextofkin', this );">Nascondi</a>
+	      <span task="person_can_edit_child_form_nextofkin" type="form" name="person:id" href="nextofkin?parent=">Aggiungi Successivo al Gruppo</span>
+	    </p>
+	    <div id="nextofkin"></div>
+	    <br style="clear: both;"></div>
+	</span>
+
+
+	<div class="recordsData">
+	<h3><a name="jump_training">Informazioni training</a></h3>
+	<p class="editRecordsData" id="training_links"><a href="" class="hide" title="Hide" onclick="return hideDiv('training', this );">Nascondi</a>
+		<span role="records" type="form" name="person:id" href="training?parent=">Aggiungi training</span>
+		</p>
+
+	<div id="training"></div> <!-- training -->
+	<br style="clear: both;"></div> <!-- recordsData -->
+
+
+    <span type="module" name="ihris-qualify-PersonTraining" ifenabled="true">
+       <div class="recordsData">
+       <h3><a name="jump_person_training">Formazione permanente</a></h3>
+       <p class="editRecordsData"><a href="" class="hide" title="Hide" onclick="return hideDiv('person_training', this );">Nascondi</a>
+           <span task="person_can_edit_child_form_person_training" type="form" name="person:id" href="person_training?parent=">Aggiungi formazione permanente</span>
+       </p>
+       <div id="person_training"></div> <!-- record_verify -->
+       <br style="clear: both;"></div> <!-- recordsData -->
+    </span>
+
+
+
+	<div class="recordsData">
+	<h3><a name="jump_deployment">Deployment Information</a></h3>
+	<p class="editRecordsData"><a href="" class="hide" title="Hide" onclick="return hideDiv('deployment', this );">Nascondi</a>
+		<span role="records" type="form" name="person:id" href="deployment?parent=">Add Deployment</span>
+		<span type="form" name="person:id" href="history?form=deployment&amp;id=">View Deployment History</span>
+		</p>
+
+	<div id="deployment"></div> <!-- deployment -->
+	<br style="clear: both;"></div> <!-- recordsData -->
+
+	<div class="recordsData">
+	<h3><a name="jump_out_migration">Informazioni sul trasferimento</a></h3>
+	<p class="editRecordsData"><a href="" class="hide" title="Hide" onclick="return hideDiv('out_migration', this );">Nascondi</a>
+		<span role="records" type="form" name="person:id" href="out_migration?parent=">Agggiungi trasferimento</span>
+		</p>
+
+	<div id="out_migration"></div> <!-- out_migration -->
+	<br style="clear: both;"></div> <!-- recordsData -->
+
+    <span type="module" name="PersonNotes" ifenabled="true">
+	<div class="recordsData">
+	<h3><a name="jump_notes">Note</a></h3>
+	<p class="editRecordsData"><a href="" class="hide" title="Hide" onclick="return hideDiv('notes', this );">Nascondi</a>
+    	<span role="records" type="form" name="person:id" href="notes?parent=">Aggiungi nota</span>
+		</p>
+
+	<div id="notes"></div>
+	<br style="clear: both;"></div> <!--  recordsData -->
+    </span>
+
+    <span type="module" name="RecordVerify" ifenabled="true">
+       <div class="recordsData">
+       <h3><a name="jump_record_verify">Record di Verifica</a></h3>
+       <p class="editRecordsData"><a href="" class="hide" title="Hide" onclick="return hideDiv('record_verify', this );">Nascondi</a>
+               <span role="records" type="form" name="person:id" href="record_verify?parent=">Aggiungi Verifica</span>
+               <span type="form" name="person:id" href="history?form=record_verify&amp;id=">Aggiungi Verifica Storico</span>
+               </p>
+
+       <div id="record_verify"></div> <!-- record_verify -->
+       <br style="clear: both;"></div> <!-- recordsData -->
+    </span>
+
+
+    <span type="module" name="PersonArchivedScan" ifenabled="true">
+      <div class="recordsData" task="person_can_view_child_form_person_archive_scan">
+	<h3>
+	  <a name="jump_archived_scans">Registrazioni Cartacee Scannerizzate</a>
+	</h3>
+	<p class="editRecordsData">
+	  <a href="" class="hide" title="Hide" onclick="return hideDiv('notes', this );">Nascondi</a>
+	  <span task="person_can_edit_child_form_person_archive_scan" type="form" name="person:id" href="person_archive_scan?parent=">Aggiungi Documento Scannerizzato</span>
+	</p>
+	
+	<div id="person_archive_scan"></div>
+	<br style="clear: both;"></div>
+      <!--  recordsData -->
+    </span>
+
+  <span type="module" name="SelfService" ifenabled="true">
+    <div class="recordsData" task="person_can_view_child_form_user_map">
+      <h3>
+        <a name="jump_self_service">Self Service</a>
+      </h3>
+      <p class="editRecordsData">
+        <a href="" class="hide" title="Hide" onclick="return hideDiv('user_map', this );">Nascondi</a>
+  <span type="form" name="person:id" href="SelfService/userAccount?parent=" ifset="!user_map:id">Assign User Account</span>
+      </p>
+      
+      <div id="user_map"></div>
+      <br style="clear: both;"></div>
+     <!--  recordsData -->
+  </span>
+
+
+    <!--<a href="construction">Print</a>-->
+</div>

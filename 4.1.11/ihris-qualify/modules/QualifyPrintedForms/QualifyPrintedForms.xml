@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-PrintedForms">
+  <metadata>
+    <displayName>iHRIS Qualify Printed Forms</displayName>
+    <category>Application Option</category>
+    <description>The Qualify Printed Forms</description>
+    <version>4.2.2.0</version>
+    <requirement name="PrintedForms">
+      <atLeast version="4.1" />
+      <lessThan version="4.4" />
+    </requirement>
+    <enable name="ihris-qualify-PrintedForms-registration" />
+    <enable name="ihris-qualify-PrintedForms-license" />
+    <path name="pdf_images">
+      <value>./pdf_images</value>
+    </path>
+    <path name="modules">
+      <value>./modules</value>
+    </path>
+  </metadata>
+</I2CEConfiguration>

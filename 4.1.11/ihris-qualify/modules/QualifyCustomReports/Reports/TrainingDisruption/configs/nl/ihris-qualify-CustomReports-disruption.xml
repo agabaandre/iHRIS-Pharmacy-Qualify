@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-disruption" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-disruption" path="//modules/CustomReports" locale="nl">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-disruption" path="relationships/training_disruption">
+      <configuration name="display_name" locale="nl">
+        <value>Opleidingsonderbreking</value>
+      </configuration>
+      <configuration name="description" locale="nl">
+        <value>Relatie voor opleidingsonderbrekingen.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="disruption_year">
+          <configuration name="description" locale="nl">
+            <value>Het jaar waarin deze verstoring is opgetreden.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="resumed">
+          <configuration name="description" locale="nl">
+            <value>Opmerking om te bepalen of deze verstoring is beëindigd of niet.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="disruption_reason">
+          <configuration name="description" locale="nl">
+            <value>De reden waarom deze verstoring is opgetreden.</value>
+          </configuration>
+          <configuration name="display_name" locale="nl">
+            <value>Reden onderbreking</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="disruption_category">
+              <configuration name="description" locale="nl">
+                <value>De categorie voor de reden dat deze verstoring is opgetreden.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Verstoringscategorie</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configuration name="description" locale="nl">
+            <value>De opleiding die is beëindigd</value>
+          </configuration>
+          <configuration name="display_name" locale="nl">
+            <value>Opleiding</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="nl">
+                <value>Het kader van de opleiding.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Kader</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="person">
+              <configuration name="description" locale="nl">
+                <value>De persoon die de opleiding volgt.</value>
+              </configuration>
+              <configuration name="display_name" locale="nl">
+                <value>Persoon</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="demographic">
+                  <configuration name="description" locale="nl">
+                    <value>De demografische gegevens van de persoon die deze opleiding volgt.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="nl">
+                    <value>Demografie</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-disruption" path="reports/training_disruption">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="nl">
+          <value>Opleidingsonderbreking</value>
+        </configuration>
+        <configuration name="description" locale="nl">
+          <value>Rapportages die te maken hebben met opleidingsonderbrekingen.</value>
+        </configuration>
+        <configuration name="category" locale="nl">
+          <value>Opleidingsrapportages</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="nl">
+                <value>Kader</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="birth_date">
+              <configuration name="header" locale="nl">
+                <value>Geboortedatum</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="nl">
+                    <value>Geboortedatum na</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="nl">
+                    <value>Geboortedatum voor</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="gender">
+              <configuration name="header" locale="nl">
+                <value>Geslacht</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="nl">
+                    <value>Geslacht</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="disruption_category">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="nl">
+                <value>Verstoringscategorie</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="disruption_reason">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="nl">
+                <value>Reden onderbreking</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_disruption_category">
+              <configuration name="header" locale="nl">
+                <value>Verstoringscategorie-ID</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="nl">
+                    <value>Verstoringscategorie</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_date">
+              <configuration name="header" locale="nl">
+                <value>Datum onderbreking</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="disruption_reason">
+              <configuration name="header" locale="nl">
+                <value>Onderbrekingsreden-ID</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="nl">
+                    <value>Reden onderbreking</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="resumption_date">
+              <configuration name="header" locale="nl">
+                <value>Datum hervatten</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="cadre">
+              <configuration name="header" locale="nl">
+                <value>Kadercursussen</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="in">
+                  <configuration name="header" locale="nl">
+                    <value>Kader</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configuration name="header" locale="nl">
+                <value>Opnamedatum</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="nl">
+                    <value>Opnamedatum na</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="nl">
+                    <value>Opnamedatum voor</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="discontinuation_category">
+        <configuration name="description" locale="nl">
+          <value>Een cirkeldiagram van alle categorieën voor opleidingsonderbreking.</value>
+        </configuration>
+        <configuration name="display_name" locale="nl">
+          <value>Opleidingsonderbrekingen per categorie</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="nl">
+                  <value>Cirkeldiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="nl">
+                  <value>Staafdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="nl">
+                  <value>Kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="nl">
+                  <value>Gestapeld kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="nl">
+                  <value>Spreidingsdiagram</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="discontinuation_reason">
+        <configuration name="description" locale="nl">
+          <value>Een grafiek van alle opleidingsonderbrekingen per reden.</value>
+        </configuration>
+        <configuration name="display_name" locale="nl">
+          <value>Opleidingsonderbrekingen per reden</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="nl">
+                  <value>Cirkeldiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="nl">
+                  <value>Staafdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="nl">
+                  <value>Kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="nl">
+                  <value>Gestapeld kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="nl">
+                  <value>Spreidingsdiagram</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="discontinuation_year">
+        <configuration name="description" locale="nl">
+          <value>Een grafiek van alle opleidingsonderbrekingen per jaar.</value>
+        </configuration>
+        <configuration name="display_name" locale="nl">
+          <value>Opleidingsonderbrekingen per jaar</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="nl">
+                  <value>Cirkeldiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="nl">
+                  <value>Staafdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="nl">
+                  <value>Kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="nl">
+                  <value>Gestapeld kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="nl">
+                  <value>Spreidingsdiagram</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="resumption">
+        <configuration name="description" locale="nl">
+          <value>Een cirkeldiagram van opleidingsonderbrekingen die al dan zijn beëindigd.</value>
+        </configuration>
+        <configuration name="display_name" locale="nl">
+          <value>Hervattingsrapportage</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="nl">
+                  <value>Cirkeldiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="nl">
+                  <value>Staafdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="nl">
+                  <value>Kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="nl">
+                  <value>Gestapeld kolomdiagram (eenvoudig)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="nl">
+                  <value>Spreidingsdiagram</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

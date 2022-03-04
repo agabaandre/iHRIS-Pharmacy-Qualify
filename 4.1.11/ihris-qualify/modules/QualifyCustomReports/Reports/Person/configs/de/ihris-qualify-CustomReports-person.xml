@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-person" path="//modules/CustomReports">
+  <metadata>
+    <version>4.1.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-person" path="//modules/CustomReports" locale="de">
+    <version>4.1.0.1</version>
+    <configurationGroup name="relationship-person" path="relationships/person">
+      <configuration name="display_name" locale="de"></configuration>
+      <configuration name="description" locale="de">
+        <value>Der Zusammenhang zwischen Person und den ersten Schulungsinformationen.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="reg_results">
+          <configuration name="description" locale="de">
+            <value>Die Ergebnisse der Prüfung und Registrierung für die erste Schulung.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="intake_year">
+          <configuration name="description" locale="de">
+            <value>Das Jahr in dem die erste Schulung stattfand.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_year">
+          <configuration name="description" locale="de">
+            <value>Das Jahr in dem die Prüfung absolviert wurde.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="in_training">
+          <configuration name="description" locale="de">
+            <value>Ja/Nein, um anzugeben, ob die Person aktuell noch geschult wird oder nicht.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="demographic">
+          <configuration name="description" locale="de">
+            <value>Die demografischen Informationen zu dieser Person.</value>
+          </configuration>
+          <configuration name="display_name" locale="de">
+            <value>Demografisch</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="birth_district">
+              <configuration name="description" locale="de">
+                <value>Der Bezirk, in dem diese Person geboren wurde.</value>
+              </configuration>
+              <configuration name="display_name" locale="de">
+                <value>Geburtsbezirk</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="deployment">
+          <configuration name="description" locale="de">
+            <value>Die jüngste Einsatz dieser Person.</value>
+          </configuration>
+          <configuration name="display_name" locale="de">
+            <value>Einsatz</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="first_training">
+          <configuration name="description" locale="de">
+            <value>Die erste Schulung, die diese Person begann.</value>
+          </configuration>
+          <configuration name="display_name" locale="de">
+            <value>Erste Schulung</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="de">
+                <value>Die Mitarbeitergruppe zur ersten Schulung.</value>
+              </configuration>
+              <configuration name="display_name" locale="de">
+                <value>Mitarbeitergruppe</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam">
+              <configuration name="description" locale="de">
+                <value>Die Prüfungsinformationen zur ersten Schulung.</value>
+              </configuration>
+              <configuration name="display_name" locale="de">
+                <value>Prüfung</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration">
+              <configuration name="description" locale="de">
+                <value>Die Registrierungsdaten zur ersten Schulung.</value>
+              </configuration>
+              <configuration name="display_name" locale="de">
+                <value>Registrierung</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="description" locale="de">
+                <value>Die Schulungseinrichtung, an der die erste Schulung stattfand.</value>
+              </configuration>
+              <configuration name="display_name" locale="de">
+                <value>Schulungseinrichtung</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="institution_district">
+                  <configuration name="description" locale="de">
+                    <value>Der Bezirk, in dem sich die Schulungseinrichtung befindet.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="de">
+                    <value>Bezirk der Schulungseinrichtung</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="training_disrupt">
+              <configuration name="description" locale="de">
+                <value>Die aktuelle Unterbrechung für diese Schulung, sofern eine vorhanden ist.</value>
+              </configuration>
+              <configuration name="display_name" locale="de">
+                <value>Schulungsunterbrechung</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-person" path="reports/person">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="de">
+          <value>Bericht zur Person</value>
+        </configuration>
+        <configuration name="description" locale="de">
+          <value>Berichte im Zusammenhang mit Personen im System zusammen mit deren erster Schulung.</value>
+        </configuration>
+        <configuration name="category" locale="de">
+          <value>Berichte zur Person</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="header" locale="de">
+                <value>Nachname</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="de">
+                <value>Vorname</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="header" locale="de">
+                <value>Weitere Namen</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="first_training">
+          <configurationGroup name="fields">
+            <configurationGroup name="index_num">
+              <configuration name="header" locale="de">
+                <value>Indexnummer</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="de">
+                    <value>Mitarbeitergruppe</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="de">
+                <value>Mitarbeitergruppenkennung zur Schulung</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="de">
+                    <value>Nächstes Aufnahmedatum</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="de">
+                    <value>Vorheriges Aufnahmedatum</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="de">
+                <value>Aufnahmedatum</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="graduation">
+              <configuration name="header" locale="de">
+                <value>Abschlussdatum</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training_disrupt">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_date">
+              <configuration name="header" locale="de">
+                <value>Unterbrechungsdatum</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="institution_district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Bezirk der Schulungseinrichtung</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configuration name="header" locale="de">
+                <value>Registrierungsnummer</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="exam">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="header" locale="de">
+                <value>Prüfungsdatum</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configuration name="header" locale="de">
+                <value>Prüfungsergebnisse</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Mitarbeitergruppe</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="gender">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="de">
+                    <value>Geschlecht</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="de">
+                <value>Geschlecht</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="birth_district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Geburtsbezirk</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="reg_results">
+          <configuration name="header" locale="de">
+            <value>Registrierungsergebnisse</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="top_birth_district">
+        <configuration name="description" locale="de">
+          <value>Ein Kreisdiagramm zur Anzahl der Personen nach ihrem Geburtsbezirk, die eine Schulung beginnen.</value>
+        </configuration>
+        <configuration name="display_name" locale="de">
+          <value>Häufigster Geburtsbezirk</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="de">
+                  <value>Kreisdiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="de">
+                  <value>Balkendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="de">
+                  <value>Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="de">
+                  <value>Gestapeltes Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="de">
+                  <value>Punktdiagramm</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_intake_year">
+        <configuration name="description" locale="de">
+          <value>Die Anzahl der Lernenden nach Jahr, die eine Schulung beginnen.</value>
+        </configuration>
+        <configuration name="display_name" locale="de">
+          <value>Aufnahmejahr des Lernenden</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="de">
+                  <value>Kreisdiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="de">
+                  <value>Balkendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="de">
+                  <value>Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="de">
+                  <value>Gestapeltes Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="de">
+                  <value>Punktdiagramm</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="pass_fail_person">
+        <configuration name="description" locale="de">
+          <value>Die Ergebnisse nach bestanden / nicht bestanden für die erste Schulung ein jeder Person.</value>
+        </configuration>
+        <configuration name="display_name" locale="de">
+          <value>Bestanden / nicht bestanden nach erster Ausbildung</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="de">
+                  <value>Kreisdiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="de">
+                  <value>Balkendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="de">
+                  <value>Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="de">
+                  <value>Gestapeltes Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="de">
+                  <value>Punktdiagramm</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="final_exam_reg">
+        <configuration name="description" locale="de">
+          <value>Die Registrierungsergebnisse für die erste Schulung ein jeder Person.</value>
+        </configuration>
+        <configuration name="display_name" locale="de">
+          <value>Registrierungsergebnisse nach erster Schulung</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="de">
+                  <value>Kreisdiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="de">
+                  <value>Balkendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="de">
+                  <value>Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="de">
+                  <value>Gestapeltes Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="de">
+                  <value>Punktdiagramm</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_training_year">
+        <configuration name="description" locale="de">
+          <value>Lernende nach Aufnahmejahr, gegliedert nach Schulungsteilnahme oder Nichtteilnahme an einer Schulung.</value>
+        </configuration>
+        <configuration name="display_name" locale="de">
+          <value>Lernende in einer Schulung nach Jahr</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="de">
+                  <value>Kreisdiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="de">
+                  <value>Balkendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="de">
+                  <value>Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="de">
+                  <value>Gestapeltes Säulendiagramm (einfach)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="de">
+                  <value>Punktdiagramm</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>
